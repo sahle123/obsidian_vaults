@@ -1,0 +1,161 @@
+{
+  "main": {
+    "id": "1677a4aa2397dcd8",
+    "type": "split",
+    "children": [
+      {
+        "id": "635186637360d532",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d173045f0377f0e5",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f455bfe079c4c04c",
+    "type": "split",
+    "children": [
+      {
+        "id": "df4490b78b873c19",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3d318dbb692291e8",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "2f59331b5469eec1",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "2850aa8c3b832ece",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "50ef384b0e838f7c",
+    "type": "split",
+    "children": [
+      {
+        "id": "19efd1cd19613374",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c55aeaca7d89a836",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "167fa167ac62d83e",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "21ed6664dc48c403",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "27166d5de25be353",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "d173045f0377f0e5",
+  "lastOpenFiles": [
+    "Docker/Docker Cmds.md",
+    "Windows/Powershell Cmds.md",
+    "Dot NET/Visual Studio Hotkeys.md",
+    "Redis Cmds.md",
+    "Windows/Hyper V.md",
+    "Dot NET/IIS Cmds.md",
+    "Dot NET/Entity Framework.md",
+    "Dot NET",
+    "Windows",
+    "Docker/DockerTestSetup.ps1",
+    "Docker",
+    "Welcome.md",
+    "Windows/Powershell Scripts/VisitSummary.ps1",
+    "Windows/Powershell Scripts/SysText_test.ps1",
+    "Windows/Powershell Scripts/Newtonsoft_test.ps1",
+    "Windows/Powershell Scripts/forloop.ps1",
+    "Windows/Powershell Scripts"
+  ]
+}

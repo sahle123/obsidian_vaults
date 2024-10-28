@@ -1,0 +1,1 @@
+docker stop $(docker ps -aq);docker rm $(docker ps -aq);cd C:\Users\sahal.alturaigi\Source\repos\backendv1-dev\ClingoMicroservices;docker-compose -f docker-compose.integrationtest.yml up

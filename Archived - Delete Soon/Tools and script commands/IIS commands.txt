@@ -1,0 +1,6 @@
+Helpful IIS commands
+
+reset IIS:
+  iisreset /restart
+  iisreset /start
+  iisreset /stop

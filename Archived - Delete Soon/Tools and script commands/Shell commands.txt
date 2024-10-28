@@ -1,0 +1,19 @@
+## Powershell commands
+
+ii $(pwd) 
+ii $((Get-PSReadLineOption).HistorySavePath)
+
+
+## Docker commands
+
+# Stop all docker containers
+docker stop $(docker ps -aq)
+
+# Remove all docker containers
+docker rm $(docker ps -aq)
+
+# Run custom compose file
+docker-compose -f .\docker-compose.custom.yml up
+
+# View all containers that are 'exited'
+docker ps -f "status=exited" -q

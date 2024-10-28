@@ -1,0 +1,11 @@
+dotnet.exe "C:\Users\sahal.alturaigi\source\repos\PerformanceTesting\PerfTests\PerfTests\bin\Release\net5.0\PerfTests.dll"
+
+
+# Run all tests in the passed in .dll file.
+dotnet.exe test "C:\Users\sahal.alturaigi\source\repos\backendv1-dev\ClingoMicroservices\Tests\ApiGateway\ApiGateway.Configuration.IntegrationTests\bin\Debug\net5.0\ApiGateway.Configuration.IntegrationTests.dll"
+
+# Run all tests that contain the trait("Configuration", "GetPhysicianCalendarAndSchedule")
+dotnet.exe test --filter "Configuration=GetPhysicianCalendarAndSchedule" "C:\Users\sahal.alturaigi\source\repos\backendv1-dev\ClingoMicroservices\Tests\ApiGateway\ApiGateway.Configuration.IntegrationTests\bin\Debug\net5.0\ApiGateway.Configuration.IntegrationTests.dll" --verbosity detailed
+
+# Run all tests in ApiGateway.Configuration.IntegrationTests.ConfigurationTests
+dotnet.exe test --filter "FullyQualifiedName~ApiGateway.Configuration.IntegrationTests.ConfigurationTests" "C:\Users\sahal.alturaigi\source\repos\backendv1-dev\ClingoMicroservices\Tests\ApiGateway\ApiGateway.Configuration.IntegrationTests\bin\Debug\net5.0\ApiGateway.Configuration.IntegrationTests.dll" -v d

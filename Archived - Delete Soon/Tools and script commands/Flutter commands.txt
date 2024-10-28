@@ -1,0 +1,11 @@
+Flutter commands
+================
+
+flutter run --enable-software-rendering -v
+
+flutter doctor
+
+flutter create
+
+# Gets all packages for project. (Based on pubspec.yaml file)
+flutter packages get

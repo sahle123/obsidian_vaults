@@ -1,0 +1,21 @@
+
+# Recursively delete '.DS_store' files.
+Get-ChildItem * -Include *.DS_store -Recurse | Remove-Item
+
+# How to setup a Powershell profile:
+# https://lazyadmin.nl/powershell/powershell-profile/
+
+# Allow powershell to run its profile within this instance.
+# Annoying... but I can understand why this is so from a security perspective.
+powershell.exe -ExecutionPolicy bypass
+
+# Opens a new window within the current directory
+ii .
+
+# Check environment variables
+dir env:
+ls env:
+Get-ChildItem env:
+
+# Check path variables
+echo $env:path

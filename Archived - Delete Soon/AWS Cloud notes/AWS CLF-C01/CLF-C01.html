@@ -1,0 +1,3192 @@
+<html><head><meta name="color-scheme" content="light dark"></head><body class="_theme-almond _toc-left"><link rel="stylesheet" type="text/css" href="themes/styles.css"><link rel="stylesheet" type="text/css" href="themes/almond.css" id="_theme"><link rel="stylesheet" type="text/css" href="themes/prism.min.css" id="_prism"><div id="_html" class="markdown-theme"><h1 id="cloud--aws"><a class="anchor" name="cloud--aws" href="#cloud--aws"><span class="octicon octicon-link"></span></a>Cloud &amp; AWS</h1>
+<h3 id="types-of-cloud-providers"><a class="anchor" name="types-of-cloud-providers" href="#types-of-cloud-providers"><span class="octicon octicon-link"></span></a>Types of cloud providers</h3>
+<ul>
+<li>Private:<ul>
+<li>Rackspace</li>
+</ul>
+</li>
+<li>Public:<ul>
+<li>AWS</li>
+<li>Google Cloud</li>
+<li>Azure</li>
+</ul>
+</li>
+<li>Hybrid:<ul>
+<li>No specific provider, but rather, off-loading some services/features from your own private server onto a public cloud provider. E.g. Storing patient medical records on your own servers and hosting your application on a cloud provider.</li>
+</ul>
+</li>
+</ul>
+<h3 id="types-of-cloud-computing"><a class="anchor" name="types-of-cloud-computing" href="#types-of-cloud-computing"><span class="octicon octicon-link"></span></a>Types of cloud computing</h3>
+<p>In descending order of degree of flexibility and involvment w/ the CP.</p>
+<ul>
+<li>Infrastructure as a Service (IaaS)</li>
+<li>Platform as a Service (PaaS)</li>
+<li>Software as a Service (SaaS)</li>
+</ul>
+<h3 id="server-management"><a class="anchor" name="server-management" href="#server-management"><span class="octicon octicon-link"></span></a>Server management</h3>
+<ul>
+<li>On-premises (i.e. managed by you or your company)<ul>
+<li>Applications</li>
+<li>Data</li>
+<li>Runtime</li>
+<li>Middleware</li>
+<li>OS</li>
+<li>Virtualization</li>
+<li>Servers</li>
+<li>Storage</li>
+<li>Networking</li>
+</ul>
+</li>
+<li>IaaS<ul>
+<li>Applications</li>
+<li>Data</li>
+<li>Runtime</li>
+<li>Middleware</li>
+<li>OS</li>
+</ul>
+</li>
+<li>PaaS<ul>
+<li>Application</li>
+<li>Data</li>
+</ul>
+</li>
+<li>Saas<ul>
+<li><em>All attributes are handled by the Cloud Provider</em></li>
+</ul>
+</li>
+</ul>
+<h3 id="aws-support-plans"><a class="anchor" name="aws-support-plans" href="#aws-support-plans"><span class="octicon octicon-link"></span></a>AWS Support Plans</h3>
+<ul>
+<li><a href="https://aws.amazon.com/premiumsupport/plans/">More info can be found here</a>.</li>
+<li>Basic support includes the following: (which also applies to all of the other plans too)<ul>
+<li>24x7 access to customer service, docs, white papers, and AWS re:Post (i.e. AWS stack overflow).</li>
+<li>AWS Trusted Advisor.</li>
+<li>AWS Personal Health Dashboard.</li>
+<li>One-on-one responses to account and billing questions.</li>
+<li>Service health checks.</li>
+</ul>
+</li>
+</ul>
+<table>
+    <tbody><tr style="text-align: left">
+        <th></th>
+        <th>Developer</th>
+        <th>Business</th>
+        <th>Enterprise On-ramp</th>
+        <th>Enterprise</th>
+    </tr>
+    <tr>
+        <td>AWS Trusted Advisor best practices checks</td>
+        <td>Service quota + basic security checks</td>
+        <td>Full set of checks</td>
+        <td>Full set of checks</td>
+        <td>Full set of checks</td>
+    </tr>
+    <tr>
+        <td>AWS Trusted Advisor Priority</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Recommendations from AWS account team</td>
+    </tr>
+    <tr>
+        <td>Technical support</td>
+        <td>
+            <ul>
+                <li>Unlimited cases w/ 1 primary contact</li>
+                <li>Business hours web access to Cloud Support Associates</li>
+                <li>Prioritized responses to AWS re:Post</li>
+                <li>General architectural guidance on how services can be used for various use-cases, workloads, or apps</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>24/7 phone, web, chat access to Cloud Support engineers</li>
+                <li>Unlimited cases and unlimited contacts (IAM supported)</li>
+                <li>Prioritized responses to AWS re:Post</li>
+                <li>Access to AWS Support App in Slack</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>24/7 phone, web, chat access to Cloud Support engineers</li>
+                <li>Unlimited cases and unlimited contacts (IAM supported)</li>
+                <li>Prioritized responses to AWS re:Post</li>
+                <li>Access to AWS Support App in Slack</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>24/7 phone, web, chat access to Cloud Support engineers</li>
+                <li>Unlimited cases and unlimited contacts (IAM supported)</li>
+                <li>Prioritized responses to AWS re:Post</li>
+                <li>Access to AWS Support App in Slack</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>Case severity / Response times</td>
+        <td>
+            <ul>
+                <li>General guidance: &lt; 24 hrs</li>
+                <li>System impaired: &lt; 12 hrs</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>General guidance: &lt; 24 hrs</li>
+                <li>System impaired: &lt; 12 hrs</li>
+                <li>Production system impaired: &lt; 4 hrs</li>
+                <li>Production system down: &lt; 1 hr</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>General guidance: &lt; 24 hrs</li>
+                <li>System impaired: &lt; 12 hrs</li>
+                <li>Production system impaired: &lt; 4 hrs</li>
+                <li>Production system down: &lt; 1 hr</li>
+                <li>Business-critical system down: &lt; 30 min</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>General guidance: &lt; 24 hrs</li>
+                <li>System impaired: &lt; 12 hrs</li>
+                <li>Production system impaired: &lt; 4 hrs</li>
+                <li>Production system down: &lt; 1 hr</li>
+                <li>Business-critical system down: &lt; 15 min</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>Architectural guidance</td>
+        <td>General</td>
+        <td>Contextual to your use-case</td>
+        <td>Consultative review and guidance based on your applications</td>
+        <td>Consultative review and guidance based on your applications</td>
+    </tr>
+    <tr>
+        <td>Programmatic case mgmt</td>
+        <td>-</td>
+        <td>AWS Support API</td>
+        <td>AWS Support API</td>
+        <td>AWS Support API</td>
+    </tr>
+    <tr>
+        <td>3rd-party software support</td>
+        <td>None</td>
+        <td>Provided</td>
+        <td>Provided</td>
+        <td>Provided</td>
+    </tr>
+    <tr>
+        <td>Proactive programs &amp; self-service</td>
+        <td>Support Automation Workflows</td>
+        <td>
+            <ul>
+                <li>Support Automation Workflows</li>
+                <li>Infrastructure Event mgmt (for additional fee)</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Support Automation Workflows</li>
+                <li>Infrastructure Event mgmt (one-per-year)</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Support Automation Workflows</li>
+                <li>Infrastructure Event mgmt</li>
+                <li>Proactive reviews, workshops + deep dives</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>AWS Incident Detection and Response</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Provided for an additional fee</td>
+    </tr>
+    <tr>
+        <td>AWS Shield Advanced</td>
+        <td>Provided for an additional fee</td>
+        <td>Provided for an additional fee</td>
+        <td>Provided for an additional fee</td>
+        <td>Provided for an additional fee</td>
+    </tr>
+    <tr>
+        <td>AWS Managed Services (AMS)</td>
+        <td>-</td>
+        <td>Provided for an additional fee</td>
+        <td>Provided for an additional fee</td>
+        <td>Provided for an additional fee</td>
+    </tr>
+    <tr>
+        <td>Technical Account Manager</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Can choose from a pool of TAMs</td>
+        <td>Designated a TAM</td>
+    </tr>
+    <tr>
+        <td>Training</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Online, self-paced labs</td>
+    </tr>
+    <tr>
+        <td>Account assistance</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Concierge Support Team</td>
+        <td>Concierge Support Team</td>
+    </tr>
+    <tr>
+        <td>Pricing</td>
+        <td><a href="https://aws.amazon.com/premiumsupport/pricing/" target="_blank">Check here</a></td>
+        <td><a href="https://aws.amazon.com/premiumsupport/pricing/" target="_blank">Check here</a></td>
+        <td><a href="https://aws.amazon.com/premiumsupport/pricing/" target="_blank">Check here</a></td>
+        <td><a href="https://aws.amazon.com/premiumsupport/pricing/" target="_blank">Check here</a></td>
+    </tr>
+</tbody></table>
+
+<h3 id="5-characteristics-of-cloud-computing"><a class="anchor" name="5-characteristics-of-cloud-computing" href="#5-characteristics-of-cloud-computing"><span class="octicon octicon-link"></span></a>5 characteristics of cloud computing</h3>
+<ul>
+<li>On-demand self service<ul>
+<li>Users can provision resources and use them w/o human interaction.</li>
+</ul>
+</li>
+<li>Broad network access<ul>
+<li>Can be accessed over many client platforms.</li>
+</ul>
+</li>
+<li>Multi-tenancy and resource pooling<ul>
+<li>Multiple customers share the same physical resources. </li>
+<li>Security and privacy are taken care of by the provider, but for highly sensitive data, it may be best to use a private server.</li>
+</ul>
+</li>
+<li>Rapid elasticity and scalability<ul>
+<li>Automatically acquire and dispose of resources as needed.</li>
+</ul>
+</li>
+<li>Measured service<ul>
+<li>Usage is measured and users pay only exactly for what they use.</li>
+</ul>
+</li>
+</ul>
+<h3 id="advantages-of-cloud-computing"><a class="anchor" name="advantages-of-cloud-computing" href="#advantages-of-cloud-computing"><span class="octicon octicon-link"></span></a>Advantages of cloud computing</h3>
+<ul>
+<li>Trade CAPEX for OPEX:<ul>
+<li>No hardware ownership. Reduced Total Cose of Ownership (TCO) and OPEX.</li>
+</ul>
+</li>
+<li>Benefit from economies of scale:<ul>
+<li>Prices are reduced from cloud providers since they are more efficient due to their large scale.</li>
+</ul>
+</li>
+<li>No need to guess capacity:<ul>
+<li>This problem is off-loaded to the cloud provider (CP).</li>
+</ul>
+</li>
+<li>Increased speed and agility.<ul>
+<li>Easy to deploy changes.</li>
+<li>Can go global in minutes.</li>
+</ul>
+</li>
+<li>No need to manage private servers since all the maintenance, monitoring, and hardware are handled by the CP.</li>
+</ul>
+<h3 id="aws-has-3-pricing-fundamental-cost-drivers"><a class="anchor" name="aws-has-3-pricing-fundamental-cost-drivers" href="#aws-has-3-pricing-fundamental-cost-drivers"><span class="octicon octicon-link"></span></a>AWS has 3 pricing fundamental cost-drivers</h3>
+<ul>
+<li>Compute - pay for compute time</li>
+<li>Storage - pay for data stored in the cloud</li>
+<li>Data transfer - pay ONLY for data that leaves the cloud. Data going in is for free.</li>
+</ul>
+<h3 id="aws-infrastructure-identities"><a class="anchor" name="aws-infrastructure-identities" href="#aws-infrastructure-identities"><span class="octicon octicon-link"></span></a>AWS infrastructure identities</h3>
+<p>Hierarchically...</p>
+<ul>
+<li><strong>Regions</strong> - physical location on planet.<ul>
+<li><strong>Availability Zones</strong> - Consist of 1 or more discrete data centers. Usually 3 AZs exist in a region; 6 max, 3 min. Isolated from disaster. All traffic between AZs is encrypted.<ul>
+<li><strong>Points of Presence</strong> (i.e. Edge locations). Only for CloudFront which is a CDN.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="well-architected-framework-aws"><a class="anchor" name="well-architected-framework-aws" href="#well-architected-framework-aws"><span class="octicon octicon-link"></span></a>Well-Architected Framework, AWS</h3>
+<ul>
+<li><a href="https://www.wellarchitectedlabs.com/?ref=wellarchitected-wp">Labs can be found here</a></li>
+<li>6 pillars:<ul>
+<li>Operational excellence</li>
+<li>Security</li>
+<li>Reliability</li>
+<li>Performance efficiency</li>
+<li>Cost optimization</li>
+<li>Sustainability</li>
+</ul>
+</li>
+</ul>
+<h1 id="accessaccountidentity-management-in-aws"><a class="anchor" name="accessaccountidentity-management-in-aws" href="#accessaccountidentity-management-in-aws"><span class="octicon octicon-link"></span></a>Access/Account/Identity Management in AWS</h1>
+<h3 id="identity-and-access-management-iam"><a class="anchor" name="identity-and-access-management-iam" href="#identity-and-access-management-iam"><span class="octicon octicon-link"></span></a>Identity and Access Management (IAM)</h3>
+<ul>
+<li>Global service</li>
+<li>For managing users within your company that you trust and that need access to various AWSs.</li>
+<li>Root account should only be used to create other accounts.</li>
+<li>Groups cannot contain other groups, only users. <ul>
+<li>1 user can belong to a single or many groups.</li>
+</ul>
+</li>
+<li>For all users, apply the least-privilege-possible policy. That is, only provide access for what the user needs.<ul>
+<li>If the user hasn't accessed a service in a while, consider removing that access.</li>
+</ul>
+</li>
+<li><strong>Root user exclusive actions</strong>:<ul>
+<li>Change account settings.</li>
+<li>View certain tax invoices.</li>
+<li>Close AWS account.</li>
+<li>Restore IAM user permissions.</li>
+<li>Change or cancel your AWS Support plan.</li>
+<li>Register as a seller in the Reserved Instance Marketplace.</li>
+<li>Configure an S3 bucket to enable MFA.</li>
+<li>Edit or delete an S3 bucket policy that includes an invalid VPC ID or VPC endpoint ID.</li>
+<li>Sign-up for GovCloud.</li>
+</ul>
+</li>
+<li>An in-line policy is an ad-hoc policy applied to a single user that is not in a group.</li>
+<li>Every IAM JSON policy requires an <em>Action</em> and <em>Effect</em>. Every other property is optional or contextually required (e.g. principal).</li>
+<li>Q) Roles vs. groups?<ul>
+<li><em>Group</em> is a bunch of users with the same policies.</li>
+<li><em>Role</em> is a preset policy for service(s).</li>
+<li>You cannot assign a role to a user. These are exclusively for AWS resources.</li>
+</ul>
+</li>
+</ul>
+<h3 id="iam-identity-center"><a class="anchor" name="iam-identity-center" href="#iam-identity-center"><span class="octicon octicon-link"></span></a>IAM Identity Center</h3>
+<ul>
+<li>One login (single sign-on) point for all the following accounts:<ul>
+<li>AWS accounts in AWS Organizations.</li>
+<li>Business cloud applications (e.g. SalesForce, Box, Microsoft 365).</li>
+<li>SAML2.0-enabled applications.</li>
+<li>EC2 Windows Instances.</li>
+</ul>
+</li>
+<li>Identity providers<ul>
+<li>Built-in identity store in IAM Identity Center.</li>
+<li>3rd party --&gt; e.g. Active Directory (MS AD), OneLogin, Okta, etc...</li>
+</ul>
+</li>
+<li>Formerly called <em>AWS Single Sign-On</em>.</li>
+</ul>
+<h3 id="iam-credentials-report"><a class="anchor" name="iam-credentials-report" href="#iam-credentials-report"><span class="octicon octicon-link"></span></a>IAM Credentials Report</h3>
+<ul>
+<li>A report that lists all the customer's users and the status of thier various credentials.</li>
+<li>Works at an account-level.</li>
+</ul>
+<h3 id="iam-access-advisor"><a class="anchor" name="iam-access-advisor" href="#iam-access-advisor"><span class="octicon octicon-link"></span></a>IAM Access Advisor</h3>
+<ul>
+<li>Shows service permissions granted to a user and when those services were last accessed.</li>
+<li>Can be used to revise IAM policies.</li>
+<li>Works at a user-level.</li>
+</ul>
+<h3 id="multi-factor-authentication-mfa"><a class="anchor" name="multi-factor-authentication-mfa" href="#multi-factor-authentication-mfa"><span class="octicon octicon-link"></span></a>Multi-factor Authentication (MFA)</h3>
+<ul>
+<li>4 types:<ul>
+<li>Virtual MFA device<ul>
+<li>e.g. Google authenticator, Authy</li>
+</ul>
+</li>
+<li>Universal 2nd factor (U2F) security key<ul>
+<li>YubiKey</li>
+</ul>
+</li>
+<li>Hardware key Fob MFA device<ul>
+<li>Gemalto</li>
+</ul>
+</li>
+<li>Hardware key Fob MFA device for AWS GovCloud (US)<ul>
+<li>SurePassID</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="organizations-aws"><a class="anchor" name="organizations-aws" href="#organizations-aws"><span class="octicon octicon-link"></span></a>Organizations, AWS</h3>
+<ul>
+<li>Allows you to managed multiple AWS accounts.</li>
+<li>Global service.</li>
+<li>The main account is the <em>master account</em> and all other accounts are <em>child accounts</em>.</li>
+<li>Benefits:<ul>
+<li>Consolidated billing across all accounts.</li>
+<li>Pricing benefits from aggregated usage (volume discount for EC2, S3, ...).</li>
+<li>Pooling of Reserved EC2 instances for optimal savings.</li>
+</ul>
+</li>
+<li>API is available to automate AWS account creation.</li>
+<li>Can restrict account privileges using <strong>Service Control Policy (SCP)</strong>.</li>
+<li>Using a multi-account strategy you can separate accounts by:<ul>
+<li>department / organization unit</li>
+<li>function</li>
+<li>cost center</li>
+<li>dev / test / prod environments</li>
+</ul>
+</li>
+<li>You can use tagging standards for billing purposes across all accounts.</li>
+<li>You should enable CloudTrail on all accounts and have those logs saved in a central S3 account.<ul>
+<li>And therefore send CloudWatch logs to a central logging account.</li>
+</ul>
+</li>
+</ul>
+<h3 id="service-control-policy-scp"><a class="anchor" name="service-control-policy-scp" href="#service-control-policy-scp"><span class="octicon octicon-link"></span></a>Service Control Policy (SCP)</h3>
+<ul>
+<li>SCPs are a type of organization policy that you can use to manage permissions in your organization.</li>
+<li>Allows you to whitelist or blacklist IAM actions.</li>
+<li>Applied at the <em>Organizational Unit</em> or <em>Account</em> level.</li>
+<li>This is applied hierarchically and denies will always override allows.</li>
+<li>SCP rules <strong>never</strong> apply to the master account, even if explicitly defined.</li>
+<li>Root in any child account is subject to SCP rules.</li>
+<li>Note that SCP rules do <strong>not</strong> apply to service-linked roles.<ul>
+<li>i.e. roles that enable other AWSs to integrate with AWS Organizations cannot be restricted.</li>
+</ul>
+</li>
+<li>SCP does not allow anything by default; you must explicitly allow services.</li>
+<li>Use cases:<ul>
+<li>Restrict access to certain services (e.g. HR department cannot use EC2)</li>
+<li>Enforce PCI (payment card industry) compliance by explicitly disabling services.</li>
+</ul>
+</li>
+</ul>
+<h3 id="control-tower-aws"><a class="anchor" name="control-tower-aws" href="#control-tower-aws"><span class="octicon octicon-link"></span></a>Control Tower, AWS</h3>
+<ul>
+<li>Control Tower is an AWS native service providing a pre-defined set of blueprints and guardrails to help customers implement a landing zone for new AWS accounts.</li>
+<li>Easy way to setup and govern a secure, compliant multi-account AWS environment based on best practices.</li>
+<li>Benefits:<ul>
+<li>Automate the set up of your environment in a few clicks.</li>
+<li>Automate ongoing policy management using guardrails.</li>
+<li>Detect policy violations and remediate them.</li>
+<li>Monitor compliance through an interactive dashboard.</li>
+</ul>
+</li>
+<li>Control Tower runs on top of AWS Organizations.<ul>
+<li>It automatically sets up AWS Organizations to organize accounts and implement SCPs.</li>
+</ul>
+</li>
+<li>Very comprehensive tool.</li>
+</ul>
+<h3 id="security-token-service-sts-aws"><a class="anchor" name="security-token-service-sts-aws" href="#security-token-service-sts-aws"><span class="octicon octicon-link"></span></a>Security Token Service (STS), AWS</h3>
+<ul>
+<li>Enables you to create temporary, limited-privileges credentials to access your AWS resources.<ul>
+<li>Short-term credentials --&gt; you configure the expiration period.</li>
+</ul>
+</li>
+<li>Use cases:<ul>
+<li><em>Identity Federation</em>: manage user identities in external systems and provide them w/ STS tokens to access AWS resources.</li>
+<li>IAM Roles for cross/same account access.</li>
+<li>IAM Roles for EC2: provide temporary credentials for EC2 instances to access AWS resources.</li>
+</ul>
+</li>
+<li>Workflow:</li>
+</ul>
+<div style="display: flex; flex-direction: column; align-items: center">
+    <img src="imgs/STS_graph.png" alt="Example of STS workflow">
+    <div style="text-align: center"><i>Credit: Stéphane Maarek</i></div>
+</div>
+
+<h3 id="cognito-aws"><a class="anchor" name="cognito-aws" href="#cognito-aws"><span class="octicon octicon-link"></span></a>Cognito, AWS</h3>
+<ul>
+<li>Simple, secure sign-up and sign-in for web/mobile users.</li>
+<li>Works for millions of users (how scalable is this???)</li>
+<li>Workflow:</li>
+</ul>
+<div style="display: flex; flex-direction: column; align-items: center">
+    <img src="imgs/cognito_graph.png" alt="Example of a Cognito workflow">
+    <div style="text-align: center"><i>Credit: Stéphane Maarek</i></div>
+</div>
+
+<h3 id="directory-services-aws"><a class="anchor" name="directory-services-aws" href="#directory-services-aws"><span class="octicon octicon-link"></span></a>Directory Services, AWS</h3>
+<ul>
+<li>An AWS that allows you to extend Microsoft Active Directory.</li>
+<li>There are 3 ways to utilize AWS Directory Services<ol>
+<li><strong>AWS Managed Microsoft AD</strong><ul>
+<li>Create your own AD in AWS and manage users in AWS.</li>
+<li>Supports MFA.</li>
+<li>Establishes "trust" connection w/ your on-premises AD.</li>
+</ul>
+</li>
+<li><strong>AD Connector</strong><ul>
+<li>Directory Gateway (proxy) to redirect on-premises AD </li>
+<li>Supports MFA.</li>
+<li>Users are managed on the on-premises data center.</li>
+</ul>
+</li>
+<li><strong>Simple Active Directory</strong><ul>
+<li>A standalone, AD-compatible managed directory service on AWS.<ul>
+<li>N.B. this is NOT Microsoft AD; it's an AWS AD-compatible version.</li>
+</ul>
+</li>
+<li>Cannot be joined w/ on-premises AD.</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+<h1 id="elastic-compute-cloud-ec2"><a class="anchor" name="elastic-compute-cloud-ec2" href="#elastic-compute-cloud-ec2"><span class="octicon octicon-link"></span></a>Elastic Compute Cloud (EC2)</h1>
+<h3 id="ec2-summary"><a class="anchor" name="ec2-summary" href="#ec2-summary"><span class="octicon octicon-link"></span></a>EC2 summary:</h3>
+<ul>
+<li>An EC2 instance = AMI (OS) + instance size (CPU + RAM) + storage + security groups + EC2 User Data.</li>
+<li>Security group = firewall attached to an EC2 instance.</li>
+<li>EC2 User Data = script run at the first start of the instance.</li>
+<li>EC2 instance role = link to an IAM role.</li>
+</ul>
+<h3 id="ec2-instance-types"><a class="anchor" name="ec2-instance-types" href="#ec2-instance-types"><span class="octicon octicon-link"></span></a>EC2 Instance Types</h3>
+<ul>
+<li>General Purpose<ul>
+<li>Balanced. Used for diverse workloads. Good for regular web-apps and code repos.</li>
+</ul>
+</li>
+<li>Compute Optimized<ul>
+<li>Focus on CPU-intensive tasks. Good for batch processing workloads, media transcoding, machine learning, dedicated game servers.</li>
+</ul>
+</li>
+<li>Memory Optimized<ul>
+<li>Focus on having large amounts of main memory available. Useful for...<ul>
+<li>High performance relational/non-relational databases, </li>
+<li>Distributed web scale cache stores,</li>
+<li>In-memory databases for optimized business intelligence, </li>
+<li>Apps performing real-time processing of big unstructured data.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Storage Optimized<ul>
+<li>For storage-intensive tasks that require high, sequential read/write access to large data sets in local storage. Useful for...<ul>
+<li>High frequency online transaction processing (OLTP) systems.</li>
+<li>Relational/NoSQL databases.</li>
+<li>Cache for in-memory database (e.g. Redis).</li>
+<li>Data warehousing apps.</li>
+<li>Distributed file systems.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="security-groups"><a class="anchor" name="security-groups" href="#security-groups"><span class="octicon octicon-link"></span></a>Security Groups</h3>
+<ul>
+<li>Essentially are firewalls for AWS services.</li>
+<li>They are local to a region. If you make one in one region, you have to make it again in another.</li>
+<li>SCs live outside of the AWS service. So if the SC blocks a connection, the AWS service never even sees it in the first place.</li>
+<li>AWS services and SCs have a many-to-many relationship.</li>
+<li>N.B. If you connect and you get a timeout error, likely an SC issue. If you get any other type of error, likely an application error.</li>
+<li>Be default, all inbound traffic is blocked and all outbound traffic is authorized.</li>
+<li>Security groups act as a firewall at the instance level whereas Network Access Control List (ACL) acts as a firewall at the subnet level.</li>
+</ul>
+<h3 id="ec2-instance-purchasing-options"><a class="anchor" name="ec2-instance-purchasing-options" href="#ec2-instance-purchasing-options"><span class="octicon octicon-link"></span></a>EC2 instance purchasing options:</h3>
+<ul>
+<li>On-demand<ul>
+<li>For short, light, uninterrupted workloads. </li>
+<li>Predictable pricing, pay by the second.<ul>
+<li>No upfront cost, but has the highest rates.</li>
+</ul>
+</li>
+<li>No commitments.</li>
+</ul>
+</li>
+<li>Reserved - (1 or 3 years)<ul>
+<li>Standard reserved Instances - for long or steady-state workloads. e.g. Databases.<ul>
+<li>Upfront cost are optional and the more paid early, the bigger the discount.</li>
+<li>Reserve a specific instance attribute (instance type, region/zonal, tenancy, OS).</li>
+<li>You can buy and sell in the Reserved Instance Marketplace.</li>
+<li>Can save up to 72% compared to on-demand.</li>
+</ul>
+</li>
+<li>Convertible reserved instances - long workloads w/ flexible instances.<ul>
+<li>Lower discount compared to Reserved Instances.</li>
+<li>Allows to change the EC2 instance type, instance family, OS, scope, and tenancy.</li>
+<li>Can save up to 66% compared to on-demand.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Savings Plans - (1 or 3 years)<ul>
+<li>More modern approach.</li>
+<li>Commitment to an amount of usage, not an instance type. Gives a lot of flexibility in terms of instances that can be used.</li>
+<li>Can save up to 72% compared to on-demand.</li>
+<li>Any usage that exceeds the savings plan will be billed at the On-demand price.</li>
+<li>Locked to a specific instance family &amp; AWS region.</li>
+<li>Flexible across:<ul>
+<li>Instance size (m5.xlarge, m5.2xlarge).</li>
+<li>OS.</li>
+<li>Tenancy (host, dedicated, default).</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Spot Instances<ul>
+<li>For short, light, and likely <strong>interruptable</strong> workloads.</li>
+<li>Very cheap. Sometimes up to 90% discount compared to On-demand. The most cost-efficient choice.</li>
+<li>Less reliable since you can lose instances.<ul>
+<li>This happens when your max price is less than the current spot price.</li>
+</ul>
+</li>
+<li>Useful for workloads that are resilient to failure. e.g...<ul>
+<li>Batch jobs, data analysis, image processing, any distributed work, or workloads w/ flexible start/end times.</li>
+</ul>
+</li>
+<li>NOT suitable for critical jobs or database.</li>
+</ul>
+</li>
+<li>Dedicated Hosts - book an entire physical server dedicated only to you.<ul>
+<li>Allows you to address compliance requirements and use your existing server-bound software license (per-socket, per-core, etc...).</li>
+<li>Purchase options: <ul>
+<li>On-demands - pay per second for active Dedicated Host</li>
+<li>Reserved - 1 or 3 years (either no upfront, partial upfront, all upfront).</li>
+</ul>
+</li>
+<li>The most expensive option.</li>
+</ul>
+</li>
+<li>Dedicated Instances - no other customer will share your hardware.<ul>
+<li>May share hardware w/ other instances in the same account.</li>
+<li>No control over instance placement</li>
+</ul>
+</li>
+<li>Capacity Reservation - reserve capacity in a specific AZ (availability zone) for any duration.<ul>
+<li>Reserve On-demand instances.</li>
+<li>You will always have access to EC2 capacity when you need it.</li>
+<li>No time commitment, no billing discounts.</li>
+<li>You're charged at On-demand rate whether or not you are running instances.</li>
+<li>Suitable for short-term, uninterrupted workloads that need to be in a specific AZ.</li>
+</ul>
+</li>
+</ul>
+<h3 id="amazon-machine-image-ami"><a class="anchor" name="amazon-machine-image-ami" href="#amazon-machine-image-ami"><span class="octicon octicon-link"></span></a>Amazon Machine Image (AMI)</h3>
+<ul>
+<li>Ready-to-use EC2 instances with our own customizations.</li>
+<li>Can be created manually or throught he EC2 Image Builder pipeline.</li>
+<li>AMIs are bound by region and must be copied over to any other region if needed.</li>
+</ul>
+<h3 id="ec2-image-builder"><a class="anchor" name="ec2-image-builder" href="#ec2-image-builder"><span class="octicon octicon-link"></span></a>EC2 Image Builder</h3>
+<ul>
+<li>Pipeline, scheduled process for making our own custom AMI w/ test cases and updates.</li>
+<li>Free service, however the EC2 instances that get spun up may incur costs.</li>
+</ul>
+<h1 id="storage-systems"><a class="anchor" name="storage-systems" href="#storage-systems"><span class="octicon octicon-link"></span></a>Storage Systems</h1>
+<h2 id="aws-storage-cloud-native-options"><a class="anchor" name="aws-storage-cloud-native-options" href="#aws-storage-cloud-native-options"><span class="octicon octicon-link"></span></a>AWS Storage Cloud Native Options</h2>
+<ul>
+<li>AWS stores files in its network in its own special way; proprietary.</li>
+<li>3 types:<ul>
+<li>Block - EBS, EC2 instance store</li>
+<li>File - EFS</li>
+<li>Object - S3, S3 glacier</li>
+</ul>
+</li>
+<li>You need to use either an AWS directly or programmatically through the AWS Storage Gateway.</li>
+</ul>
+<h2 id="elastic-block-store-ebs"><a class="anchor" name="elastic-block-store-ebs" href="#elastic-block-store-ebs"><span class="octicon octicon-link"></span></a>Elastic Block Store (EBS)</h2>
+<h3 id="ebs-summary"><a class="anchor" name="ebs-summary" href="#ebs-summary"><span class="octicon octicon-link"></span></a>EBS summary</h3>
+<ul>
+<li>i.e. "network USB stick"</li>
+<li>Block-level storage</li>
+<li>An EBS volume is a network drive you can attach to an instance while they run.</li>
+<li>Allows persistency of data, even after termination.</li>
+<li>They can only be mounted to one instance at a time (at the Certified Cloud Practitioner (CCP) level).<ul>
+<li>Note that an EC2 instance can still have multiple, distinct EBS volumes.</li>
+</ul>
+</li>
+<li>They are bound to a specific AZ.</li>
+<li>Must provision capacity (GiBs) and speed (IOPS) in advance.</li>
+<li>EBS snapshots are stored incrementally; only billed for the changed blocks stored.</li>
+</ul>
+<h2 id="instance-store"><a class="anchor" name="instance-store" href="#instance-store"><span class="octicon octicon-link"></span></a>Instance Store</h2>
+<h3 id="instance-store-summary"><a class="anchor" name="instance-store-summary" href="#instance-store-summary"><span class="octicon octicon-link"></span></a>Instance Store summary</h3>
+<ul>
+<li>Physical hard-drive attached to the server where your EC2 instance lives.</li>
+<li>Block-level storage</li>
+<li>Beats EBS volumes w.r.t to speed/performance.</li>
+<li>Ephemeral. If the EC2 instance terminates, this data is lost.</li>
+<li>If EC2 instance fails, risk of data loss.<ul>
+<li>You must backup and replicate data.</li>
+</ul>
+</li>
+<li>Use cases: buffer, caching, temporary content.</li>
+</ul>
+<h2 id="elastic-file-system-efs"><a class="anchor" name="elastic-file-system-efs" href="#elastic-file-system-efs"><span class="octicon octicon-link"></span></a>Elastic File System (EFS)</h2>
+<h3 id="efs-summary"><a class="anchor" name="efs-summary" href="#efs-summary"><span class="octicon octicon-link"></span></a>EFS summary</h3>
+<ul>
+<li>A managed network file system (NFS).</li>
+<li>File-level storage</li>
+<li>Can be mounted to 100s of EC2s.</li>
+<li>Only works on Linux EC2.</li>
+<li>Available in multiple AZs, Regions, and VPCs.</li>
+<li>Via either AWS Direct Connect or an AWS VPN, on-premises data centers can access the VPC where the EFS instance lives.</li>
+<li>Highly-available, scalable, expensive.<ul>
+<li>Pay per use</li>
+<li>No capacity planning</li>
+<li>Roughly 3x more expensive than gp2 EBS volume</li>
+</ul>
+</li>
+</ul>
+<h3 id="efs-infrequent-access-efs-ia"><a class="anchor" name="efs-infrequent-access-efs-ia" href="#efs-infrequent-access-efs-ia"><span class="octicon octicon-link"></span></a>EFS Infrequent Access (EFS-IA)</h3>
+<ul>
+<li>A subset of EFS that is cost-optimized.</li>
+<li>This storage class is used for files that are not accessed daily.</li>
+<li>Up to 92% lower cost compared to EFS standard.</li>
+<li>Based on your Lifecycle Policy, EFS will automatically move your files to EFS-IA based on the last time they were accessed.</li>
+</ul>
+<h2 id="amazon-fsx"><a class="anchor" name="amazon-fsx" href="#amazon-fsx"><span class="octicon octicon-link"></span></a>Amazon FSx</h2>
+<h3 id="fsx-summary"><a class="anchor" name="fsx-summary" href="#fsx-summary"><span class="octicon octicon-link"></span></a>FSx summary</h3>
+<ul>
+<li>These are 3rd-party high-perf file systems on AWS.</li>
+<li>Fully managed service.</li>
+<li>There are several, but the 2 major ones are:<ul>
+<li>FSx for Lustre</li>
+<li>FSx for Windows File Server</li>
+</ul>
+</li>
+</ul>
+<h3 id="fsx-for-windows-file-server"><a class="anchor" name="fsx-for-windows-file-server" href="#fsx-for-windows-file-server"><span class="octicon octicon-link"></span></a>FSx for Windows File Server</h3>
+<ul>
+<li>Fully managed, highly reliable, and scalable Windows native shared file system.</li>
+<li>Built on Windows File Server.</li>
+<li>Meant for Windows instances. Supports... <ul>
+<li>SMB protocol</li>
+<li>Windows NTFS</li>
+<li>Active Directory</li>
+</ul>
+</li>
+</ul>
+<h3 id="fsx-for-lustre"><a class="anchor" name="fsx-for-lustre" href="#fsx-for-lustre"><span class="octicon octicon-link"></span></a>FSx for Lustre</h3>
+<ul>
+<li>Linux + Cluster = Lustre</li>
+<li>For fully managed, scalable file storage, High-Performance Computing (HPC).</li>
+<li>Scales up to 100s GB/s, 10^6+ IOPS, and sub-millisecond latencies.</li>
+<li>This technically stores your data in an S3 bucket.</li>
+<li>Use cases:<ul>
+<li>Machine learning</li>
+<li>Analytics</li>
+<li>Video processing</li>
+<li>Financial modeling</li>
+</ul>
+</li>
+</ul>
+<h2 id="simple-storage-service-s3-aws"><a class="anchor" name="simple-storage-service-s3-aws" href="#simple-storage-service-s3-aws"><span class="octicon octicon-link"></span></a>Simple Storage Service (S3), AWS</h2>
+<h3 id="s3-summary"><a class="anchor" name="s3-summary" href="#s3-summary"><span class="octicon octicon-link"></span></a>S3 summary</h3>
+<ul>
+<li>Advertized as "infinitely scaling".</li>
+<li>Object-level storage.</li>
+<li>Many websites use Amazon S3 as a backbone.</li>
+<li>Many AWS services use Amazon S3 in some capacity. e.g. FSx for Lustre stores data in S3.</li>
+<li>Fun fact: Nasdaq stores the last 7 years of data on S3 Glacier.</li>
+<li>In S3 --&gt; files = objects, directories = buckets.</li>
+<li>Use cases:<ul>
+<li>Backup + storage</li>
+<li>Disaster recovery</li>
+<li>Archiving</li>
+<li>Hybrid cloud storage</li>
+<li>Application hosting (media, website, etc...)</li>
+<li>Data lakes + big data analytics</li>
+<li>Software delivery</li>
+<li>Hosting static websites</li>
+</ul>
+</li>
+</ul>
+<h3 id="s3-buckets"><a class="anchor" name="s3-buckets" href="#s3-buckets"><span class="octicon octicon-link"></span></a>S3 Buckets</h3>
+<ul>
+<li>Must have a globally unique name (across all regions and all accounts).</li>
+<li>Are defined at a regional level.</li>
+<li>Looks like a global service, but buckets are created by region.</li>
+<li>Versioning is enabled at a bucket-level.</li>
+<li>Naming convention:<ul>
+<li>No uppercase, no underscore</li>
+<li>3-63 chars</li>
+<li>Not an IP</li>
+<li>Must NOT be prefixed w/: xn--</li>
+<li>Must NOT be suffixed w/: -s3alias</li>
+</ul>
+</li>
+</ul>
+<h3 id="s3-objects"><a class="anchor" name="s3-objects" href="#s3-objects"><span class="octicon octicon-link"></span></a>S3 Objects</h3>
+<ul>
+<li>Objects have a key.<ul>
+<li>This key is the FULL path to the object in S3 (NOT the URI).</li>
+</ul>
+</li>
+<li>Object values are the content of the body</li>
+<li>Max object size = 5TB.</li>
+<li>If you're uploading a file beyond 5GB, must use "multi-part upload."</li>
+<li>Contain metadata + tags.</li>
+<li>Contains version ID if versioning was enabled.</li>
+</ul>
+<h3 id="s3-security-config"><a class="anchor" name="s3-security-config" href="#s3-security-config"><span class="octicon octicon-link"></span></a>S3 Security config</h3>
+<ul>
+<li>User-based:<ul>
+<li>IAM policies</li>
+</ul>
+</li>
+<li>Resource-based:<ul>
+<li>Bucket Policies - bucket wide rules from the S3 console. Allows cross-account access.</li>
+<li>Object Access Control List (ACL) - finer grained. Can be disabled.</li>
+<li>Bucket Access Control List (ACL) - far less common. Can be disabled.</li>
+</ul>
+</li>
+<li>Note that an IAM principal can access an S3 object if:<ul>
+<li>They have EITHER an IAM permission allowing access or if the resource-based policy allows it.</li>
+<li>AND there's no explicit deny.</li>
+</ul>
+</li>
+<li>S3 bucket policies are JSON based. They look similar to IAM policies.</li>
+</ul>
+<h3 id="s3-replication"><a class="anchor" name="s3-replication" href="#s3-replication"><span class="octicon octicon-link"></span></a>S3 Replication</h3>
+<ul>
+<li>There are two types:<ul>
+<li>Cross-Region Replication (CRR)</li>
+<li>Same-Region Replication (SRR)</li>
+</ul>
+</li>
+<li>Requires versioning in both buckets.</li>
+<li>Buckets can be in different AWS accounts.</li>
+<li>Copying is async.</li>
+<li>Must give proper IAM permissions to S3 bukects for Read/Write.</li>
+<li>Use cases:<ul>
+<li>CRR --&gt; compliance, lower latency, replicate to another account.</li>
+<li>SRR --&gt; log aggregation, live replication between prod and dev environments.</li>
+</ul>
+</li>
+</ul>
+<h3 id="s3-storage-classes"><a class="anchor" name="s3-storage-classes" href="#s3-storage-classes"><span class="octicon octicon-link"></span></a>S3 Storage Classes</h3>
+<ul>
+<li>Classes:<ul>
+<li><strong>S3 Standard - General Purpose</strong><ul>
+<li>99.999% availability. i.e. 53 min of downtime per year.</li>
+<li>Used for frequently accessed data.<ul>
+<li>No data retrieval charges.</li>
+</ul>
+</li>
+<li>Low latency, high throughput.</li>
+<li>Can sustain 2 concurrent facility failures.</li>
+<li>Use cases: big data, game apps, content distribution.</li>
+</ul>
+</li>
+<li><strong>S3 Standard-Infrequent Access (IA)</strong><ul>
+<li>99.9% availability.</li>
+<li>Lower cost than S3 Standard, but there is a cost on retrieval.</li>
+<li>Use cases: disaster recovery, backups.</li>
+</ul>
+</li>
+<li><strong>S3 One Zone-Infrequent Access</strong><ul>
+<li>In a single AZ; data lost when AZ destroyed.</li>
+<li>99.5% availability.</li>
+<li>Use case: secondary backups or data you can recreate.</li>
+</ul>
+</li>
+<li><strong>S3 Glacier Instant Retrieval</strong><ul>
+<li>Pricing: storage + object retrieval cost.</li>
+<li>Millisecond retrieval, great for data accessed once a quarter.</li>
+<li>Minimum storage duration of 90 days.</li>
+<li>Automatically encrypted.</li>
+</ul>
+</li>
+<li><strong>S3 Glacier Flexible Retrieval</strong><ul>
+<li>Pricing: storage + object retrieval cost.</li>
+<li>Fetch tiers: expedited (1 to 5 min), standard (3 to 5 hours), bulk (5 to 12 hours, but free).</li>
+<li>Minimum storage duration of 90 days.</li>
+<li>Automatically encrypted.</li>
+</ul>
+</li>
+<li><strong>S3 Glacier Deep Archive</strong><ul>
+<li>Very low cost.</li>
+<li>Pricing: storage + object retrieval cost.</li>
+<li>For long-term storage or archiving.</li>
+<li>Fetch tiers: standard (12 hours), bulk (2 days).</li>
+<li>Minimum storage duration of 180 days.</li>
+<li>Automatically encrypted.</li>
+</ul>
+</li>
+<li><strong>S3 Intelligent Tiering</strong><ul>
+<li>Small monthly monitoring and auto-tiering fee.</li>
+<li>Moves objects automatically between Access Tiers based on usage.</li>
+<li>There are no retrieval charges in S3 Inteligent-Tiering.</li>
+<li>Tiers:<ul>
+<li>Frequent Access tier: default tier</li>
+<li>Infrequent Access tier: objects not accessed for 30 days.</li>
+<li>Archive Instant Access tier: objects not accessed for 90 days.</li>
+<li>Archive Access tier: (optional) configurable from 90 to 700+ days.</li>
+<li>Deep Archive Access tier: (optional) configurable from 180 days to 700+ days.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>All of these storage classes have high durability (99.99999999999%). Yes, that's 11 9's.</li>
+<li>These can be moved manually or via S3 Lifecycle config rules.</li>
+</ul>
+<h1 id="databases"><a class="anchor" name="databases" href="#databases"><span class="octicon octicon-link"></span></a>Databases</h1>
+<h2 id="amazon-relational-database-rds"><a class="anchor" name="amazon-relational-database-rds" href="#amazon-relational-database-rds"><span class="octicon octicon-link"></span></a>Amazon Relational Database (RDS)</h2>
+<h3 id="rds-overview"><a class="anchor" name="rds-overview" href="#rds-overview"><span class="octicon octicon-link"></span></a>RDS overview</h3>
+<ul>
+<li>All databases in AWS are managed. No need to directly handle security updates and backing up manually.</li>
+<li>These are all SQL based.</li>
+<li>Can be scaled vertically or horizontally.</li>
+<li>Cannot SSH into database instances.</li>
+<li>All storage for RDS is done w/ Elastic Block Storage (EBS) volumes.</li>
+<li>The supported databases are:<ul>
+<li>Postgres</li>
+<li>MySQL</li>
+<li>MariaDB</li>
+<li>Oracle</li>
+<li>SQL Server</li>
+<li>Aurora (AWS proprietary DB)</li>
+</ul>
+</li>
+</ul>
+<h3 id="aurora-aws"><a class="anchor" name="aurora-aws" href="#aurora-aws"><span class="octicon octicon-link"></span></a>Aurora, AWS</h3>
+<ul>
+<li>Proprietary software from Amazon.</li>
+<li>Optimized for the AWS cloud and is therefore much faster and efficient than other engines.</li>
+<li>It costs more to use; approx. 20% more.</li>
+<li>Storage grows automatically by increments of 10 GB all the way to 64 TB.</li>
+<li>Aurora comes in two flavors: PostgreSQL and MySQL.</li>
+</ul>
+<h3 id="rds-deployment"><a class="anchor" name="rds-deployment" href="#rds-deployment"><span class="octicon octicon-link"></span></a>RDS deployment</h3>
+<ul>
+<li>Read replicas</li>
+<li>Multi-AZ</li>
+<li>Multi-region</li>
+</ul>
+<h3 id="elasticache-aws"><a class="anchor" name="elasticache-aws" href="#elasticache-aws"><span class="octicon octicon-link"></span></a>ElastiCache, AWS</h3>
+<ul>
+<li>Used to get managed Redis or Memcached data.</li>
+<li>These are all in-memory and therefore very fast for reads.</li>
+<li>Since this is managed by AWS, all infrastructure work + maintanence is done by AWS.</li>
+</ul>
+<h2 id="amazon-nosql-databases"><a class="anchor" name="amazon-nosql-databases" href="#amazon-nosql-databases"><span class="octicon octicon-link"></span></a>Amazon NoSQL databases</h2>
+<h3 id="dynamodb-aws"><a class="anchor" name="dynamodb-aws" href="#dynamodb-aws"><span class="octicon octicon-link"></span></a>DynamoDB, AWS</h3>
+<ul>
+<li>Flagship product from Amazon in the DB realm.</li>
+<li>Key/Value database.<ul>
+<li>Composed of a primary key and attributes<ul>
+<li>Primary key --&gt; partition key + sort key (optional)</li>
+<li>Attributes --&gt; Any columns you want for the data</li>
+</ul>
+</li>
+<li>Schema is defined per item; NOT table-wise.</li>
+</ul>
+</li>
+<li>Fully managed, highly available w/ replication across 3 AZs.</li>
+<li>Supports reservations for cost optimization. i.e. reserved capacity.</li>
+<li>Scales to massive workloads, distributed "serverless" database.<ul>
+<li>No need to provide provisions or specs upon creation.</li>
+</ul>
+</li>
+<li>Single-digit, millisecond latency. Very fast compared to other AWSs.</li>
+<li>Auto-scales. Low cost.</li>
+<li>Table classes:<ul>
+<li>Standard</li>
+<li>Infrequent Access (IA)</li>
+</ul>
+</li>
+</ul>
+<h3 id="dynamodb-accelerator-dax"><a class="anchor" name="dynamodb-accelerator-dax" href="#dynamodb-accelerator-dax"><span class="octicon octicon-link"></span></a>DynamoDB Accelerator (DAX)</h3>
+<ul>
+<li>Exactly as DynamoDB, but in-memory. i.e. cached.</li>
+<li>10x performance improvement over regular DynamoDB.</li>
+<li>Do NOT use ElastiCache for in-memory DynamoDB. DAX performs far better.</li>
+</ul>
+<h3 id="dynamodb-global-tables"><a class="anchor" name="dynamodb-global-tables" href="#dynamodb-global-tables"><span class="octicon octicon-link"></span></a>DynamoDB Global Tables</h3>
+<ul>
+<li>Makes a DynamoDB table accessible in multiple regions w/ low latency.</li>
+<li>The data gets replicated to other regions. Active-Active replication.<ul>
+<li>Note that read/writes can be done on any region</li>
+<li>Question: How does this data get propogated to other regions? Eventual consistency?</li>
+</ul>
+</li>
+</ul>
+<h3 id="documentdb-aws"><a class="anchor" name="documentdb-aws" href="#documentdb-aws"><span class="octicon octicon-link"></span></a>DocumentDB, AWS</h3>
+<ul>
+<li>Similar to Aurora, but built on top of MongoDB, therefore this is a document-based NoSQL database.</li>
+<li>Similar deployment concepts as Aurora.</li>
+<li>Fully managed w/ replication across 3 AZs.</li>
+<li>Grows in same increments as Aurora.</li>
+<li>Automatically scales to workloads w/ millions of requests per second.</li>
+</ul>
+<h3 id="when-to-use-native-mongodb-vs-documentdb-vs-dynamodb"><a class="anchor" name="when-to-use-native-mongodb-vs-documentdb-vs-dynamodb" href="#when-to-use-native-mongodb-vs-documentdb-vs-dynamodb"><span class="octicon octicon-link"></span></a>When to use Native MongoDB vs. DocumentDB vs. DynamoDB</h3>
+<ul>
+<li>Native MongoDB provides the most flexibility<ul>
+<li>Harder to setup.</li>
+<li>Suitable for flexible, broadt document storage types.</li>
+</ul>
+</li>
+<li>DynamoDB has the least amount of flexibility<ul>
+<li>Easiest to setup.</li>
+<li>Suitable for transactional-based document storage.</li>
+</ul>
+</li>
+<li>DocumentDB is somewhere in between<ul>
+<li>Should only be used for apps with high workloads.</li>
+<li>Smallest size is 2 CPU, 16GB RAM.</li>
+<li>Suitable for when your MongoDB project has gotten to big to handle and you need your DB to be more managed by AWS, but at an increased cost.</li>
+</ul>
+</li>
+</ul>
+<h2 id="other-database-services"><a class="anchor" name="other-database-services" href="#other-database-services"><span class="octicon octicon-link"></span></a>Other database services</h2>
+<h3 id="redshift-aws"><a class="anchor" name="redshift-aws" href="#redshift-aws"><span class="octicon octicon-link"></span></a>Redshift, AWS</h3>
+<ul>
+<li>Used for <strong>Online analytical processing (OLAP)</strong>.</li>
+<li>Based on PostgreSQL, but not for OLTP.</li>
+<li>Loads data once every hour.</li>
+<li>10x perf over other data warehouses. Scales in PBs.</li>
+<li>Columnar storage of data (not row-based).</li>
+<li>Massively Parallel Query Execution (MPP).</li>
+<li>Pay as you go model based on provisioned instances.</li>
+<li>BI tools such as AWS Quicksight and Tableua integrate with it.</li>
+</ul>
+<h3 id="elastic-mapreduce-emr-amazon"><a class="anchor" name="elastic-mapreduce-emr-amazon" href="#elastic-mapreduce-emr-amazon"><span class="octicon octicon-link"></span></a>Elastic MapReduce (EMR), Amazon</h3>
+<ul>
+<li>Helps w/ creating Hadoop clusters (big data) to analyze and process vast amount of data.</li>
+<li>Clusers can be made with 100s of EC2 instances.</li>
+<li>EMR takes care of all of the provisioning and config.</li>
+<li>Auto-scaling and integrated w/ Spot instances.</li>
+<li>Use cases: data processing, ML, web indexing, big data</li>
+</ul>
+<h3 id="athena-amazon"><a class="anchor" name="athena-amazon" href="#athena-amazon"><span class="octicon octicon-link"></span></a>Athena, Amazon</h3>
+<ul>
+<li>Severless query service to <strong>perform analytics against S3 objects</strong> in the order of petabytes.</li>
+<li>Supports: CSV, JSON, ORC, Avro, and Parquet.</li>
+<li>SQL-based.</li>
+<li>Pricing is 5 USD per TB of data scanned. <ul>
+<li>Pricing can be reduced via compression or using columnar data</li>
+</ul>
+</li>
+<li>Use cases: BI, analytics, VPC flow logs, reporting, ELB logs, CloudTrails, etc...</li>
+</ul>
+<h3 id="quicksight"><a class="anchor" name="quicksight" href="#quicksight"><span class="octicon octicon-link"></span></a>QuickSight</h3>
+<ul>
+<li>Serverless ML-powered BI service to create interactive dashboards.</li>
+<li>Automatically scales.</li>
+<li>Embeddable.</li>
+<li>Use cases: <ul>
+<li>BI</li>
+<li>Reporting</li>
+<li>Ad-hoc analysis</li>
+</ul>
+</li>
+<li>Integrated w/ many AWSs.</li>
+</ul>
+<h3 id="neptune-amazon"><a class="anchor" name="neptune-amazon" href="#neptune-amazon"><span class="octicon octicon-link"></span></a>Neptune, Amazon</h3>
+<ul>
+<li>Fully managed <strong>graph database</strong>.</li>
+<li>Highly available across 3 AZs w/ up to 15 read replicas.</li>
+<li>Can store up to billions of relations and query the graph w/ millisecond latency.</li>
+<li>Use cases: social networks, knowledge graphs, fraud detection, recommendation engines, applications w/ high-connected data sets.</li>
+</ul>
+<h3 id="quantum-ledger-database-qldb-amazon"><a class="anchor" name="quantum-ledger-database-qldb-amazon" href="#quantum-ledger-database-qldb-amazon"><span class="octicon octicon-link"></span></a>Quantum Ledger Database (QLDB), Amazon</h3>
+<ul>
+<li>Fully managed, serverless, highly available.</li>
+<li>Replication across 3 AZs.</li>
+<li>Can be used to review history of all the changes made to your application data over time.</li>
+<li>Immutable system. Can enable cryptographic signing for additional proof of integrity.</li>
+<li>2-3x better perf than common ledger blockchain frameworks.</li>
+<li>Use cases: recording immutable financial transactions (i.e. a ledger).</li>
+</ul>
+<h3 id="managed-blockchain-amazon"><a class="anchor" name="managed-blockchain-amazon" href="#managed-blockchain-amazon"><span class="octicon octicon-link"></span></a>Managed Blockchain, Amazon</h3>
+<ul>
+<li>Very similar to Amazon QLDB, however, this is decentralized a la blockchain.</li>
+<li>Compared to Amazon QLDB, there is no central authority holding the blockchain.</li>
+<li>Compatible w/ <em>Hyperledger Fabric</em> and <em>Ethereum</em>.</li>
+</ul>
+<h3 id="glue-aws"><a class="anchor" name="glue-aws" href="#glue-aws"><span class="octicon octicon-link"></span></a>Glue, AWS</h3>
+<ul>
+<li>Fully managed. Serverless.</li>
+<li><strong>Extract, transform, and load (ETL) tool</strong>.</li>
+<li><strong>Glue Data Catalog</strong> is a central repository for structural + operational metadata for data assets stored in Glue.</li>
+<li>Use cases: data preparation for analytics, especially across multiple, different sources.</li>
+</ul>
+<h3 id="database-migration-service-dms"><a class="anchor" name="database-migration-service-dms" href="#database-migration-service-dms"><span class="octicon octicon-link"></span></a>Database Migration Service (DMS)</h3>
+<ul>
+<li>Performs database migrations that are quick, secure, resilient, and self-healing.</li>
+<li>The source DB remains available during migration; no need to take it offline during the process.</li>
+<li>Must be run on an EC2 instance.</li>
+<li>Supports:<ul>
+<li>Homogeneous migrations: e.g. Oracle to Oracle</li>
+<li>Heterogeneous migrations: e.g. SQL Server to Aurora</li>
+</ul>
+</li>
+</ul>
+<h1 id="edge-computing"><a class="anchor" name="edge-computing" href="#edge-computing"><span class="octicon octicon-link"></span></a>Edge Computing</h1>
+<h2 id="aws-snow-family"><a class="anchor" name="aws-snow-family" href="#aws-snow-family"><span class="octicon octicon-link"></span></a>AWS Snow Family</h2>
+<h3 id="snow-family-summary"><a class="anchor" name="snow-family-summary" href="#snow-family-summary"><span class="octicon octicon-link"></span></a>Snow Family summary</h3>
+<ul>
+<li>High-secure, portable devices.</li>
+<li>Used to collect and process data the the edge.</li>
+<li>Used to migrate data into and out of AWS.</li>
+<li>Must be requested and will be shipped by Amazon.</li>
+<li>These devices are borrowed. Can be held for up to 1 or 3 years at discounted pricings.</li>
+<li><strong>AWS OpsHub</strong> is the GUI to access/manage these snow family devices.</li>
+<li>These are all physical data transport solutions.<ul>
+<li>Anytime it is not feasible to send such large quantities of data over the network, use the snow family.</li>
+</ul>
+</li>
+<li>3 types (from smallest to biggest):<ul>
+<li>Snowcone</li>
+<li>Snowball Edge</li>
+<li>Snowmobile</li>
+</ul>
+</li>
+</ul>
+<h3 id="datasync-aws"><a class="anchor" name="datasync-aws" href="#datasync-aws"><span class="octicon octicon-link"></span></a>DataSync, AWS</h3>
+<ul>
+<li>Secure, online data transfer service that simplifies, automates, and accelerates copying terabytes of data to and from AWS storage services.</li>
+<li>Replication tasks can be scheduled hourly, daily, weekly, etc...</li>
+<li>All replication tasks are <strong>incremental</strong> after the first full load.</li>
+<li>Can copy data between:<ul>
+<li>network file systems (NFS)</li>
+<li>server message block (SMB)</li>
+<li>self-managed object storage</li>
+<li>AWS Snowcone</li>
+<li>S3</li>
+<li>elastic file system (EFS)</li>
+<li>Amazon FSx for Windows File Server</li>
+</ul>
+</li>
+</ul>
+<h3 id="snowcone"><a class="anchor" name="snowcone" href="#snowcone"><span class="octicon octicon-link"></span></a>Snowcone</h3>
+<ul>
+<li>Very small, only 2.1 kg.</li>
+<li>Rugged and can withstand harsh environments.</li>
+<li>Specs:<ul>
+<li>8 TB of usable storage</li>
+<li>2 CPU </li>
+<li>4 GB memory</li>
+<li>Powered by USB-C or battery</li>
+</ul>
+</li>
+<li>Can be used for either edge computing or edge storage.</li>
+<li>Comes pre-installed w/ DataSync agent.<ul>
+<li>Can migrate up to 24 TB of data online.</li>
+</ul>
+</li>
+<li>Use case:<ul>
+<li>When you have data stores in remote locations and you need to do small transfers often.</li>
+</ul>
+</li>
+</ul>
+<h3 id="snowball-edge"><a class="anchor" name="snowball-edge" href="#snowball-edge"><span class="octicon octicon-link"></span></a>Snowball Edge</h3>
+<ul>
+<li>About the size of a briefcase.</li>
+<li>Pay per data transfer job.</li>
+<li>Provides block storage and S3-compatible object storage.</li>
+<li>Supports clusters up to 15 nodes.</li>
+<li>2 types:<ul>
+<li>Snowball Edge Storage Optimized:<ul>
+<li>80 TB of HDD</li>
+<li>40 vCPU</li>
+<li>80 GiB memory</li>
+<li>Object storage clustering available</li>
+</ul>
+</li>
+<li>Snowball Edge Compute Optimized:<ul>
+<li>42 TB of HDD</li>
+<li>52 vCPU</li>
+<li>208 GiB memory</li>
+<li>(Optional) GPU</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Use case:<ul>
+<li>Large data cloud migrations,</li>
+<li>Disaster recovery,</li>
+<li>Data center decommission</li>
+</ul>
+</li>
+</ul>
+<h3 id="snowmobile"><a class="anchor" name="snowmobile" href="#snowmobile"><span class="octicon octicon-link"></span></a>Snowmobile</h3>
+<ul>
+<li>Literally a truck for sending data.</li>
+<li>Each snowmobile has 100 PB of capacity.</li>
+<li>Purely for data transfer. There is no edge computing than can be done w/ this solution.</li>
+<li>Use case:<ul>
+<li>Anytime you need to transfer for than 10 PB of data.</li>
+</ul>
+</li>
+</ul>
+<h1 id="other-compute-services"><a class="anchor" name="other-compute-services" href="#other-compute-services"><span class="octicon octicon-link"></span></a>Other Compute Services</h1>
+<h2 id="container-services"><a class="anchor" name="container-services" href="#container-services"><span class="octicon octicon-link"></span></a>Container Services</h2>
+<h3 id="elastic-container-service-ecs"><a class="anchor" name="elastic-container-service-ecs" href="#elastic-container-service-ecs"><span class="octicon octicon-link"></span></a>Elastic Container Service (ECS)</h3>
+<ul>
+<li>Allows Docker containers to run on AWS via EC2 instances.</li>
+<li>EC2 instances must be provisioned and infrastructure must be maintained. Ergo, not serverless.</li>
+<li>AWS will take care of starting/stopping containers.</li>
+<li>Integrated w/ an application load balancer.</li>
+</ul>
+<h3 id="fargate"><a class="anchor" name="fargate" href="#fargate"><span class="octicon octicon-link"></span></a>Fargate</h3>
+<ul>
+<li>Allows Docker containers to run on AWS.</li>
+<li>Serverless. No need to provision any infrastructure.<ul>
+<li>AWS runs containers for you based on needed CPU &amp; RAM.</li>
+</ul>
+</li>
+</ul>
+<h3 id="elastic-container-registry-ecr"><a class="anchor" name="elastic-container-registry-ecr" href="#elastic-container-registry-ecr"><span class="octicon octicon-link"></span></a>Elastic Container Registry (ECR)</h3>
+<ul>
+<li>Private Docker registry on AWS.</li>
+<li>For storing Docker images that can be run by other AWSs.<ul>
+<li>Fargate and ECS use this service to fetch images.</li>
+</ul>
+</li>
+</ul>
+<h2 id="function-as-a-service-faas"><a class="anchor" name="function-as-a-service-faas" href="#function-as-a-service-faas"><span class="octicon octicon-link"></span></a>Function-as-a-Service (FaaS)</h2>
+<h3 id="lambda-aws"><a class="anchor" name="lambda-aws" href="#lambda-aws"><span class="octicon octicon-link"></span></a>Lambda, AWS</h3>
+<ul>
+<li>Serverless, but bound by Region.</li>
+<li>Virtual functions that run on-demand. i.e. <em>Event-driven</em> functions.</li>
+<li>Can setup a trigger to run for some event in S3.</li>
+<li>Scales automatically.</li>
+<li>Max execution time of 15 minutes.</li>
+<li>Much better to use than doing it yourself via EC2 and autos</li>
+<li>Billing is done via: <ul>
+<li><em>(function compute time) * (RAM provisioned)</em></li>
+<li><em>Number of times function was invoked</em></li>
+</ul>
+</li>
+<li>Supports some languages, but if you want to unsupported ones, you need to use Docker and implement the lambda runtime API.</li>
+<li>Monitored through AWS CloudWatch.</li>
+<li>Use cases:<ul>
+<li>Create thumbnails for images uploaded into S3.</li>
+<li>Run a severless cron job.</li>
+</ul>
+</li>
+</ul>
+<h3 id="api-gateway-amazon"><a class="anchor" name="api-gateway-amazon" href="#api-gateway-amazon"><span class="octicon octicon-link"></span></a>API Gateway, Amazon</h3>
+<ul>
+<li>Serverless and scalable.</li>
+<li>This works in tandem w/ Lambda.</li>
+<li>Allows Lambda functions to be exposed as HTTP APIs.<ul>
+<li>RESTful</li>
+<li>WebSockets</li>
+</ul>
+</li>
+</ul>
+<h3 id="batch-aws"><a class="anchor" name="batch-aws" href="#batch-aws"><span class="octicon octicon-link"></span></a>Batch, AWS</h3>
+<ul>
+<li>Fully managed.</li>
+<li>Can run at any scale. e.g. running 100,000s of batch jobs.</li>
+<li>N.B. that a "batch job" is a job with a definitive start/end times. Not continuous.</li>
+<li>Runs a set of batch jobs on AWS across managed EC2 instances or Spot instances.</li>
+<li>Batches can be defined via Docker images that run on top of the ECS.</li>
+<li>Use cases: similar to Lambda use cases.</li>
+</ul>
+<h3 id="step-functions-aws"><a class="anchor" name="step-functions-aws" href="#step-functions-aws"><span class="octicon octicon-link"></span></a>Step Functions, AWS</h3>
+<ul>
+<li>Allows building of visual workflows to orchestrate customer's Lambda functions.<ul>
+<li>Can be integrated w/ EC2, ECS, on-premises servers, API gateway, SQS, etc...</li>
+<li>Can implement a human approval feature.</li>
+</ul>
+</li>
+<li>Serverless.</li>
+<li>Use cases:<ul>
+<li>Order fulfillment</li>
+<li>Data processing</li>
+<li>Any kind of workflow</li>
+</ul>
+</li>
+<li>Below is an example of a visual workflow made w/ AWS Step Functions:</li>
+</ul>
+<div style="display: flex; flex-direction: column; align-items: center">
+    <img src="imgs/StepFunctions_graph.png" alt="Step function graph">
+    <div style="text-align: center"><i>Credit: Stéphane Maarek</i></div>
+</div>
+
+<h2 id="lightsail-amazon"><a class="anchor" name="lightsail-amazon" href="#lightsail-amazon"><span class="octicon octicon-link"></span></a>Lightsail, Amazon</h2>
+<ul>
+<li>Provides virtual server, storage, databases, and networking.</li>
+<li>This service is designed <strong>for people w/ little cloud experience!</strong><ul>
+<li>Much simpler than using EC2, RDS, ELB, EBS, etc...</li>
+</ul>
+</li>
+<li>Can setup notifications and monitoring of your Lightsail resources.</li>
+<li>High availability, but no auto-scaling.</li>
+<li>Limited AWS integration.</li>
+<li>This is generally a poor solution if you already know how to work w/ most AWSs.</li>
+<li>Use cases:<ul>
+<li>Simple web apps.</li>
+<li>Websites from WordPress, Magento, Plesk, or Joomla.</li>
+<li>Dev / Test environment.</li>
+</ul>
+</li>
+</ul>
+<h2 id="machine-learning"><a class="anchor" name="machine-learning" href="#machine-learning"><span class="octicon octicon-link"></span></a>Machine Learning</h2>
+<h3 id="rekognition"><a class="anchor" name="rekognition" href="#rekognition"><span class="octicon octicon-link"></span></a>Rekognition</h3>
+<ul>
+<li>For finding objects, people, text, scenes in images and videos using ML.</li>
+<li>Facial analysis and facial search to do verification or people counting.</li>
+<li>Can create a database of "familiar faces."</li>
+<li>Bound by Region.</li>
+<li>Use cases:<ul>
+<li>Labeling</li>
+<li>Content moderation</li>
+<li>Text detection</li>
+<li>Face detection + analysis (e.g. gender, age, emotions)</li>
+<li>Face search + verification</li>
+<li>Celebrity recognition</li>
+<li>Pathing (e.g. sports game analysis)</li>
+</ul>
+</li>
+</ul>
+<h3 id="transcribe"><a class="anchor" name="transcribe" href="#transcribe"><span class="octicon octicon-link"></span></a>Transcribe</h3>
+<ul>
+<li>Speech-to-text ML service.</li>
+<li>Utilizes Automatic Speech Recognition (ASR) deep learning process.</li>
+<li>Note, you can configure it to automatically remove an personally identifiable information via redaction.</li>
+<li>Supports multi-lingual audio identification.</li>
+<li>Use cases:<ul>
+<li>Transcribe customer service calls</li>
+<li>Automate closed captioning/subtitling</li>
+<li>Generate metadata for media assets</li>
+</ul>
+</li>
+</ul>
+<h3 id="polly"><a class="anchor" name="polly" href="#polly"><span class="octicon octicon-link"></span></a>Polly</h3>
+<ul>
+<li>Text-to-speech ML service.</li>
+</ul>
+<h3 id="translate-aws"><a class="anchor" name="translate-aws" href="#translate-aws"><span class="octicon octicon-link"></span></a>Translate, AWS</h3>
+<ul>
+<li>Natural language translation.</li>
+<li>Allows you to localize (i.e. translate) content for international users.</li>
+<li>Works well w/ large volumes of text.</li>
+</ul>
+<h3 id="lex--conntext-amazon"><a class="anchor" name="lex--conntext-amazon" href="#lex--conntext-amazon"><span class="octicon octicon-link"></span></a>Lex &amp; Conntext, Amazon</h3>
+<ul>
+<li>Amazon Lex: <ul>
+<li>Is the same tech used to power Alexa</li>
+<li>Automatic Speech Recognition</li>
+<li>Natural Language Understanding to recognize intent of text/calls</li>
+<li>Helps build chatbots</li>
+</ul>
+</li>
+<li>Amazon Connect:<ul>
+<li>Can receive calls, create contact workflows</li>
+<li>Cloud-based virtual contact center</li>
+<li>Can integrate w/ other CRM (customer relationship sys.) systems or AWS</li>
+<li>No upfront payments. 80% cheaper than traditional contact center solutions</li>
+</ul>
+</li>
+</ul>
+<h3 id="comprehend-amazon"><a class="anchor" name="comprehend-amazon" href="#comprehend-amazon"><span class="octicon octicon-link"></span></a>Comprehend, Amazon</h3>
+<ul>
+<li>For Natural Language Processing (NLP).</li>
+<li>Fully managed. Serverless.</li>
+<li>Uses ML to find insights and relationships in text. e.g...<ul>
+<li>Language of the text</li>
+<li>Extract key phrases, places, people, events, etc...</li>
+<li>Understand how positive/negative the text is</li>
+<li>Analyze text using tokenization and parts of speech</li>
+<li>Automatically organize a collection of text files by topic</li>
+</ul>
+</li>
+<li>Use cases:<ul>
+<li>Analyze customer interactions (e.g. email) to find what leads to positive/negative UX.</li>
+<li>Create and group articles by topic that Comprehend will uncover.</li>
+</ul>
+</li>
+</ul>
+<h3 id="sagemaker-amazon"><a class="anchor" name="sagemaker-amazon" href="#sagemaker-amazon"><span class="octicon octicon-link"></span></a>SageMaker, Amazon</h3>
+<ul>
+<li>For devs/data scientist to build ML models. <em>For the pros.</em></li>
+<li>Fully managed.</li>
+<li>Typically difficult to do all the processes in one place. Need to provision services. Lots of setup.</li>
+</ul>
+<h3 id="forecast-amazon"><a class="anchor" name="forecast-amazon" href="#forecast-amazon"><span class="octicon octicon-link"></span></a>Forecast, Amazon</h3>
+<ul>
+<li>For forecasting via ML.</li>
+<li>Fully managed.</li>
+<li>Use cases:<ul>
+<li>Product demand planning</li>
+<li>Financial planning</li>
+<li>Resource planning</li>
+</ul>
+</li>
+</ul>
+<h3 id="kendra-amazon"><a class="anchor" name="kendra-amazon" href="#kendra-amazon"><span class="octicon octicon-link"></span></a>Kendra, Amazon</h3>
+<ul>
+<li>Document search service via ML.</li>
+<li>Fully managed.</li>
+<li>Extract answers from within a document (text, PDF, HTML, PowerPoint, Word, etc...)</li>
+<li>Kendra builds an index on all of these documents for fast searching.</li>
+<li>Contains natural language search capabilities.</li>
+<li>Can learn incrementally via user interactions + feedback.</li>
+</ul>
+<h3 id="personalize-amazon"><a class="anchor" name="personalize-amazon" href="#personalize-amazon"><span class="octicon octicon-link"></span></a>Personalize, Amazon</h3>
+<ul>
+<li>ML service for real-time, personalized recommendations.</li>
+<li>Fully managed.</li>
+<li>Same tech used in Amazon.com's recommendation system.</li>
+<li>Implementation takes days rather than months. You don't need to build, train, and deploy ML solutions.</li>
+<li>Use cases:<ul>
+<li>Retail stores</li>
+<li>Media + entertainment</li>
+</ul>
+</li>
+</ul>
+<h3 id="textract-amazon"><a class="anchor" name="textract-amazon" href="#textract-amazon"><span class="octicon octicon-link"></span></a>Textract, Amazon</h3>
+<ul>
+<li>For extracting text, handwriting, or any scannable documents via ML.<ul>
+<li>e.g. scanning a driver's license and extract all of the text fields.</li>
+</ul>
+</li>
+<li>Use cases:<ul>
+<li>Document scanning service</li>
+<li>Handwriting extraction</li>
+<li>Processing hand-written financial invoices, medical records, insurance claims, etc...</li>
+</ul>
+</li>
+</ul>
+<h1 id="scaling-and-elasticity"><a class="anchor" name="scaling-and-elasticity" href="#scaling-and-elasticity"><span class="octicon octicon-link"></span></a>Scaling and Elasticity</h1>
+<h3 id="load-balancers-in-general"><a class="anchor" name="load-balancers-in-general" href="#load-balancers-in-general"><span class="octicon octicon-link"></span></a>Load Balancers in general</h3>
+<ul>
+<li>Spreads load across multiple downstream instances.</li>
+<li>Expose a single point of access (DNS) to your application.</li>
+<li>Seamlessly handle failures of downstream instances.</li>
+<li>Do regular health checks to your instances.</li>
+<li>Provide SSL termination (HTTPS) for your websites.</li>
+</ul>
+<h3 id="elastic-load-balancer-elb-summary"><a class="anchor" name="elastic-load-balancer-elb-summary" href="#elastic-load-balancer-elb-summary"><span class="octicon octicon-link"></span></a>Elastic Load Balancer (ELB) summary</h3>
+<ul>
+<li>Fully managed by AWS.</li>
+<li>Limited configuration.</li>
+<li><strong>Allows customer to use EC2 instances across multiple AZs.</strong></li>
+<li>AWS offers 3 load balancer subsets:<ul>
+<li>Layer 7 - <em>Application Load Balancer</em> (HTTP/HTTPS/gRPC only).</li>
+<li>Layer 4 - <em>Network Load Balancer</em> (TCP/UDP/TLS over TCP, ultra-high perf).</li>
+<li>Layer 3 - <em>Gateway Load Balancer</em> (GENEVE protocol on IP packets).<ul>
+<li>This kind is a special case because it is more used for routing traffic through firewalls + intrusion detection.</li>
+<li>Upon receiving packets, traffic is first routed to 3rd Party Security Virtual Appliances and the to your app (e.g. EC2 instance).</li>
+</ul>
+</li>
+<li>Layer 7 &amp; 4 - Classic Load Balancer. (This is getting retired in 2023, don't use this anymore).</li>
+</ul>
+</li>
+</ul>
+<h3 id="auto-scaling-groups-asg-summary"><a class="anchor" name="auto-scaling-groups-asg-summary" href="#auto-scaling-groups-asg-summary"><span class="octicon octicon-link"></span></a>Auto Scaling Groups (ASG) summary</h3>
+<ul>
+<li>Scales out (add instances) or in (remove instances) to match load.</li>
+<li>Free service.</li>
+<li>Ensures we have a minimum and maximum number of instances running.<ul>
+<li>Replaces unhealthy/terminated instances.</li>
+</ul>
+</li>
+<li>Can automatically register instances to the load balancer (ELB).</li>
+<li>Purpose: cost savings. Running at optimal capacity.</li>
+<li>Auto-scaling strategies:<ul>
+<li>Manual Scaling: Basically do-it-yourself approach.</li>
+<li>Dynamic Scaling: Responding to changing demand.<ul>
+<li>Simple/Step Scaling:<ul>
+<li>e.g. When a CloudWatch alarm is triggered at (CPU &gt; 70% for 10 minutes), then add 2 instances.</li>
+<li>e.g. When a CloudWatch alarm is triggered at (CPU &lt; 30% for 10 minutes), then remove 1.instance.</li>
+</ul>
+</li>
+<li>Target Tracking Scaling:<ul>
+<li>e.g. I want the avg. ASG CPU to stay around 40%.</li>
+</ul>
+</li>
+<li>Scheduled Scaling:<ul>
+<li>Anticipate scaling based on known usage patterns.</li>
+<li>e.g. increase the minimum capacity to 10 units on Fridays at 5PM.</li>
+</ul>
+</li>
+<li>Predictive Scaling:<ul>
+<li>Uses machine learning to predict future traffic ahead of time.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="hybrid-cloud"><a class="anchor" name="hybrid-cloud" href="#hybrid-cloud"><span class="octicon octicon-link"></span></a>Hybrid Cloud</h3>
+<ul>
+<li>Amazon is pushing for a blend between on-premises servers and integration w/ Amazon servers.</li>
+<li>Amazon stores data very differently (proprietary) compared to other file systems. This is where AWS Storage Gateway comes in.</li>
+<li><strong>AWS Storage Gateway</strong> bridges the way between on-premises servers and AWS (e.g. S3 or EBS).<ul>
+<li>For all 3 files types (File, Volume, Tape), all transferred data is encrypted via SSL.</li>
+</ul>
+</li>
+</ul>
+<h1 id="deployment--managing-infrastructure"><a class="anchor" name="deployment--managing-infrastructure" href="#deployment--managing-infrastructure"><span class="octicon octicon-link"></span></a>Deployment &amp; Managing Infrastructure</h1>
+<h3 id="cloudformation-aws"><a class="anchor" name="cloudformation-aws" href="#cloudformation-aws"><span class="octicon octicon-link"></span></a>CloudFormation, AWS</h3>
+<ul>
+<li><strong>Declarative</strong> tool for starting + configuring many (not all) AWSs at scale.</li>
+<li>Excellent for setup. Can destroy and re-create an infra on the cloud on the fly.</li>
+<li>Declarations that make-up the stack are called CloudFormation Templates.</li>
+<li>Provides a relationship diagram based on markup input.</li>
+<li>Each resource in the stack will be tagged such that you can easily identify the cost of the entire stack.</li>
+<li>"Infrastructure as code"</li>
+<li>Note that you <strong>CANNOT</strong> use CloudFormation to move data or applications into another region.<ul>
+<li>You can use CloudFormation to setup all the needed resources, but you will need to manually add the data and apps to this new region.</li>
+</ul>
+</li>
+</ul>
+<h3 id="cloud-development-kit-cdk-aws"><a class="anchor" name="cloud-development-kit-cdk-aws" href="#cloud-development-kit-cdk-aws"><span class="octicon octicon-link"></span></a>Cloud Development Kit (CDK), AWS</h3>
+<ul>
+<li>An SDK to programmatically write AWS infra code.<ul>
+<li>This code gets "compiled" to CloudFormation JSON/YAML.</li>
+</ul>
+</li>
+<li>Supports many popular languages like Python, C#, JavaScript, etc...</li>
+</ul>
+<h3 id="elastic-beanstalk-aws"><a class="anchor" name="elastic-beanstalk-aws" href="#elastic-beanstalk-aws"><span class="octicon octicon-link"></span></a>Elastic Beanstalk, AWS</h3>
+<ul>
+<li>Quick tool for building 3-tier web-apps (Load balancer / App / Database). Developer friendly.</li>
+<li>"Platform-as-a-Service"</li>
+<li>Managed service.</li>
+<li>Still have full control over all configs of AWSs.</li>
+<li>Free service, but you still have to pay for underlying instances.</li>
+<li>Provides health monitoring dashboards. Integrated w/ CloudWatch.</li>
+<li>Technically uses CloudFormation to deploy + configure.<ul>
+<li>Beanstalk is more application-focused while CloudFormation is more infra-focused.</li>
+</ul>
+</li>
+<li>3 architectural models:<ul>
+<li>Single instance deployment: good for dev environment</li>
+<li>Load balancer + Auto scaler group: great for prod/pre-prod web apps.</li>
+<li>Auto scaler group only: for non-web apps. e.g. workers.</li>
+</ul>
+</li>
+<li>Health monitoring:<ul>
+<li>Can determine that the environment's Auto Scaling group is available and has a minimum of at least one instance.</li>
+<li>Publishes metrics to CloudWatch.</li>
+</ul>
+</li>
+</ul>
+<p>	</p>
+<h3 id="codedeploy"><a class="anchor" name="codedeploy" href="#codedeploy"><span class="octicon octicon-link"></span></a>CodeDeploy</h3>
+<ul>
+<li>Hybrid service.</li>
+<li>Serverless.</li>
+<li>For automatic code deployment on EC2 instances or on-premises servers.</li>
+<li>Note that the servers/instances must be preconfigured w/ the CodeDeploy agent.</li>
+</ul>
+<h3 id="codecommit"><a class="anchor" name="codecommit" href="#codecommit"><span class="octicon octicon-link"></span></a>CodeCommit</h3>
+<ul>
+<li>AWS version control repo made by Amazon.</li>
+<li>Fully managed.</li>
+<li>Serverless.</li>
+</ul>
+<h3 id="codebuild"><a class="anchor" name="codebuild" href="#codebuild"><span class="octicon octicon-link"></span></a>CodeBuild</h3>
+<ul>
+<li>Builder service for code that is fetched from a repo. e.g. CodeCommit.<ul>
+<li>Can run tests (unit/integration tests?)</li>
+</ul>
+</li>
+<li>Fully managed.</li>
+<li>Serverless.</li>
+<li>Only pay for build-time.</li>
+</ul>
+<h3 id="codepipeline"><a class="anchor" name="codepipeline" href="#codepipeline"><span class="octicon octicon-link"></span></a>CodePipeline</h3>
+<ul>
+<li>Orchestration tool for CI/CD.</li>
+<li>Fully managed.</li>
+<li>Serverless.</li>
+<li>Uses CodeDeploy, CodeCommit, CodeBuild, and Elastic Beanstalk (possibly more).</li>
+<li>Compatible w/ 3rd parties.</li>
+<li>Orchestration example: Code --&gt; Build --&gt; Tests --&gt; Provision --&gt; Deploy.</li>
+<li>Uses CloudWatch Events to detect changes in CodeCommit repos used as a source for a pipeline.</li>
+</ul>
+<h3 id="codeartifact"><a class="anchor" name="codeartifact" href="#codeartifact"><span class="octicon octicon-link"></span></a>CodeArtifact</h3>
+<ul>
+<li>Artifact management system. For storing/retrieving dependencies.</li>
+<li>Works w/ popular package managers like Pip, NuGet, npm, etc...</li>
+<li>Serverless.</li>
+</ul>
+<h3 id="codestar"><a class="anchor" name="codestar" href="#codestar"><span class="octicon octicon-link"></span></a>CodeStar</h3>
+<ul>
+<li>Unified UI for managing software dev activities.</li>
+<li>Quick way to get started w/ all of the Code-family services.</li>
+<li>Serverless.</li>
+<li>CodeStar + Cloud9 allows you to develop, build, and deploy serverless web apps.</li>
+</ul>
+<h3 id="cloud9"><a class="anchor" name="cloud9" href="#cloud9"><span class="octicon octicon-link"></span></a>Cloud9</h3>
+<ul>
+<li>In-browser cloud IDE.</li>
+<li>NOT serverless. Requires an EC2 instance w/ Cloud9 installed.</li>
+<li>Allows for code collaboration in real-time.</li>
+</ul>
+<h3 id="systems-manager-ssm"><a class="anchor" name="systems-manager-ssm" href="#systems-manager-ssm"><span class="octicon octicon-link"></span></a>Systems Manager (SSM)</h3>
+<ul>
+<li>Allows customer to centralize operational data from multiple AWS and automate tasks across customer's AWSs.<ul>
+<li><strong>Helps w/ managing EC2 and on-premises systems at scale.</strong></li>
+<li>Can create logical groups of resources such as applications, different layers of app-stacks, or prod vs. dev environments.</li>
+</ul>
+</li>
+<li>Comprehensive feature list. Below is a short list of important features:<ul>
+<li>Patching automation for enhanced compliance.</li>
+<li>Run commands over a <strong>fleet</strong> of servers.</li>
+<li>Store parameter configs w/ <strong>SSM Parameter Store</strong>.</li>
+<li>View API activity, resource config changes, software inventory, patch compliance status, and operational alerts.</li>
+<li>Data is aggregated and put into visualizations/graphs for insights.</li>
+</ul>
+</li>
+<li>Hybrid service.</li>
+<li>Works w/ Linux and Windows.</li>
+<li><strong>SSM Session Manager</strong> allows us to connect to an EC2 instance or on-premises server w/o SSH or any exposed connection.<ul>
+<li>This is possible via the SSM agent installed on the instance/server and AWS.</li>
+</ul>
+</li>
+</ul>
+<h3 id="opsworks-aws"><a class="anchor" name="opsworks-aws" href="#opsworks-aws"><span class="octicon octicon-link"></span></a>OpsWorks, AWS</h3>
+<ul>
+<li>For automatic server configuration or performing repetitive tasks.</li>
+<li>OpsWorks == Managed <strong>Chef</strong> and <strong>Puppet</strong>.</li>
+<li>Alternative to SSM.</li>
+<li>Hybrid service.</li>
+<li>Can only provision standard AWS resources. e.g. EC2, RDS, etc...</li>
+</ul>
+<h1 id="leveraging-aws-global-infrastructure"><a class="anchor" name="leveraging-aws-global-infrastructure" href="#leveraging-aws-global-infrastructure"><span class="octicon octicon-link"></span></a>Leveraging AWS Global Infrastructure</h1>
+<h3 id="route-53"><a class="anchor" name="route-53" href="#route-53"><span class="octicon octicon-link"></span></a>Route 53</h3>
+<ul>
+<li>Highly available, scalable, cloud Domain Name System (DNS).</li>
+<li>Fully managed.</li>
+<li>Global.</li>
+<li>Can perform health checks on customer applications, web servers, or any other resources.</li>
+<li>Can do domain name registration w/ Route 53.</li>
+<li>Routing policies:<ul>
+<li>Simple Routing Policy - Basic. Only policy w/ no health checks.</li>
+<li>Weighted Routing Policy - Distribute traffic among weighted EC2 instances.</li>
+<li>Latency Routing Policy - Users redirected based on geographical proximity to an AZ.</li>
+<li>Failover Routing Policy - If health of primary instance is bad, switches to the failover instance. For distaster recovery. For active-passive config.</li>
+</ul>
+</li>
+</ul>
+<h3 id="cloudfront"><a class="anchor" name="cloudfront" href="#cloudfront"><span class="octicon octicon-link"></span></a>CloudFront</h3>
+<ul>
+<li>Content Delivery Network (CDN).</li>
+<li>Integrated w/ AWS Shield.</li>
+<li>Price varies depending on the region.</li>
+<li>Improves the read perf of content via caching at edge locations --&gt; what a CDN basically does.</li>
+<li>CloudFront origin types:<ul>
+<li>S3 bucket<ul>
+<li><strong>Origin Access Control</strong> can be used to only allow CloudFront to access these buckets.</li>
+<li>Can be used as an ingress (i.e. upload files to S3).</li>
+</ul>
+</li>
+<li>Any custom origin (HTTP)<ul>
+<li>App load balancer (ALB).</li>
+<li>EC2 instance.</li>
+<li>S3 static website.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="s3-transfer-acceleration"><a class="anchor" name="s3-transfer-acceleration" href="#s3-transfer-acceleration"><span class="octicon octicon-link"></span></a>S3 Transfer Acceleration</h3>
+<ul>
+<li>Tool for quickly uploading/downloading objects between S3 buckets, regionally.</li>
+<li>For optimizing <strong>transfer speed</strong> of S3 objects.</li>
+<li>Global tool.</li>
+<li><a href="https://s3-accelerate-speedtest.s3-accelerate.amazonaws.com/en/accelerate-speed-comparsion.html">Speed tester</a></li>
+</ul>
+<h3 id="global-accelerator-aws"><a class="anchor" name="global-accelerator-aws" href="#global-accelerator-aws"><span class="octicon octicon-link"></span></a>Global Accelerator, AWS</h3>
+<ul>
+<li>For improving global application availability and perf via the AWS global (internal) network.<ul>
+<li>Therefore, this operates in layer 4 (TCP and UDP) and is a good for non-HTTP use cases.</li>
+</ul>
+</li>
+<li>Integrated w/ AWS Shield.</li>
+<li>Can see up to 60% improvment in speed.</li>
+<li>Users will first access the nearest edge location which will then leverage the AWS network and talk to whatever resource it is looking from within.</li>
+<li>2 Anycast IPs (i.e. shared, static IP address) are created for your app and traffic is sent there via edge locations (i.e. Points of Presence).</li>
+<li>Global Accelerator and CloudFront use the same edge locations.</li>
+<li><a href="https://speedtest.globalaccelerator.aws/">Speed tester</a></li>
+<li>Use cases:<ul>
+<li>For resources that require a static IP address.</li>
+<li>Anytime you need fast, deterministic regional failover.</li>
+</ul>
+</li>
+</ul>
+<h3 id="outposts-aws"><a class="anchor" name="outposts-aws" href="#outposts-aws"><span class="octicon octicon-link"></span></a>Outposts, AWS</h3>
+<ul>
+<li>Literal server racks given to your business by Amazon.</li>
+<li>Outposts offers AWS infrastructure services (not all) on-premises.</li>
+<li>Caveat: you are responsible for the physical security of AWS Outposts since it physically lives in your rack space.</li>
+<li>Software service is fully managed by AWS.</li>
+<li>Eases development in hybrid cloud environments.</li>
+</ul>
+<h3 id="wavelength-aws"><a class="anchor" name="wavelength-aws" href="#wavelength-aws"><span class="octicon octicon-link"></span></a>WaveLength, AWS</h3>
+<p>WaveLength Zones are infrastructure deployments embedded within telecom provider datacenters at the edge of 5G networks.</p>
+<ul>
+<li>For running <strong>ultra-low latency applications through 5G networks.</strong></li>
+<li>Many AWSs available, e.g. EC2, EBS, VPC, etc...</li>
+<li>No additional charges or service agreements.</li>
+<li>Traffic doesn't leave the Comm. Service Provider (CSP) network.<ul>
+<li>However, you still have a high-bandwidth, secure connection to the parent AWS region.</li>
+</ul>
+</li>
+<li>Use cases:<ul>
+<li>Smart cities.</li>
+<li>ML-assisted diagnostics.</li>
+<li>Connected vehicles.</li>
+<li>AR/VR, real-time gaming.</li>
+</ul>
+</li>
+</ul>
+<h3 id="local-zones-aws"><a class="anchor" name="local-zones-aws" href="#local-zones-aws"><span class="octicon octicon-link"></span></a>Local Zones, AWS</h3>
+<ul>
+<li>Closer to end users to run latency-sensitive applications.</li>
+<li>Extends your VPC to more locations.</li>
+<li>This is more limited since most Local Zones seem to be in few cities and mostly in the US.</li>
+<li>Use cases: ???</li>
+</ul>
+<h3 id="global-applications-architecture"><a class="anchor" name="global-applications-architecture" href="#global-applications-architecture"><span class="octicon octicon-link"></span></a>Global Applications Architecture</h3>
+<table>
+    <tbody><tr style="text-align: left">
+        <th>Single Region, Single-AZ</th>
+        <th>Single Region, Multi-AZ</th>
+        <th>Multi-Region, Active-Passive</th>
+        <th>Multi-Region, Active-Active</th>
+    </tr>
+    <tr>
+        <td>❌ Low availability</td>
+        <td>☑️ Good availability</td>
+        <td>✔️ Highest availability</td>
+        <td>✔️ Highest availability</td>
+    </tr>
+    <tr>
+        <td>❌ Poor global latency</td>
+        <td>❌ Poor global latency</td>
+        <td>✔️ Great global read latency, ❌ poor global write latency</td>
+        <td>✔️ Great global read/write latency</td>
+    </tr>
+    <tr>
+        <td>✔️ Easy setup</td>
+        <td>✔️ Slightly easy setup</td>
+        <td>❌ Hard setup</td>
+        <td>❌ Very difficult setup</td>
+    </tr>
+</tbody></table>
+
+
+<h1 id="cloud-integrations"><a class="anchor" name="cloud-integrations" href="#cloud-integrations"><span class="octicon octicon-link"></span></a>Cloud Integrations</h1>
+<h3 id="simple-queue-service-sqs"><a class="anchor" name="simple-queue-service-sqs" href="#simple-queue-service-sqs"><span class="octicon octicon-link"></span></a>Simple Queue Service (SQS)</h3>
+<ul>
+<li>Fully managed. Serverless.</li>
+<li>Event-based, queueing service to decouple applications. (e.g. microservices)</li>
+<li>Default message retention = 4 days; 14 days maximum.</li>
+<li>No limit on how many msgs can be in the queue.</li>
+<li>Messages are deleted after they're read by the consumer.</li>
+<li>Horizontal scaling solution.</li>
+<li>Oldest AWS (over 10 years old).</li>
+</ul>
+<h3 id="simple-notification-service-sns"><a class="anchor" name="simple-notification-service-sns" href="#simple-notification-service-sns"><span class="octicon octicon-link"></span></a>Simple Notification Service (SNS)</h3>
+<ul>
+<li>Fully managed. Serverless.</li>
+<li>Event-based Publisher/Subscriber model (for decoupling applications).<ul>
+<li>Publisher sends a message to a topic (an SNS topic) and any subscribers to that topic will receive that message if they are available.</li>
+<li>Messages are not saved in the topic; they are sent immediately.</li>
+</ul>
+</li>
+<li>Up to 12,500,000 subscriptions per topic, 100,000 topics limit.</li>
+</ul>
+<h3 id="simple-email-service-ses"><a class="anchor" name="simple-email-service-ses" href="#simple-email-service-ses"><span class="octicon octicon-link"></span></a>Simple Email Service (SES)</h3>
+<ul>
+<li>Cloud-based email service provider that can integrate any application for bulk email sending.</li>
+<li>Fully managed. Serverless.</li>
+</ul>
+<h3 id="mq-amazon"><a class="anchor" name="mq-amazon" href="#mq-amazon"><span class="octicon octicon-link"></span></a>MQ, Amazon</h3>
+<ul>
+<li>Not an ideal solution unless you are migrating your on-premises infra to AWS and you are already using a separate messaging broker service.<ul>
+<li>Any service using MQTT, AMQP, STOMP, OpenWire, or WSS (WebSockets) could be migrated using Amazon MQ.</li>
+<li>e.g. RabbitMQ or Apache ActiveMQ.</li>
+</ul>
+</li>
+<li>Note that MQ does not scale nearly as well as SNS/SQS.</li>
+<li>MQ is not serverless, but can run in multi-AZ w/ failover.</li>
+<li>MQ has both queue and topic features.</li>
+</ul>
+<h3 id="kinesis-amazon"><a class="anchor" name="kinesis-amazon" href="#kinesis-amazon"><span class="octicon octicon-link"></span></a>Kinesis, Amazon</h3>
+<ul>
+<li>For real-time big data streaming.<ul>
+<li>To collect, process, and analyze real-time streaming data at any scale.</li>
+</ul>
+</li>
+<li>Managed service.</li>
+<li>Sub-services:<ul>
+<li>Kinesis Data Streams: low latency streaming to ingest data at scale from thousands of sources.</li>
+<li>Kinesis Data Firehose: load streams into AWSs like S3, Redshift, ElasticSearch.</li>
+<li>Kinesis Data Analytics: perform real-time analytics on streams using SQL.</li>
+<li>Kinesis Video Streams: monitor real-time video streams for analytics or ML.</li>
+</ul>
+</li>
+</ul>
+<h1 id="cloud-monitoring"><a class="anchor" name="cloud-monitoring" href="#cloud-monitoring"><span class="octicon octicon-link"></span></a>Cloud Monitoring</h1>
+<h3 id="cloudwatch-amazon"><a class="anchor" name="cloudwatch-amazon" href="#cloudwatch-amazon"><span class="octicon octicon-link"></span></a>CloudWatch, Amazon</h3>
+<ul>
+<li>Centralized service for alarms, metrics, and logging across all (many?) AWSs.</li>
+<li>Note that billing metrics/alarms can only be done in us-east-1 (N. Virgina).</li>
+<li>Sub-groups:<ul>
+<li><strong>Metrics</strong><ul>
+<li>Provides metrics for every service in AWS. e.g. CPUUtilization, NetworkIn, ...</li>
+</ul>
+</li>
+<li><strong>Alarms</strong><ul>
+<li>Used to trigger notifications/actions for any metric.</li>
+<li>e.g. auto scaling, EC2 actions depending on an event, or SNS notifications.</li>
+<li>These alarms are simple and not as powerful as AWS Budgets.</li>
+</ul>
+</li>
+<li><strong>Logging</strong><ul>
+<li>Enables real-time monitoring of your logs.</li>
+<li>Adjustable log retention period.</li>
+<li>By default, EC2 instance will NOT send data to CloudWatch. You need to create the CloudWatch log agent on the EC2 instance.</li>
+<li>Can collect logs from: Elastic Beanstalk, ECS, Lambda, CloudTrail, CloudWatch log agent (for EC2), Route53 DNS queries.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="eventbridge-amazon"><a class="anchor" name="eventbridge-amazon" href="#eventbridge-amazon"><span class="octicon octicon-link"></span></a>EventBridge, Amazon</h3>
+<ul>
+<li>Service that lets you react to events in AWS.<ul>
+<li>Can schedule Cron jobs.</li>
+<li>Can do an action if some event pattern is satisfied. e.g. someone logs in w/ root --&gt; send out SNS topic.</li>
+</ul>
+</li>
+<li>Serverless.</li>
+<li>Formerly called "CloudWatch Events".</li>
+<li>Capable of receiving events from AWS partner companies. (e.g. DataDog, Zendesk)</li>
+<li>You can create your own event bus from your apps to send to EventBridge.</li>
+</ul>
+<h3 id="cloudtrail-amazon"><a class="anchor" name="cloudtrail-amazon" href="#cloudtrail-amazon"><span class="octicon octicon-link"></span></a>CloudTrail, Amazon</h3>
+<ul>
+<li>For <strong>auditing, compliance, and governance</strong>. Powerful tool for investigation across all AWSs.<ul>
+<li>e.g. get history of events or API calls made within your AWS account.</li>
+<li>e.g. see what commands a user typed in the CLI when he/she was logged in.</li>
+</ul>
+</li>
+<li>3 types of events:<ul>
+<li><em>Management events</em> - (enabled by default)</li>
+<li><em>Data events</em> - (disabled by default. Can enable w/ fee.)</li>
+<li><em>CloudTrail Insights events</em> - (disabled by default. Can enable w/ fee.)</li>
+</ul>
+</li>
+<li>Enabled by default for all AWSs.</li>
+<li>Logs can be saved to CloudWatch of S3.</li>
+<li><em>Insights</em> is an automatic service in CloudTrail for your CloudTrail events. Needs to be enabled first and customer will incur additional fees.</li>
+<li>CloudTrail logs are automatically encrypted.</li>
+</ul>
+<h3 id="x-ray-aws"><a class="anchor" name="x-ray-aws" href="#x-ray-aws"><span class="octicon octicon-link"></span></a>X-Ray, AWS</h3>
+<ul>
+<li>Used for distributed system debugging.</li>
+<li>Provides visual analysis of your application. Useful for...<ul>
+<li>Prod. debugging. Find errors/exceptions.</li>
+<li>Understanding dependencies in a microservice architecture.</li>
+<li>Identifying bottlenecks.</li>
+<li>See if we are meeting our SLA.</li>
+</ul>
+</li>
+<li>Trace requests made through your distributed applications.</li>
+</ul>
+<h3 id="codeguru-amazon"><a class="anchor" name="codeguru-amazon" href="#codeguru-amazon"><span class="octicon octicon-link"></span></a>CodeGuru, Amazon</h3>
+<ul>
+<li>ML-powered service for <strong>automated code reviews</strong> and <strong>application performance recommendations</strong>.</li>
+<li>Two powerful functionalities<ul>
+<li>CodeGuru Review: automated code reviews for static code analysis</li>
+<li>CodeGuru Profiler: visibility/recommendations about app performance during runtime.</li>
+</ul>
+</li>
+<li>Supports only Java and Python, currently.</li>
+<li>Integrated w/ GitHub, Bitbucket, and AWS CodeCommit.</li>
+<li>CodeGuru Profiler adds a small overhead to the application.</li>
+</ul>
+<h3 id="service-health-dashboard-aws"><a class="anchor" name="service-health-dashboard-aws" href="#service-health-dashboard-aws"><span class="octicon octicon-link"></span></a>Service Health Dashboard, AWS</h3>
+<ul>
+<li>Shows the health of all services in all regions. General.<ul>
+<li>Also shows historical data.</li>
+</ul>
+</li>
+<li>Has an RSS feed you can subscribe to.</li>
+<li><a href="https://status.aws.amazon.com/">You can check here</a></li>
+</ul>
+<h3 id="personal-health-dashboard-aws"><a class="anchor" name="personal-health-dashboard-aws" href="#personal-health-dashboard-aws"><span class="octicon octicon-link"></span></a>Personal Health Dashboard, AWS</h3>
+<ul>
+<li>Shows AWS events that impact your infra.<ul>
+<li>Provides alerts and remediation guidance as needed.</li>
+</ul>
+</li>
+<li>Serverless.</li>
+</ul>
+<h1 id="cloud-networking-security-and-compliance"><a class="anchor" name="cloud-networking-security-and-compliance" href="#cloud-networking-security-and-compliance"><span class="octicon octicon-link"></span></a>Cloud Networking, Security, and Compliance</h1>
+<h2 id="virtual-private-cloud-vpc"><a class="anchor" name="virtual-private-cloud-vpc" href="#virtual-private-cloud-vpc"><span class="octicon octicon-link"></span></a>Virtual Private Cloud (VPC)</h2>
+<h3 id="vpc-summary"><a class="anchor" name="vpc-summary" href="#vpc-summary"><span class="octicon octicon-link"></span></a>VPC summary</h3>
+<ul>
+<li>A private, logically (not physical) isolated network to deploy your resources on the AWS cloud (by Region).</li>
+<li>VPCs are bound by Region.</li>
+<li>Use cases: Anytime you want to isolate/expose services or resources in your private, cloud network. e.g. subnetting.</li>
+</ul>
+<h3 id="vpc-endpoints"><a class="anchor" name="vpc-endpoints" href="#vpc-endpoints"><span class="octicon octicon-link"></span></a>VPC Endpoints</h3>
+<ul>
+<li>Provides private access (i.e. not over the internet) to AWSs; not necessarily to other VPCs.</li>
+<li>Provides lower latency and better security.</li>
+<li>There are 2 VPC endpoints:<ul>
+<li><strong>VPC Endpoint Gateway</strong>. Used only for S3 and DynamoDB.</li>
+<li><strong>VPC Endpoint Interface</strong>. Used for all other AWSs. Interface endpoints are powered by AWS PrivateLink.</li>
+</ul>
+</li>
+<li>N.B. Use VPC Peering to connect VPCs together. Use VPC endpoints to connect a VPC to a specific AWS resource, e.g. an EC2 instance. (CHECK)</li>
+</ul>
+<h3 id="vpc-peering"><a class="anchor" name="vpc-peering" href="#vpc-peering"><span class="octicon octicon-link"></span></a>VPC Peering</h3>
+<ul>
+<li>Connects two VPCs, privately using AWS' network; doesn't go over the internet.<ul>
+<li>Makes connection more secure by virtue of it living soley within AWS.</li>
+</ul>
+</li>
+<li>Makes them behave as if they were on the same VPC network.<ul>
+<li>IP address ranges cannot have overlap. e.g. no overlapping CIDR blocks.</li>
+</ul>
+</li>
+<li>Peering connections are <strong>not</strong> transitive. That means that each VPC needs an explicit connection to one-another.<ul>
+<li>e.g. If A &lt;--&gt; B, and C &lt;--&gt; A, then B &lt;-/-&gt; C unless we explicit setup a VPC peering connection.</li>
+</ul>
+</li>
+<li>Use this over PrivateLink if you want to connect VPCs that are local to your AWS account or another owned AWS account. (CHECK)</li>
+</ul>
+<h3 id="privatelink-aws-vpc-endpoint-services"><a class="anchor" name="privatelink-aws-vpc-endpoint-services" href="#privatelink-aws-vpc-endpoint-services"><span class="octicon octicon-link"></span></a>PrivateLink, AWS (VPC Endpoint Services)</h3>
+<ul>
+<li>Most secure and scalable way to expose a service to 1000s of VPCs.</li>
+<li>Does not require VPC peering, internet gateway, NAT, route tables, etc...</li>
+<li>Requires a network load balancer (from the Service VPC) and an Elastic Network Interface (Customer VPC).</li>
+<li>Use this over VPC Peering if you need to privately connect to a 3rd party VPC.</li>
+</ul>
+<h3 id="vpc-flow-logs"><a class="anchor" name="vpc-flow-logs" href="#vpc-flow-logs"><span class="octicon octicon-link"></span></a>VPC Flow Logs</h3>
+<ul>
+<li>Logs network traffic for...<ul>
+<li>VPC</li>
+<li>Subnet</li>
+<li>Elastic Network Interface</li>
+</ul>
+</li>
+<li>Helps to monitor and troubleshoot connectivity issues. e.g.<ul>
+<li>Subnets to internet</li>
+<li>Subnets to subnets</li>
+<li>Internet to subnets</li>
+</ul>
+</li>
+<li>Also captures network information from AWS managed interfaces too:<ul>
+<li>Elastic Load Balancer</li>
+<li>ElastiCache</li>
+<li>RDS</li>
+<li>Aurora</li>
+<li>etc...</li>
+</ul>
+</li>
+<li>Flow Logs can be exported to S3 or CloudWatch logs.</li>
+</ul>
+<h2 id="other-networking"><a class="anchor" name="other-networking" href="#other-networking"><span class="octicon octicon-link"></span></a>Other Networking</h2>
+<h3 id="subnets"><a class="anchor" name="subnets" href="#subnets"><span class="octicon octicon-link"></span></a>Subnets</h3>
+<ul>
+<li>Allows you to partition your network inside your VPC.</li>
+<li>This is bound by AZ.<ul>
+<li>Therefore, a VPC lives in a region, and a subnet lives in an AZ. Since each region has a minimum of 3 AZ, by default, you can expect 3 subnets.</li>
+</ul>
+</li>
+<li>Public subnets are internet accessible, private subnets aren't.<ul>
+<li>To define access between the internet and between subnets, we use <strong>Route Tables</strong>.</li>
+<li>For public subnets to access the internet, they require an <strong>Internet Gateway (IGW)</strong>. The public subnet needs a route to the IGW and the IGW goes to the internet.</li>
+<li>For private subnets to access the internet, they require a either a <strong>Network Address Translation (NAT) Gateway</strong> or <strong>NAT Instance</strong>.<ul>
+<li>NAT Gateways are AWS-managed.</li>
+<li>NAT Instances are self-managed.</li>
+<li>In full, a private subnet must have a route to either a NAT (either) that lives in the public subnet and the public subnet needs a route to an IGW.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>N.B. it is recommended to look up graphs for these topologies online since visualizations help a lot and are used a lot in this topic.</li>
+</ul>
+<h3 id="security-groups-1"><a class="anchor" name="security-groups-1" href="#security-groups-1"><span class="octicon octicon-link"></span></a>Security Groups</h3>
+<ul>
+<li>A firewall that <strong>controls traffic to and from an Elastic Network Interface or an EC2 instance</strong>.</li>
+<li>Can only have ALLOW rules.</li>
+<li>Stateful. Return traffic is automatically allowed, regardless of any rules.</li>
+<li>Rules apply to IP addresses and other security groups.</li>
+<li>The console for this service is exactly the same as the one for EC2.</li>
+</ul>
+<h3 id="network-access-control-list-nacl"><a class="anchor" name="network-access-control-list-nacl" href="#network-access-control-list-nacl"><span class="octicon octicon-link"></span></a>Network Access Control List (NACL)</h3>
+<ul>
+<li>A firewall that <strong>controls traffic to and from a subnet</strong>.</li>
+<li>Can have ALLOW or DENY rules.</li>
+<li>Stateless. Rules are always evaluated at ingress and egress.</li>
+<li>Rules only apply to IP addresses.</li>
+</ul>
+<h3 id="site-to-site-vpn"><a class="anchor" name="site-to-site-vpn" href="#site-to-site-vpn"><span class="octicon octicon-link"></span></a>Site-to-site VPN</h3>
+<ul>
+<li>Connects an on-premises VPN to AWS.<ul>
+<li>The on-premises center must use <strong>Customer Gateway (CGW)</strong></li>
+<li>AWS needs to be configured with a <strong>Virtual Private Gateway (VGW)</strong>.</li>
+</ul>
+</li>
+<li>This connection is encrypted by default.</li>
+<li>Goes over the public internet.</li>
+<li>Compared to DX, slower in terms of network performance, but much faster to setup.</li>
+<li>Use cases: ???</li>
+</ul>
+<h3 id="direct-connect-dx"><a class="anchor" name="direct-connect-dx" href="#direct-connect-dx"><span class="octicon octicon-link"></span></a>Direct Connect (DX)</h3>
+<ul>
+<li>Establish an actual physical connection between on-premises and AWS.</li>
+<li>This connection is <strong>private</strong>, secure, and fast. Goes over a private network.</li>
+<li>Caveat: takes up to a month to setup since this requires some physical installation.</li>
+<li>Compared to site-to-site VPN, much faster network performance, but much slower to setup.</li>
+<li>Use cases: ???</li>
+</ul>
+<h3 id="clientvpn-aws"><a class="anchor" name="clientvpn-aws" href="#clientvpn-aws"><span class="octicon octicon-link"></span></a>ClientVPN, AWS</h3>
+<ul>
+<li>Connects your computer, using OpenVPN, to your private network in AWS (and on-premises if it's a hybrid cloud architecture).</li>
+<li>Goes over public internet.</li>
+</ul>
+<h3 id="transit-gateway-aws"><a class="anchor" name="transit-gateway-aws" href="#transit-gateway-aws"><span class="octicon octicon-link"></span></a>Transit Gateway, AWS</h3>
+<ul>
+<li>Provides transitive peering between 1000s of VPCs and on-premises centers.</li>
+<li>Since network topologies can get complicated very quickly, this is a solution to handle it.</li>
+<li>The topology shifts to a hub-and-spoke (star) connection where the Transit Gateway is the center; one single gateway.</li>
+<li>Works w/ Direct Connect Gateway and VPN connections.</li>
+<li>Use cases:<ul>
+<li>Connect many VPCs and on-premises data centers together in a simplified network topology.</li>
+</ul>
+</li>
+</ul>
+<h2 id="security-tools"><a class="anchor" name="security-tools" href="#security-tools"><span class="octicon octicon-link"></span></a>Security Tools</h2>
+<h3 id="shield-standard-aws"><a class="anchor" name="shield-standard-aws" href="#shield-standard-aws"><span class="octicon octicon-link"></span></a>Shield Standard, AWS</h3>
+<ul>
+<li>Protects against DDoS attacks. Gives protection against:<ul>
+<li>SYN/UDP floods</li>
+<li>Reflection attacks</li>
+<li>Various layer 3 &amp; 4 attacks</li>
+</ul>
+</li>
+<li>Free + activated for all users by default.</li>
+</ul>
+<h3 id="shield-advanced-aws"><a class="anchor" name="shield-advanced-aws" href="#shield-advanced-aws"><span class="octicon octicon-link"></span></a>Shield Advanced, AWS</h3>
+<ul>
+<li>Premium DDoS attack protection. Protects against more sophisticated attacks.</li>
+<li>Operates 24/7. An AWS DDoS response team is always available.</li>
+<li>Provides protection on: EC2, ELB, CloudFront, Global Accelerator, and Route 53.</li>
+<li>Priced at USD 3000 per month.<ul>
+<li>Fees due to spiked usage caused by a DDoS are waived by AWS.</li>
+</ul>
+</li>
+</ul>
+<h3 id="web-application-firewall-waf-aws"><a class="anchor" name="web-application-firewall-waf-aws" href="#web-application-firewall-waf-aws"><span class="octicon octicon-link"></span></a>Web Application Firewall (WAF), AWS</h3>
+<ul>
+<li>For filtering request based on user-defined rules.</li>
+<li>Works only on layer 7; Application layer; i.e. HTTP/HTTPS.</li>
+<li>Can be deployed on Application Load Balancer, API gateway, AWS AppSync, and CloudFront.</li>
+<li>Can define a Web ACL (web access control list). Rules can include:<ul>
+<li>IP Addresses, HTTP headers, HTTP body, or URI strings.</li>
+<li>Size constraints, geo-matching (i.e. block certain countries).</li>
+<li>Protection against SQL injection and cross-site scripting (XSS).</li>
+<li>Rate-based rules (to count occurences of events); for DDoS protection. e.g. A user can't do more than 5 requests per second.</li>
+</ul>
+</li>
+</ul>
+<h3 id="key-management-system-kms-aws"><a class="anchor" name="key-management-system-kms-aws" href="#key-management-system-kms-aws"><span class="octicon octicon-link"></span></a>Key Management System (KMS), AWS</h3>
+<ul>
+<li><strong>AWS Managed Keys</strong><ul>
+<li>Encryption keys are managed by AWS.</li>
+<li>Free service (check).</li>
+<li>Encryption is opt-in for the following:<ul>
+<li>EBS volumes</li>
+<li>S3 buckets</li>
+<li>Redshift databases</li>
+<li>RDS databases</li>
+<li>EFS drives</li>
+</ul>
+</li>
+<li>Encryption is automatically enabled for:<ul>
+<li>CloudTrail logs</li>
+<li>S3 Glacier</li>
+<li>Storage Gateway</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>CloudHSM</strong> (Cloud Hardware Security Module)<ul>
+<li>This is provisioned, dedicated hardware from AWS to allow customer to create their own keys.</li>
+<li>User manages own encryption keys entirely; NOT AWS.</li>
+<li>HSM devices are tamper resistant, FIPS 140-2 Level 3 compliance.</li>
+<li>Use cases: for compliance where dedicated, isolated hardware is required for key generation.</li>
+</ul>
+</li>
+<li><strong>Customer Master Keys (CMK)</strong><ul>
+<li><em>Customer Managed CMK</em><ul>
+<li>Customer creates, manages keys. Can enable or disable.</li>
+<li>Can set key rotation policies. (e.g. generate a new key each year).</li>
+<li>Can upload our own keys.</li>
+</ul>
+</li>
+<li><em>AWS Managed CMK</em><ul>
+<li>Automatically created and managed by AWS for customer to use.</li>
+<li>Used by AWS services (e.g. aws/s3, aws/ebs, aws/redshift).</li>
+<li>Free and least effort possible setup.</li>
+</ul>
+</li>
+<li><em>AWS owned CMK</em><ul>
+<li>Collection of CMKs that an AWS service owns and manages to use in multiple accounts.</li>
+<li>AWS can use those to protect resources in customer's account, but customer can't view the keys.</li>
+<li>These keys cannot be used, tracked, or audited by the customer.</li>
+</ul>
+</li>
+<li><em>CloudHSM Keys</em> (custom keystore)<ul>
+<li>Keys are generated from customer's own CloudHSM hardware device.</li>
+<li>Cryptographic operations are performed within the CloudHSM cluster.</li>
+</ul>
+</li>
+<li>Note that this service is not free. e.g. for Customer Managed CMK, it costs USD 1 per month for each key generated.</li>
+</ul>
+</li>
+</ul>
+<h3 id="aws-certificate-manager-acm"><a class="anchor" name="aws-certificate-manager-acm" href="#aws-certificate-manager-acm"><span class="octicon octicon-link"></span></a>AWS Certificate Manager (ACM)</h3>
+<ul>
+<li>Let's customer provision, manage, and deploy SSL/TLS certificates.</li>
+<li>Used to provide <strong>in-flight encryption</strong> for websites (HTTPS).</li>
+<li>Supports both public and private TLS certificates.<ul>
+<li>Free for public certificates.</li>
+</ul>
+</li>
+<li>Automatic TLS certificate renewal.</li>
+<li>Integrations w/ (i.e. it loads the TLS certificates on):<ul>
+<li>ELB</li>
+<li>CloudFront distributions</li>
+<li>APIs on API gateway</li>
+</ul>
+</li>
+</ul>
+<h3 id="secrets-manager-aws"><a class="anchor" name="secrets-manager-aws" href="#secrets-manager-aws"><span class="octicon octicon-link"></span></a>Secrets Manager, AWS</h3>
+<ul>
+<li>For storing secrets (passwords/connection strings, API keys, SSH keys, certificates, etc...).</li>
+<li>Can force rotation of secrets every set amount of days.</li>
+<li>Automate generation of secrets on rotation (uses AWS Lambda).</li>
+<li>Is integrated with Amazon RDS.</li>
+<li>Secrets are encrypted using KMS.</li>
+<li>This service is mostly meant for RDS integration.</li>
+<li>Paid service.</li>
+</ul>
+<h3 id="guardduty-aws"><a class="anchor" name="guardduty-aws" href="#guardduty-aws"><span class="octicon octicon-link"></span></a>GuardDuty, AWS</h3>
+<ul>
+<li>Intelligent threat discovery to protect AWS account.</li>
+<li>Uses machine learning algorithms, anomaly detection, and 3rd party data.</li>
+<li>Has 30 day free trail and doesn't require any software installation.</li>
+<li>Input data can include:<ul>
+<li>CloudTrail event logs</li>
+<li>VPC flow logs</li>
+<li>DNS logs</li>
+<li>Kubernetes audit logs</li>
+</ul>
+</li>
+<li>Can setup CloudWatch Event rules to be notified in case of findings.</li>
+<li>CloudWatch Event rules can target AWS Lambda or SNS.</li>
+<li>Can protect against CryptoCurrency attacks.</li>
+</ul>
+<h3 id="inspector-aws"><a class="anchor" name="inspector-aws" href="#inspector-aws"><span class="octicon octicon-link"></span></a>Inspector, AWS</h3>
+<ul>
+<li>Automated security assessment.<ul>
+<li>For EC2 instances:<ul>
+<li>Leverages the AWS SSM agent.</li>
+<li>Analyzes against unintended network accessibility.</li>
+<li>Analyzes the running OS against known vulnerabilities.</li>
+</ul>
+</li>
+<li>For container images push to AWS ECR<ul>
+<li>Assess the container images as they are pushed.</li>
+</ul>
+</li>
+<li>For Lambda functions<ul>
+<li>Analyzes software vulnerabilities in code + package dependencies.</li>
+<li>Assess functions as they are deployed.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Only for EC2 instances, container images, and Lambda functions.</li>
+<li>Continuously scans infrastructure; only when needed.</li>
+<li>Checks package vulnerabilities --&gt; database checked is CVE.</li>
+<li>A risk score is associated w/ all vulnerabilities for prioritization.</li>
+<li>Reporting and integration with AWS Security Hub and Amazon Event Bridge.</li>
+<li>This agent must be installed into your instances.</li>
+</ul>
+<h3 id="security-hub-aws"><a class="anchor" name="security-hub-aws" href="#security-hub-aws"><span class="octicon octicon-link"></span></a>Security Hub, AWS</h3>
+<ul>
+<li>Central security tool to manage security across several AWS accounts and automate security checks.</li>
+<li>Has integrated dashboards showing current security and compliance status to quickly take action.</li>
+<li>Automatically integrates alerts in predefined or personal finding formats from various AWS services/partner tools:<ul>
+<li>GuardDuty</li>
+<li>Inspector</li>
+<li>Macie</li>
+<li>IAM Access Analyzer</li>
+<li>AWS Systems Manager</li>
+<li>AWS Firewall Manager</li>
+<li>AWS Partner Network Solutions</li>
+</ul>
+</li>
+<li>Must first enable AWS Config Service.</li>
+<li>Paid service.</li>
+</ul>
+<h3 id="detective-amazon"><a class="anchor" name="detective-amazon" href="#detective-amazon"><span class="octicon octicon-link"></span></a>Detective, Amazon</h3>
+<ul>
+<li>Analyzes, investigates, and quickly identifies the root cause of security issues or suspicious activities (using machine learning and graphs).</li>
+<li>Automatically collects and processes events from VPC Flow Logs, CloudTrail, GuardDuty, and creates a unified view.</li>
+<li>Produces visualizations with details and context to get to the root cause.</li>
+</ul>
+<h2 id="security-notes"><a class="anchor" name="security-notes" href="#security-notes"><span class="octicon octicon-link"></span></a>Security Notes</h2>
+<h3 id="penetration-testing"><a class="anchor" name="penetration-testing" href="#penetration-testing"><span class="octicon octicon-link"></span></a>Penetration Testing</h3>
+<ul>
+<li>Without prior approval, these are the services you can pen-test in the AWS infrastructure:<ul>
+<li>EC2 instances, NAT Gateways, ELB</li>
+<li>RDS</li>
+<li>CloudFront</li>
+<li>Aurora</li>
+<li>API Gateways</li>
+<li>Lambda + Lambda Edge functions</li>
+<li>Lightsail resources</li>
+<li>Elastic Beanstalk environments</li>
+<li>(List will likely increase w/ time)</li>
+</ul>
+</li>
+<li>Prohibited activities:<ul>
+<li>DNS zone walking via AWS Route 53 Hosted Zones.</li>
+<li>DoS, DDoS, or simulated DoS on AWS resources.</li>
+<li>Port flooding.</li>
+<li>Protocol flooding.</li>
+<li>Request flooding (e.g. login request flooding, API request flooding).</li>
+</ul>
+</li>
+<li>For any other simulated events, contact: <a href="mailto:aws-security-simulated-event@amazon.com">aws-security-simulated-event@amazon.com</a></li>
+<li>More info can be found <a href="https://aws.amazon.com/security/penetration-testing/">here</a>.</li>
+</ul>
+<h3 id="ddos-protection-best-practices"><a class="anchor" name="ddos-protection-best-practices" href="#ddos-protection-best-practices"><span class="octicon octicon-link"></span></a>DDoS Protection Best Practices</h3>
+<ul>
+<li><a href="https://aws.amazon.com/answers/networking/aws-ddos-attack-mitigation">More info can be found here</a></li>
+</ul>
+<h3 id="aws-abuse"><a class="anchor" name="aws-abuse" href="#aws-abuse"><span class="octicon octicon-link"></span></a>AWS Abuse</h3>
+<ul>
+<li>Resource for reporting abusive, illegal behavior on AWS services.</li>
+<li>Some reportable offenses include:<ul>
+<li>Spam</li>
+<li>Dos or DDoS</li>
+<li>Intrusion attempts</li>
+<li>Hosting objectionable or copyrighted content</li>
+<li>Malware distribution</li>
+</ul>
+</li>
+</ul>
+<h2 id="compliance"><a class="anchor" name="compliance" href="#compliance"><span class="octicon octicon-link"></span></a>Compliance</h2>
+<h3 id="aws-shared-responsibility-model"><a class="anchor" name="aws-shared-responsibility-model" href="#aws-shared-responsibility-model"><span class="octicon octicon-link"></span></a>AWS Shared Responsibility Model</h3>
+<ul>
+<li>AWS's responsibility - security <strong>of</strong> the cloud. This includes...<ul>
+<li>Protecting infrastructure (i.e. hardware, software, infra config, physicial facilities, networking).</li>
+<li>Managed services (e.g. S3, DynamoDB, RDS, etc...)</li>
+</ul>
+</li>
+<li>Customer's responsibility - security <strong>in</strong> the cloud. This includes...<ul>
+<li>For EC2 instance, customer is responsible for management of the guest OS (security patches + updates), firewall, and network configuration. </li>
+<li>IAM groups, roles, users.</li>
+<li>Encrypt applcation data according to customer compliance requirements (external; NOT provisioned by AWS).</li>
+</ul>
+</li>
+<li>Shared responsibilities:<ul>
+<li>Patch management (e.g. Amazon patches RDS, but customer has to patch their database if it lives in an EC2 instance).</li>
+<li>Configuration management.</li>
+<li>Awareness &amp; training.</li>
+</ul>
+</li>
+</ul>
+<img src="imgs/aws_shared_resp_model.jpg" alt="AWS Icon">
+<div style="text-align: center"><i>Credit: Amazon Web Services</i></div>
+
+<h3 id="artifact-aws"><a class="anchor" name="artifact-aws" href="#artifact-aws"><span class="octicon octicon-link"></span></a>Artifact, AWS</h3>
+<ul>
+<li>Portal that provides customers w/ on-demand access to AWS compliance documentation and AWS agreements.</li>
+<li><strong>Artifact Reports</strong> --&gt; allows customer to download AWS security and compliance documents from 3rd party auditors, like AWS ISO certifications, Payment Card Industry (PCI), and System and Organizations Control (SOC) reports.</li>
+<li><strong>Artifact Agreements</strong> --&gt; allows customer to review, accept, and track the status of AWS agreements such as the <em>Business Associate Addendum</em> (BAA) or the <em>Health Insurance Portability and Accountability Act</em> (HIPAA) for an individual account or within the customer's organization.</li>
+<li>These reports can be used to support internal audit or compliance.</li>
+<li>Technically not a service, but is presented as one.</li>
+</ul>
+<h3 id="config-aws"><a class="anchor" name="config-aws" href="#config-aws"><span class="octicon octicon-link"></span></a>Config, AWS</h3>
+<ul>
+<li>Helps w/ auditing and recording compliance of customer's AWS resources.</li>
+<li>Records configuration and changes over time.</li>
+<li>Can store config data into S3 (analyzed by Athena).</li>
+<li>Questions that AWS Config can answer:<ul>
+<li>Is there unrestricted SSH access to my security groups?</li>
+<li>Do my buckets have any public access?</li>
+<li>How has my ALB configuration changed over time?</li>
+</ul>
+</li>
+<li>Can receive alerts (SNS notifications) for any changes.</li>
+<li>AWS Config is a per-region service.</li>
+<li>Can be aggregated across regions and accounts.</li>
+<li>Paid service.</li>
+<li>AWS Security Hub relies on AWS Config.</li>
+</ul>
+<h3 id="macie-amazon"><a class="anchor" name="macie-amazon" href="#macie-amazon"><span class="octicon octicon-link"></span></a>Macie, Amazon</h3>
+<ul>
+<li>Fully managed data security/privacy service that uses machine learning and pattern matching to discover and protect sensitive data in AWS.</li>
+<li>Macie helps identify and alert customer to sensitive data, such as personally identifiable information (PII).</li>
+</ul>
+<h1 id="billing--support"><a class="anchor" name="billing--support" href="#billing--support"><span class="octicon octicon-link"></span></a>Billing &amp; Support</h1>
+<h2 id="billing"><a class="anchor" name="billing" href="#billing"><span class="octicon octicon-link"></span></a>Billing</h2>
+<h3 id="the-4-pricing-models-in-aws"><a class="anchor" name="the-4-pricing-models-in-aws" href="#the-4-pricing-models-in-aws"><span class="octicon octicon-link"></span></a>The 4 Pricing Models in AWS</h3>
+<ul>
+<li><em>Pay as you go</em><ul>
+<li>Pay only for what you use. Remain agile, responsive, and scale to meet demands.</li>
+</ul>
+</li>
+<li><em>Save when you reserve</em><ul>
+<li>Minimize risks, predictably manage budgets, comply w/ long-term requirements.</li>
+<li><strong>Reservations are available for</strong>:<ul>
+<li>EC2 </li>
+<li>DynamoDB</li>
+<li>ElastiCache</li>
+<li>RDS</li>
+<li>Redshift</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em>Pay less by using more</em><ul>
+<li>Volume-based discounts.</li>
+</ul>
+</li>
+<li><em>Pay less as AWS grows</em><ul>
+<li>Enjoy economies of scale as AWS's infra grows.</li>
+</ul>
+</li>
+<li><a href="https://aws.amazon.com/free/">List of free services and all of their stipulations</a></li>
+</ul>
+<h3 id="ec2-pricing---computing"><a class="anchor" name="ec2-pricing---computing" href="#ec2-pricing---computing"><span class="octicon octicon-link"></span></a>EC2 Pricing - Computing</h3>
+<ul>
+<li>Only charged for what you use. This is based on:<ul>
+<li>Number of instances</li>
+<li>Instance config:<ul>
+<li>Physical capacity</li>
+<li>Region</li>
+<li>OS + software</li>
+<li>Instance type<ul>
+<li><em>On-demand instances</em>: <ul>
+<li>Minimum of 60s.</li>
+<li>pay per second (Windows/Linux) or per hour (other).</li>
+</ul>
+</li>
+<li><em>Reserved instances</em>:<ul>
+<li>Up to 75% discount compared to On-demand on hourly rate.</li>
+<li>1 or 3 year commitment.</li>
+<li>Can pay all upfront, partial or no upfront. Lower discount the more that is paid early.</li>
+</ul>
+</li>
+<li><em>Spot instances</em>:<ul>
+<li>Up to 90% discount compared to On-demand on hourly rate.</li>
+<li>Bid for unused capacity. Can lose instance if another bidder is willing to pay more.</li>
+</ul>
+</li>
+<li><em>Dedicated host</em>:<ul>
+<li>Physical server booked.</li>
+<li>On-demand, but must make a reservation for 1 or 3 years.</li>
+</ul>
+</li>
+<li><em>Savings plans</em> as an alternative to save on sustained usage.</li>
+</ul>
+</li>
+<li>Instance size</li>
+</ul>
+</li>
+<li>Elastic Load Balancer run time and amount of data processed</li>
+<li>Detailed monitoring (if enabled).</li>
+</ul>
+</li>
+</ul>
+<h3 id="lambda--elastic-container-service-ecs-pricing---computing"><a class="anchor" name="lambda--elastic-container-service-ecs-pricing---computing" href="#lambda--elastic-container-service-ecs-pricing---computing"><span class="octicon octicon-link"></span></a>Lambda &amp; Elastic Container Service (ECS) Pricing - Computing</h3>
+<ul>
+<li>Lambda<ul>
+<li>Pay per call and per duration.</li>
+</ul>
+</li>
+<li>ECS<ul>
+<li>EC2 launch type model.</li>
+<li>No additional fees incurred except for all the pricing details outlined in EC2.</li>
+</ul>
+</li>
+<li>Fargate<ul>
+<li>Fargate launch type model.</li>
+<li>Pay for vCPU and memory resources allocated to your applications in your containers.</li>
+</ul>
+</li>
+</ul>
+<h3 id="s3-pricing---storage"><a class="anchor" name="s3-pricing---storage" href="#s3-pricing---storage"><span class="octicon octicon-link"></span></a>S3 Pricing - Storage</h3>
+<ul>
+<li>Pricing is base on:<ul>
+<li>Storage class.</li>
+<li>Number and size of objects (price can be tiered based on volume).</li>
+<li>Number and type of requests.</li>
+<li>Data transfer OUT of the S3 region. (Sending data into S3 is free).</li>
+<li>S3 Transfer Acceleration (if enabled).</li>
+<li>Lifecycle transitions.</li>
+</ul>
+</li>
+</ul>
+<h3 id="elastic-block-storage-ebs-pricing---storage"><a class="anchor" name="elastic-block-storage-ebs-pricing---storage" href="#elastic-block-storage-ebs-pricing---storage"><span class="octicon octicon-link"></span></a>Elastic Block Storage (EBS) Pricing - Storage</h3>
+<ul>
+<li>Pricing is based on:<ul>
+<li>Volume type (based on performance).</li>
+<li>Storage volume in GB per month provisioned. i.e. you pay for this regardless if it was utilized or not.</li>
+<li>IOPS (I/O operations per second):<ul>
+<li>General purpose SSD: Included.</li>
+<li>Provisioned IOPS SSD: Provisioned amount in IOPS.</li>
+<li>Magnetic: Number of requests.</li>
+</ul>
+</li>
+<li>Snapshots:<ul>
+<li>Add data cost per GB per month</li>
+</ul>
+</li>
+<li>Data transfer:<ul>
+<li>Outbound data transfer are tiered for volume discounts.</li>
+<li>Inbound data is free.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="rds-database-pricing---database"><a class="anchor" name="rds-database-pricing---database" href="#rds-database-pricing---database"><span class="octicon octicon-link"></span></a>RDS Database Pricing - Database</h3>
+<ul>
+<li>Per hour billing</li>
+<li>Pricing is based on:<ul>
+<li>Time</li>
+<li>Database characteristics:<ul>
+<li>Engine</li>
+<li>Size</li>
+<li>Memory class</li>
+</ul>
+</li>
+<li>Purchase type:<ul>
+<li>On-demand</li>
+<li>Reserved instances (1 or 3 years) w/ required upfront.</li>
+</ul>
+</li>
+<li>Backup storage: always free as long as backup storage is not yet 100% full.</li>
+<li>Any additional storage (per GB per month). It uses EBS for storage.</li>
+<li>Number of I/O requests per month.</li>
+<li>Deployment type (storage and I/O are variable):<ul>
+<li>Single AZ</li>
+<li>Multi AZ</li>
+</ul>
+</li>
+<li>Data transfer:<ul>
+<li>Outbound data transfer are tiered for volume discounts.</li>
+<li>Inbound is free.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="cloudfront-pricing---content-delivery"><a class="anchor" name="cloudfront-pricing---content-delivery" href="#cloudfront-pricing---content-delivery"><span class="octicon octicon-link"></span></a>CloudFront Pricing - Content delivery</h3>
+<ul>
+<li>Since this is a global service, pricing is based on geographic region.</li>
+<li>Pricing lowers as volume of data pushed increases.</li>
+<li>Aggregated for each edge location, then applied to your bill.</li>
+<li>Data transfer out is billable, data transfer in is free.</li>
+<li>Number of HTTP/HTTPS requests are counted and billed.</li>
+</ul>
+<h3 id="savings-plan"><a class="anchor" name="savings-plan" href="#savings-plan"><span class="octicon octicon-link"></span></a>Savings Plan</h3>
+<ul>
+<li>This is a flexible plan that applies to many Amazon compute services.<ul>
+<li>i.e. EC2, Fargate, Lambda, SageMaker</li>
+</ul>
+</li>
+<li>Commit a certain amount of capital ($) per hour for the next 1 or 3 years.</li>
+<li>Easiest way to setup long-term commitments on AWS.</li>
+<li><a href="https://aws.amazon.com/savingsplans/pricing">Estimate savings plans here</a>.</li>
+<li><strong>EC2 Instance  Savings Plan</strong><ul>
+<li>Up to 72% discount compared to On-demand.</li>
+<li>Commit to usage of individual instance families in a region (e.g. C5 or M5 in us-east-1).</li>
+<li>AZ, instance size, guest OS, and tenancy are all free for modification in this plan.</li>
+<li>Can pay all upfront (biggest discount), partial upfront, or no upfront (lowest discount).</li>
+</ul>
+</li>
+<li><strong>Compute Savings Plan</strong><ul>
+<li>Up to 66% discount compared to On-demand.</li>
+<li>Region, instance size, instance family, guest OS, tenancy, and compute options are free for modification.</li>
+<li>Compute options: EC2, Fargat, Lambda.</li>
+</ul>
+</li>
+<li><strong>Machine Learning Savings Plan</strong><ul>
+<li>Instance family, instance size, AZ, region, and components are free for modification in this plan.</li>
+<li>Applies to AWS SageMaker.<ul>
+<li>Likely to expand in the near future (2023).</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="networking-costs-in-aws-per-gb---simplified"><a class="anchor" name="networking-costs-in-aws-per-gb---simplified" href="#networking-costs-in-aws-per-gb---simplified"><span class="octicon octicon-link"></span></a>Networking Costs in AWS per GB - Simplified</h3>
+<ul>
+<li>Complicated topic. Should read online if you need to go in-depth.</li>
+<li>Example below:</li>
+</ul>
+<img style="width: 100%" src="imgs/network_simple.png" alt="diagram explaining networking costs in AWS.">
+<div style="text-align: center"><i>Credit: Stéphane Maarek</i></div>
+
+<h2 id="support"><a class="anchor" name="support" href="#support"><span class="octicon octicon-link"></span></a>Support</h2>
+<h3 id="compute-optimizer-aws"><a class="anchor" name="compute-optimizer-aws" href="#compute-optimizer-aws"><span class="octicon octicon-link"></span></a>Compute Optimizer, AWS</h3>
+<ul>
+<li>Tool for helping reduce costs up to 25%.</li>
+<li>Helps you choose optimal configurations and right-sized workloads (over/underprovisioned).<ul>
+<li>This is done via machine learning. Resources configuration, and their CloudWatch utilization metrics are evaluated.</li>
+</ul>
+</li>
+<li>Supported resources:<ul>
+<li>EC2 instances</li>
+<li>EC2 auto scaling groups</li>
+<li>EBS volumes</li>
+<li>Lambda functions</li>
+</ul>
+</li>
+<li>Recommendations can be exported to S3.</li>
+</ul>
+<h3 id="pricing-calculator-aws"><a class="anchor" name="pricing-calculator-aws" href="#pricing-calculator-aws"><span class="octicon octicon-link"></span></a>Pricing Calculator, AWS</h3>
+<ul>
+<li>For estimating costs the cost of your solution architecture.</li>
+<li><a href="https://calculator.aws/">Available here</a>.</li>
+</ul>
+<h3 id="billing-dashboard-aws"><a class="anchor" name="billing-dashboard-aws" href="#billing-dashboard-aws"><span class="octicon octicon-link"></span></a>Billing Dashboard, AWS</h3>
+<ul>
+<li>Gives a high-level overview and forecast of all expenses associated with the AWS account.</li>
+<li>It also comes with the <strong>AWS Free Tier Dashboard</strong> to track free tier usage and if the account is forecasted to go above the free limit.</li>
+</ul>
+<h3 id="cost-allocation-tags"><a class="anchor" name="cost-allocation-tags" href="#cost-allocation-tags"><span class="octicon octicon-link"></span></a>Cost Allocation Tags</h3>
+<ul>
+<li>Use <em>cost allocation tags</em> to track your AWS costs on a detailed level.</li>
+<li>Reports made w/ cost allocation tags are exportable to MS Excel.</li>
+<li>Tags can be used to create <em>Resource Groups</em>.</li>
+<li>User-defined tags:<ul>
+<li>Defined by user</li>
+<li>Always prefixed with <em>user:</em></li>
+</ul>
+</li>
+<li>AWS generated tags:<ul>
+<li>Automatically applied to the resource you create</li>
+<li>Always prefixed with <em>aws:</em> (e.g. aws:createdBy)</li>
+</ul>
+</li>
+<li>You must activate both AWS generated tags and user-defined tags separately before they can appear in Cost Explorer or on a cost allocation report.</li>
+<li>Note that for each resource, each tag key mut be unique and can only contain one value.</li>
+</ul>
+<h3 id="cost-and-usage-reports-aws"><a class="anchor" name="cost-and-usage-reports-aws" href="#cost-and-usage-reports-aws"><span class="octicon octicon-link"></span></a>Cost and Usage Reports, AWS</h3>
+<ul>
+<li>Contains the most comprehensive/granular set of AWS cost and usage data available. This includes:<ul>
+<li>Additional metadata</li>
+<li>About AWSs</li>
+<li>Pricing</li>
+<li>Reservations (e.g. EC2 Reserved Instances)</li>
+</ul>
+</li>
+<li>Lists AWS usage for each service category used by an account and its IAM users in hourly or daily line items, as well as any tags that you have activated for cost allocation purposes.</li>
+<li>Can be integrated w/ Athena, Redshift, or QuickSight.</li>
+<li>Requires some setup before it can be used.</li>
+</ul>
+<h3 id="cost-explorer-aws"><a class="anchor" name="cost-explorer-aws" href="#cost-explorer-aws"><span class="octicon octicon-link"></span></a>Cost Explorer, AWS</h3>
+<ul>
+<li>Visual, high-level tool for understanding AWS costs + usage over time.<ul>
+<li>Can be used off-the-shelf.</li>
+</ul>
+</li>
+<li>Can create custom reports for analyzing cost + usage.<ul>
+<li>Can be hourly, monthly or resource level reports.</li>
+</ul>
+</li>
+<li>Can forecast up to 12 months based on previous usage.</li>
+<li>Provides Savings Plans if there are savings that can be made. </li>
+<li>Global service.</li>
+</ul>
+<h3 id="budgets-aws"><a class="anchor" name="budgets-aws" href="#budgets-aws"><span class="octicon octicon-link"></span></a>Budgets, AWS</h3>
+<ul>
+<li>For creating budgets and sending alarms when cost or usage exceeds the budget.<ul>
+<li>Note that these alarms are more customizable compared to AWS CloudWatch.</li>
+<li>Compared to CloudWatch, Budgets works w/ forecasting. Can send alarms when a forecasted threshold is met.</li>
+</ul>
+</li>
+<li>Requires some setup before it can be used.</li>
+<li>4 types of budgets:<ul>
+<li>Usage</li>
+<li>Cost</li>
+<li>Reservation</li>
+<li>Savings Plans</li>
+</ul>
+</li>
+<li>For Reserved Instances (RI)<ul>
+<li>Track utilization</li>
+<li>Supports EC2, ElastiCache, RDS, Redshift</li>
+</ul>
+</li>
+<li>Up to 5 SNS notifications per budget.</li>
+<li>Can filter by:<ul>
+<li>Service</li>
+<li>Linked account</li>
+<li>Tag</li>
+<li>Purchase option</li>
+<li>Instance type</li>
+<li>Region</li>
+<li>AZ</li>
+<li>API operation</li>
+<li>etc...</li>
+</ul>
+</li>
+<li>2 budgets are free, then USD0.02 per day per budget.</li>
+</ul>
+<h3 id="trusted-advisor-aws"><a class="anchor" name="trusted-advisor-aws" href="#trusted-advisor-aws"><span class="octicon octicon-link"></span></a>Trusted Advisor, AWS</h3>
+<ul>
+<li>High-level AWS account assessment tool.<ul>
+<li>Can be used off-the-shelf.</li>
+</ul>
+</li>
+<li>No need to install anything.</li>
+<li>Trusted Advisor analyzes your AWS accounts and provides recommendations on 5 categories:<ul>
+<li><strong>Cost optimization</strong></li>
+<li><strong>Performance</strong></li>
+<li><strong>Security</strong></li>
+<li><strong>Fault tolerance</strong></li>
+<li><strong>Service limits</strong></li>
+</ul>
+</li>
+<li>Support plans:<ul>
+<li>7 Core Checks (for <em>basic</em> and <em>developer</em> support plans)<ul>
+<li>S3 bucket permissions</li>
+<li>Security groups --&gt; making sure some ports are not restricted (i.e. SSH).</li>
+<li>IAM use (one IAM user minimum)</li>
+<li>MFA on Root account</li>
+<li>Ensure no EBS public snapshots</li>
+<li>Ensure no RDS public snapshots</li>
+<li>Looking at service limits</li>
+</ul>
+</li>
+<li>Full Checks (for <em>business</em> and <em>enterprise</em> support plans)<ul>
+<li>Full Checks available on the 5 categories (Trusted Advisor)</li>
+<li>Ability to set CloudWatch alarms when reaching limits</li>
+<li>Programmatic access using AWS Support API.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="disaster-recovery-dr"><a class="anchor" name="disaster-recovery-dr" href="#disaster-recovery-dr"><span class="octicon octicon-link"></span></a>Disaster Recovery (DR)</h1>
+<h3 id="disaster-recovery-strategies"><a class="anchor" name="disaster-recovery-strategies" href="#disaster-recovery-strategies"><span class="octicon octicon-link"></span></a>Disaster Recovery strategies</h3>
+<img src="https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2021/05/13/Figure-1.-DR-strategies.png" alt="Disaster recovery strategy spectrum">
+<div style="text-align: center"><i>Credit: Amazon Web Services</i></div>
+
+<h3 id="elastic-disaster-recovery-drs-aws"><a class="anchor" name="elastic-disaster-recovery-drs-aws" href="#elastic-disaster-recovery-drs-aws"><span class="octicon octicon-link"></span></a>Elastic Disaster Recovery (DRS), AWS</h3>
+<ul>
+<li>Quickly and easily recover customer's physical, virtual, and cloud-based servers into AWS.</li>
+<li>Does continuous, block-level replication for customer's servers.</li>
+<li>Formerly named <em>CloudEndure Disaster Recovery</em>.</li>
+</ul>
+<div style="display: flex; flex-direction: column; align-items: center">
+    <img src="imgs/DRS_graph.png" alt="DRS graph">
+    <div style="text-align: center"><i>Credit: Stéphane Maarek</i></div>
+</div>
+
+
+<h1 id="architecting--ecosystems-aws"><a class="anchor" name="architecting--ecosystems-aws" href="#architecting--ecosystems-aws"><span class="octicon octicon-link"></span></a>Architecting &amp; Ecosystems, AWS</h1>
+<h3 id="general-guiding-principles"><a class="anchor" name="general-guiding-principles" href="#general-guiding-principles"><span class="octicon octicon-link"></span></a>General guiding principles</h3>
+<ul>
+<li>Stop guessing your capacity needs --&gt; use auto scaling.</li>
+<li>Test your systems at production scale.</li>
+<li>Automate to make architectural experimentation easier.</li>
+<li>Allow for evolutionary architectures. i.e. design based on changing requirements.</li>
+<li>Drive architectures using data.</li>
+<li>Improve through game days. e.g. simulate applications for flash sale days.<ul>
+<li>Netflix uses chaos monkey to simulate random failures in the environment.</li>
+</ul>
+</li>
+</ul>
+<h3 id="design-principles"><a class="anchor" name="design-principles" href="#design-principles"><span class="octicon octicon-link"></span></a>Design principles</h3>
+<ul>
+<li><em>Scalability</em> --&gt; vertical and horizontal.</li>
+<li><em>Disposable resources</em> --&gt; servers should be disposable and easily configured.</li>
+<li><em>Automation</em> --&gt; serverless, IaaS, auto scaling, etc...</li>
+<li><em>Loose coupling</em> --&gt; microservices, message passing, distinct isolated units.</li>
+<li><em>Services, NOT servers</em>.</li>
+</ul>
+<h3 id="aws-ecosystem"><a class="anchor" name="aws-ecosystem" href="#aws-ecosystem"><span class="octicon octicon-link"></span></a>AWS Ecosystem</h3>
+<ul>
+<li><a href="https://aws.amazon.com/blogs/aws/">AWS Blogs</a></li>
+<li><a href="https://forums.aws.amazon.com/index.jspa">AWS Forums (community)</a></li>
+<li><a href="https://aws.amazon.com/whitepapers/">AWS Whitepapers &amp; guides</a></li>
+<li><a href="https://aws.amazon.com/quickstart/">AWS Quick  Start</a></li>
+<li><a href="https://aws.amazon.com/solutions/">AWS Solutions</a></li>
+<li>AWS Marketplace<ul>
+<li>Digital catalog with thousands of software listings from independent software vendors (3rd party).</li>
+<li>e.g. can purchase custom AMIs or CloudFormation templates.</li>
+<li>Transactions go directly to your AWS bill.</li>
+</ul>
+</li>
+<li>AWS Training<ul>
+<li>Available in digital or in-person.</li>
+<li>Private training for your organization.</li>
+<li>Training + certification for US gov or Enterprise.</li>
+<li><em>AWS Academy</em> helps universities teach AWS.</li>
+</ul>
+</li>
+<li>AWS Partner Network (APN):<ul>
+<li>Global team of AWS experts recognized by Amazon.</li>
+<li>There are the following types of partners:<ul>
+<li>APN Technology Partner</li>
+<li>APN Consulting Partner</li>
+<li>APN Training Partner</li>
+</ul>
+</li>
+<li>AWS Competency Program: AWS competencies are granted to APN partners who have demonstrated technical proficiency and proven customer success in specializedd solution areas.</li>
+<li>AWS Nagivate Program: helps partners become better partners.</li>
+</ul>
+</li>
+<li>AWS Knowledge Center: huge, comprehensive repo for FAQs.</li>
+<li>AWS IQ: Quickly find professional, AWS certified, 3rd party help for your AWS projects.</li>
+<li>AWS re:Post --&gt; AWS-managed Q&amp;A service. Very similar to Stack Overflow.</li>
+</ul>
+<h2 id="well-architected-framework-aws-1"><a class="anchor" name="well-architected-framework-aws-1" href="#well-architected-framework-aws-1"><span class="octicon octicon-link"></span></a>Well-Architected Framework, AWS</h2>
+<h3 id="the-6-pillars"><a class="anchor" name="the-6-pillars" href="#the-6-pillars"><span class="octicon octicon-link"></span></a>The 6 Pillars</h3>
+<ol>
+<li>Operational Excellence</li>
+<li>Security</li>
+<li>Reliability</li>
+<li>Performance Efficiency</li>
+<li>Cost Optimization</li>
+<li>Sustainability</li>
+</ol>
+<h3 id="1---operational-excellence"><a class="anchor" name="1---operational-excellence" href="#1---operational-excellence"><span class="octicon octicon-link"></span></a>1 - Operational Excellence</h3>
+<ul>
+<li>Encompasses the ability to run and monitor systems to deliver business value and to continue to improve supporting processes/procedures.</li>
+<li>Design Principles:<ul>
+<li><strong>Perform operations as code</strong> - i.e. infrastructure as code.</li>
+<li><strong>Annotate documentation</strong> - Automate the creation of annotated documentation after every build.</li>
+<li><strong>Make frequent, small, reversible changes</strong> - So that in case of any failure, you can reverse it.</li>
+<li><strong>Refine operations/procedures frequently</strong> - And ensure all team members are familiar with it.</li>
+<li><strong>Anticipate failure</strong>.</li>
+<li><strong>Learn from all operational failures</strong>.</li>
+</ul>
+</li>
+</ul>
+<h3 id="2---security"><a class="anchor" name="2---security" href="#2---security"><span class="octicon octicon-link"></span></a>2 - Security</h3>
+<ul>
+<li>Includes the ability to protect information, systems, and assets while delivering business value through risk assessment and mitigation strategies.</li>
+<li>Design Principles:<ul>
+<li><strong>Implement a strong identity foundation</strong> - Basically use IAM and principle of least privilege.</li>
+<li><strong>Enable traceability</strong> - Integrate logs and metrics with systems to automatically respond and take action.</li>
+<li><strong>Apply security at all layers</strong> - At VPC, edge network, subnet, load balance, every instance OS, app, etc...</li>
+<li><strong>Automate security best practices</strong>.</li>
+<li><strong>Protect data in-transit and at-rest</strong>.</li>
+<li><strong>Keep people away from data</strong> - Reduce or eliminate the need for direct access or manual processing of data.</li>
+<li><strong>Prepare for security events</strong> - Run incident response simulations and use tools w/ automation to increase your speed for detection, investigation, and recovery.</li>
+</ul>
+</li>
+</ul>
+<h3 id="3---reliability"><a class="anchor" name="3---reliability" href="#3---reliability"><span class="octicon octicon-link"></span></a>3 - Reliability</h3>
+<ul>
+<li>Ability for a system to recover from infrastructure or service disruptions, dynamically acquire computing resources to meet demand, and mitigate disruptions such as misconfigurations or transient network issues.</li>
+<li>Design Principles:<ul>
+<li><strong>Test recovery procedures</strong> - Use automation to simulate different failures or to recreate scenarios that led to failure.</li>
+<li><strong>Automatically recover from failure</strong> - Anticipate and remediate failures before they occur.</li>
+<li><strong>Scale horizontally to increase aggregate system availability</strong>.</li>
+<li><strong>Stop guessing capacity</strong> - Use Auto Scaling.</li>
+<li><strong>Manage change in automation</strong> - Use automation to make changes to infrastructure.</li>
+</ul>
+</li>
+</ul>
+<h3 id="4---performance-efficiency"><a class="anchor" name="4---performance-efficiency" href="#4---performance-efficiency"><span class="octicon octicon-link"></span></a>4 - Performance Efficiency</h3>
+<ul>
+<li>Ability to use computing resource efficiently to meet system requirements and to maintain that efficiency as demand changes and tech evolves.</li>
+<li>Design Principles:<ul>
+<li><strong>Democratize advanced tech</strong> - Advanced techs become services and hence you can focus more on product development.</li>
+<li><strong>Go global in minutes</strong> - Easy deployment in multiple regions.</li>
+<li><strong>Use serverless architectures</strong> - Avoid burden of managing servers.</li>
+<li><strong>Experiment more often</strong> - Easy to carry out comparative testing.</li>
+<li><strong>Mechanical sympathy</strong> - Be aware of all AWS services + changes.</li>
+</ul>
+</li>
+</ul>
+<h3 id="5---cost-optimization"><a class="anchor" name="5---cost-optimization" href="#5---cost-optimization"><span class="octicon octicon-link"></span></a>5 - Cost Optimization</h3>
+<ul>
+<li>Ability to run systems to deliver business value at the lowest price point.</li>
+<li>Design Principles:<ul>
+<li><strong>Adopt a consumption mode</strong> - Pay only for what you use.</li>
+<li><strong>Measure overall efficiency</strong> - Use CloudWatch.</li>
+<li><strong>Stop spending money on data center operations</strong> - Ergo, move to cloud. CapEx --&gt; OpEx.</li>
+<li><strong>Analyze and attribute expenditure</strong> - Accurate identificates of system usage and costs. Helps measure return on investment --&gt; make sure to use tags.</li>
+<li><strong>Use managed and application-level services to reduce cost of ownership</strong> - Using cloud services benefit from economies of scale.</li>
+</ul>
+</li>
+</ul>
+<h3 id="6---sustainability"><a class="anchor" name="6---sustainability" href="#6---sustainability"><span class="octicon octicon-link"></span></a>6 - Sustainability</h3>
+<ul>
+<li>Minimizing the environmental impacts of running cloud workloads.</li>
+<li>Design Principles:<ul>
+<li><strong>Understand your impacts</strong>.</li>
+<li><strong>Establish sustainability goals</strong>.</li>
+<li><strong>Maximize utilization</strong>.</li>
+<li><strong>Anticipate and adopt new, more efficient hardware and software offerings</strong> - AWS overtime releases new tech that works better. Stay up-to-date.</li>
+<li><strong>Use managed services</strong> - Shared serices reduce the amount of infrastructure.</li>
+<li><strong>Reduce the downstream impact of your cloud workloads</strong>.</li>
+</ul>
+</li>
+</ul>
+<h1 id="aws-iconography"><a class="anchor" name="aws-iconography" href="#aws-iconography"><span class="octicon octicon-link"></span></a>AWS Iconography</h1>
+<h2 id="aws-architecture-diagrams"><a class="anchor" name="aws-architecture-diagrams" href="#aws-architecture-diagrams"><span class="octicon octicon-link"></span></a>AWS Architecture Diagrams</h2>
+<img src="imgs/aws-architecture-diagram-example.png" alt="Example of an AWS architecture diagram">
+<div style="text-align: center"><i>Credit: SmartDraw</i></div>
+
+<h2 id="aws-icons"><a class="anchor" name="aws-icons" href="#aws-icons"><span class="octicon octicon-link"></span></a>AWS Icons</h2>
+<img src="imgs/aws-symbols.png" alt="Diagram of most AWS icons">
+<div style="text-align: center"><i>Credit: SmartDraw</i></div>
+
+<h2 id="aws-groups"><a class="anchor" name="aws-groups" href="#aws-groups"><span class="octicon octicon-link"></span></a>AWS Groups</h2>
+<img src="imgs/aws-diagram-groups.png" alt="Diagram of most AWS icons">
+<div style="text-align: center"><i>Credit: SmartDraw</i></div>
+
+
+<h1 id="other-minor-services"><a class="anchor" name="other-minor-services" href="#other-minor-services"><span class="octicon octicon-link"></span></a>Other Minor Services</h1>
+<h3 id="workspace-amazon"><a class="anchor" name="workspace-amazon" href="#workspace-amazon"><span class="octicon octicon-link"></span></a>WorkSpace, Amazon</h3>
+<ul>
+<li>Desktop-as-a-Service (DaaS) for provisioning Windows or Linux desktops.</li>
+<li>Fully managed. Scalable.</li>
+<li>Global service.</li>
+<li>Pay as you go service w/ monthly or hourly rates.</li>
+<li>Integrated w/ Amazon KMS.</li>
+<li>Customer should use Workspaces that are in regions closest to their office(s).</li>
+<li>Use cases:<ul>
+<li>For eliminating management of on-premises virtual desktop infrastructure.</li>
+</ul>
+</li>
+</ul>
+<h3 id="appstream-20-amazon"><a class="anchor" name="appstream-20-amazon" href="#appstream-20-amazon"><span class="octicon octicon-link"></span></a>AppStream 2.0, Amazon</h3>
+<ul>
+<li>Desktop application streaming service.</li>
+<li>Deliver to any computer, without acquiring or provisioning infrastructure.</li>
+<li><strong>The application is delivered from within a web browser</strong>.<ul>
+<li>e.g. opening Blender from your web browser.</li>
+</ul>
+</li>
+<li>Allows configuration of instance type per application type.</li>
+</ul>
+<h3 id="sumerian-amazon"><a class="anchor" name="sumerian-amazon" href="#sumerian-amazon"><span class="octicon octicon-link"></span></a>Sumerian, Amazon</h3>
+<ul>
+<li>For creating and running VR, AR, and 3D apps.</li>
+<li>Can be used to quickly create 3D models w/ animations.</li>
+<li>Has ready-to-use templates + assets. No programming or 3D modeling expertise required.</li>
+<li>Accessible via web-browser URLs or on popular VR/AR hardware.</li>
+</ul>
+<h3 id="iot-core-aws"><a class="anchor" name="iot-core-aws" href="#iot-core-aws"><span class="octicon octicon-link"></span></a>IoT Core, AWS</h3>
+<ul>
+<li>Allows customer to easily connect IoT devices to the AWS cloud.</li>
+<li>Serverless, secure, and scalable. Billions of devices can connect w/ trillions of messages.</li>
+<li>Integrated well w/ a lot of AWSs like Lambda, S3, SageMaker, etc...</li>
+</ul>
+<h3 id="elastic-transcoder-aws"><a class="anchor" name="elastic-transcoder-aws" href="#elastic-transcoder-aws"><span class="octicon octicon-link"></span></a>Elastic Transcoder, AWS</h3>
+<ul>
+<li>Used to convert media files stored in S3 into media files in the formats required by consumer playback devices (phones, tablets, etc...)</li>
+<li>Highly scalable and easy to use.</li>
+<li>Cost effective. You only pay for the duration your media was being transcoded.</li>
+<li>Fully managed.</li>
+</ul>
+<h3 id="appsync-aws"><a class="anchor" name="appsync-aws" href="#appsync-aws"><span class="octicon octicon-link"></span></a>AppSync, AWS</h3>
+<ul>
+<li>Using <strong>GraphQL</strong>, stores and syncs data across mobile and web apps in real-time.</li>
+<li>Client code can be generated automatically.</li>
+<li>Offline data synchronization (replaces Cognito Sync).</li>
+<li>AWS Amplify can leverage AWS AppSync in the background.</li>
+</ul>
+<h3 id="amplify-aws"><a class="anchor" name="amplify-aws" href="#amplify-aws"><span class="octicon octicon-link"></span></a>Amplify, AWS</h3>
+<ul>
+<li>A set of tools and services that helps you develop and deploy scalable full stack web and mobile applications.</li>
+<li>Includes: authentication, storage, APIs (REST or GraphQL), CI/CD, PubSub, analytics, AI/ML predictions, monitoring, source code from AWS or GitHub, etc...</li>
+</ul>
+<h3 id="device-farm-aws"><a class="anchor" name="device-farm-aws" href="#device-farm-aws"><span class="octicon octicon-link"></span></a>Device Farm, AWS</h3>
+<ul>
+<li>Tests your web/mobile app against actual (NOT emulated) desktop browsers, mobile devices, and tablets.</li>
+<li>Fully managed service.</li>
+<li>Devices are all configurable.</li>
+<li>Sends reports, logs, and screenshots for any bugs found.</li>
+</ul>
+<h3 id="backup-aws"><a class="anchor" name="backup-aws" href="#backup-aws"><span class="octicon octicon-link"></span></a>Backup, AWS</h3>
+<ul>
+<li>For centrally managing and automating backups across AWSs.</li>
+<li>Fully managed service.</li>
+<li>On-demand or scheduled backups. Supports point-in-time recovery.</li>
+<li>Contains retention logs, lifecyle management, backup policies, etc...</li>
+<li>Can do cross-Region (and cross-Account via AWS Organizations) backups.</li>
+</ul>
+<h3 id="application-discovery-service-aws"><a class="anchor" name="application-discovery-service-aws" href="#application-discovery-service-aws"><span class="octicon octicon-link"></span></a>Application Discovery Service, AWS</h3>
+<ul>
+<li>Tool for <strong>planning migration</strong> of customer's on-premises data centers to the cloud.</li>
+<li>Scans customer's server data, dependecy mapping, and utilization.<ul>
+<li>Result can be viewed within <strong>AWS Migration Hub</strong>.</li>
+</ul>
+</li>
+<li>2 types of migrations:<ul>
+<li><strong>Agentless Discovery (AWS Agentless Discovery Connector)</strong><ul>
+<li>Gets VM inventory, configuration, performance history (CPU, memory, disk).</li>
+</ul>
+</li>
+<li><strong>Agent-based Discovery (AWS Application Discovery Agent)</strong><ul>
+<li>Gets more information compared to Agentless Discovery.</li>
+<li>Fetches system config, system performance, running processes, details on network connections between systems.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="application-migration-service-mgn-aws"><a class="anchor" name="application-migration-service-mgn-aws" href="#application-migration-service-mgn-aws"><span class="octicon octicon-link"></span></a>Application Migration Service (MGN), AWS</h3>
+<ul>
+<li>Tool for <strong>executing migration</strong> of customer's on-premises data centers to the cloud.</li>
+<li>Converts your physical, virtual, and cloud-based servers to run natively on AWS.</li>
+<li>Formerly called <em>CloudEndure Migration</em>.</li>
+</ul>
+<h3 id="migration-evaluator-aws"><a class="anchor" name="migration-evaluator-aws" href="#migration-evaluator-aws"><span class="octicon octicon-link"></span></a>Migration Evaluator, AWS</h3>
+<ul>
+<li>Tool for <strong>creating data-drive business cases</strong> for AWS Cloud planning and migration.</li>
+<li>Formerly called <em>TSO Logic</em>.</li>
+</ul>
+<h3 id="fault-injection-simulator-fis-aws"><a class="anchor" name="fault-injection-simulator-fis-aws" href="#fault-injection-simulator-fis-aws"><span class="octicon octicon-link"></span></a>Fault Injection Simulator (FIS), AWS</h3>
+<ul>
+<li>For running fault injection experiments on AWS workloads.</li>
+<li>Utilizes a concept called <em>chaos engineering</em>.<ul>
+<li>Stress application by creating disruptive events (e.g. sudden CPU spike or memory usage) and observing how the system responds.</li>
+<li>Helps to uncover bugs and hidden bottlenecks.</li>
+</ul>
+</li>
+<li>Supports the following services:<ul>
+<li>EC2</li>
+<li>ECS</li>
+<li>EKS</li>
+<li>RDS</li>
+</ul>
+</li>
+<li>Fully managed service.</li>
+</ul>
+<div style="display: flex; flex-direction: column; align-items: center">
+    <img src="imgs/FIS_graph.png" alt="FIS graph">
+    <div style="text-align: center"><i>Credit: Stéphane Maarek</i></div>
+</div>
+
+<h3 id="ground-station-aws"><a class="anchor" name="ground-station-aws" href="#ground-station-aws"><span class="octicon octicon-link"></span></a>Ground Station, AWS</h3>
+<ul>
+<li>Allows customer to control sattelite communications, process data, and scale your satellite operations.</li>
+<li>Provides a global network of satellite ground stations near AWS regions.</li>
+<li>Allows customer to download satellite data to customer's AWS CPV within seconds.</li>
+<li>Fully managed service.</li>
+<li>Use cases:<ul>
+<li>Weather forecasting</li>
+<li>Surface imaging</li>
+<li>Video broadcasting</li>
+</ul>
+</li>
+</ul>
+<h3 id="pinpoint-aws"><a class="anchor" name="pinpoint-aws" href="#pinpoint-aws"><span class="octicon octicon-link"></span></a>Pinpoint, AWS</h3>
+<ul>
+<li>Scalable, 2-way (outbound/inbound) marketing communication service.</li>
+<li>Supports email, SMS, voice, in-app messaging.</li>
+<li>Has the ability to segment and personalize messages with the right content to customers.</li>
+<li>Has possibility to receive replies.</li>
+<li>Can easily build automation (SNS, Kinesis Data Firehose, CloudWatch logs) on top of Amazon Pinpoint.</li>
+<li>Differs from AWS SNS and SES in that you don't need to manage each message's audience, content, and delivery schedule.</li>
+<li>Use cases:<ul>
+<li>Run campaigns by sending marketing in bulk</li>
+<li>Transactional SMS messages</li>
+</ul>
+</li>
+</ul>
+<h1 id="exam-questions"><a class="anchor" name="exam-questions" href="#exam-questions"><span class="octicon octicon-link"></span></a>Exam questions</h1>
+<h3 id="how-to-choose-an-aws-region"><a class="anchor" name="how-to-choose-an-aws-region" href="#how-to-choose-an-aws-region"><span class="octicon octicon-link"></span></a>How to choose an AWS region?</h3>
+<ul>
+<li>Compliance - consider data governance and legal requirements in your field/country.</li>
+<li>Proxmity - where are the majority of your customers? Keep it close to them.</li>
+<li>Available services - not all regions have all services. </li>
+<li>Pricing - prices will vary depending on the region.</li>
+</ul>
+<h3 id="database-and-analytics-summary-in-aws"><a class="anchor" name="database-and-analytics-summary-in-aws" href="#database-and-analytics-summary-in-aws"><span class="octicon octicon-link"></span></a>Database and analytics summary in AWS:</h3>
+<ul>
+<li><em>Relational DB - OLTP</em>: Use RDS or Aurora</li>
+<li><em>In-memory database</em>: Use ElastiCache</li>
+<li><em>Key/Value database</em>: Use DynamoDB (serverless) or DAX (cache for DynamoDB)</li>
+<li><em>Warehouse - OLAP</em>: Redshift</li>
+<li><em>Hadoop cluster</em>: EMR</li>
+<li><em>Query S3 data</em>: Athena (serverless)</li>
+<li><em>Dashboards</em>: Quicksight (serverless)</li>
+<li><em>Document-based DB</em>: DocumentDB</li>
+<li><em>Financial transaction ledger</em>: Amazon QLDB (immutable journal, centralized authority)</li>
+<li><em>Managed ETL solution</em>: Use Glue (serverless) and Glue Data Catalog service</li>
+<li><em>Database migration</em>: Use DMS</li>
+<li><em>Graph-based database</em>: Use Neptune</li>
+</ul>
+<h3 id="batch-vs-lambda"><a class="anchor" name="batch-vs-lambda" href="#batch-vs-lambda"><span class="octicon octicon-link"></span></a>Batch vs. Lambda</h3>
+<ul>
+<li>Lambda<ul>
+<li>Limited time. Max 15 min.</li>
+<li>Limited runtimes. Only access to several programming langauges.</li>
+<li>Limited, temporary disk space.</li>
+<li>Serverless.</li>
+</ul>
+</li>
+<li>Batch<ul>
+<li>No time limit.</li>
+<li>Any runtime is allowed so as long it is packaged in Docker.</li>
+<li>Relies on EBS/instance store for disk space.</li>
+<li>Relies on EC2 (are be managed by AWS).</li>
+</ul>
+</li>
+</ul>
+<h3 id="cloudfront-vs-s3-x-region-replication"><a class="anchor" name="cloudfront-vs-s3-x-region-replication" href="#cloudfront-vs-s3-x-region-replication"><span class="octicon octicon-link"></span></a>CloudFront vs. S3 X-Region Replication</h3>
+<ul>
+<li>CloudFront:<ul>
+<li>Global Edge (i.e. Points of Presence) network.</li>
+<li>Files are cached for a TTL (usually 1 day).</li>
+<li>Great for static content that must be available everywhere.</li>
+</ul>
+</li>
+<li>S3 X-Region Replication:<ul>
+<li>Must be setup for each region we want replication to happen.</li>
+<li>Files are updated in near real-time.</li>
+<li>Read only.</li>
+<li>Suited for dynamic content that needs to be available at low-latency in few regions.</li>
+</ul>
+</li>
+</ul>
+<h3 id="cloudfront-vs-global-accelerator"><a class="anchor" name="cloudfront-vs-global-accelerator" href="#cloudfront-vs-global-accelerator"><span class="octicon octicon-link"></span></a>CloudFront vs. Global Accelerator</h3>
+<ul>
+<li><p>CloudFront:</p>
+<ul>
+<li>Improves performance via caching content at edge locations.</li>
+</ul>
+</li>
+<li><p>Global Accelerator:</p>
+<ul>
+<li>Proxies packets at edge locations to the AWS internal network; cross-region.</li>
+</ul>
+</li>
+</ul>
+<h3 id="aws-machine-learning-in-a-nutshell"><a class="anchor" name="aws-machine-learning-in-a-nutshell" href="#aws-machine-learning-in-a-nutshell"><span class="octicon octicon-link"></span></a>AWS Machine Learning in a nutshell:</h3>
+<ul>
+<li>Rekognition: face detection, labeling, celeb recognition</li>
+<li>Transcribe: audio-to-text</li>
+<li>Polly: text-to-audio</li>
+<li>Translate: translation + localize content</li>
+<li>Lex: build chatbots (like Alexa)</li>
+<li>Connect: cloud contact center</li>
+<li>Comprehend: NLP</li>
+<li>SageMaker: ML tool for devs + data scientist. For the pros.</li>
+<li>Forecast: build forecasts</li>
+<li>Kendra: ML-powered search engine</li>
+<li>Personalize: real-time personalized recommendations</li>
+</ul>
+<h3 id="security-groups-vs-nacl"><a class="anchor" name="security-groups-vs-nacl" href="#security-groups-vs-nacl"><span class="octicon octicon-link"></span></a>Security Groups vs. NACL</h3>
+<table>
+    <tbody><tr>
+        <th>Security Group</th>
+        <th>Network ACL</th>
+    </tr>
+    <tr>
+        <td>Operates at the <b>instance</b> level</td>
+        <td>Operates at the <b>subnet</b> level</td>
+    </tr>
+    <tr>
+        <td>Supports ALLOW rules only</td>
+        <td>Supports ALLOW and DENY rules</td>
+    </tr>
+    <tr>
+        <td><b>Is stateful</b>: return traffic is automatically allowed, regardless of any rules</td>
+        <td><b>Is stateless</b>: return traffic must be explicitly allowed by rules</td>
+    </tr>
+    <tr>
+        <td>Evaluates all rules before deciding whether to allow traffic</td>
+        <td>Rules are processed in a numbered order when deciding to allow traffic</td>
+    </tr>
+    <tr>
+        <td>Applies to instance only if it has been assigned to the instance</td>
+        <td>Automatically applied to all instances in the subnet that the NACL was associated with</td>
+    </tr>
+</tbody></table>
+
+<h3 id="multi-account-vs-multi-vpc"><a class="anchor" name="multi-account-vs-multi-vpc" href="#multi-account-vs-multi-vpc"><span class="octicon octicon-link"></span></a>Multi-account vs. Multi-VPC</h3>
+<ul>
+<li>Separating out functions/departments within AWS can be done via multiple accounts (using AWS Organizations) or via 1 account w/ multiple VPCs.</li>
+<li>Multi-account is usually preferred since it offers more benefits and is easier to manage given the AWS Organizations.</li>
+</ul>
+<h3 id="reserved-instance-billing-example"><a class="anchor" name="reserved-instance-billing-example" href="#reserved-instance-billing-example"><span class="octicon octicon-link"></span></a>Reserved Instance billing example:</h3>
+<ul>
+<li>Bob and Susan each have an AWS account in AWS Organizations. Susan has 5 Reserved Instances (RIs) of the same type and Bob has none. During one particular hour, Susan uses 3 instances and Bob uses 6 for a total of 9 instances on the organization's consolidated bill.<ul>
+<li>Ans: If the instances Bob is using are RIs in the same AZ, then the organization's consolidated bill is charged to the 5 RIs and the remaining 4 instances are charged as regular instances.</li>
+</ul>
+</li>
+</ul>
+<h3 id="data-transfer-question"><a class="anchor" name="data-transfer-question" href="#data-transfer-question"><span class="octicon octicon-link"></span></a>Data transfer question:</h3>
+<ul>
+<li>The DevOps team at an IT company is moving 500 GB of data from an EC2 instance to an S3 bucket in the same region. Which of the following scenario captures the correct charges for this data transfer?<ul>
+<li>Ans: The company would NOT be charged for this data transfer since it is all local to the region. There is not transfer-out charges.</li>
+</ul>
+</li>
+</ul>
+<h3 id="billing-and-costing-tools"><a class="anchor" name="billing-and-costing-tools" href="#billing-and-costing-tools"><span class="octicon octicon-link"></span></a>Billing and Costing tools</h3>
+<ul>
+<li>Estimate costs in the cloud:<ul>
+<li>Pricing Calculator</li>
+</ul>
+</li>
+<li>Tracking costs in the cloud:<ul>
+<li>Billing dashboard</li>
+<li>Cost allocation tags</li>
+<li>Cost and usage reports</li>
+<li>Cost Explorer</li>
+</ul>
+</li>
+<li>Monitoring against cost plans:<ul>
+<li>Billing alarms</li>
+<li>Budgets</li>
+</ul>
+</li>
+</ul>
+<h3 id="awss-that-support-reservations-to-optimize-costs"><a class="anchor" name="awss-that-support-reservations-to-optimize-costs" href="#awss-that-support-reservations-to-optimize-costs"><span class="octicon octicon-link"></span></a>AWSs that support reservations to optimize costs</h3>
+<ul>
+<li>EC2 reserved instances.</li>
+<li>DynamoDB reserved capacity.</li>
+<li>ElastiCache reserved nodes.</li>
+<li>RDS reserved instances.</li>
+<li>Redshift reserved nodes.</li>
+</ul>
+<h3 id="trusted-advisor-recommendation-categories"><a class="anchor" name="trusted-advisor-recommendation-categories" href="#trusted-advisor-recommendation-categories"><span class="octicon octicon-link"></span></a>Trusted Advisor recommendation categories:</h3>
+<ul>
+<li>Cost Optimization</li>
+<li>Performance</li>
+<li>Security</li>
+<li>Fault tolerance</li>
+<li>Service limits</li>
+</ul>
+<h3 id="question-separating-costs-by-department"><a class="anchor" name="question-separating-costs-by-department" href="#question-separating-costs-by-department"><span class="octicon octicon-link"></span></a>Question: separating costs by department</h3>
+<ul>
+<li>A company would like to separate cost for AWS services by the department for cost allocation. Which of the following is the simplest way to achieve this task?<ul>
+<li>Ans: Create tags for each department.</li>
+<li>Note that creating a VPC per department will NOT separate costs.</li>
+</ul>
+</li>
+</ul>
+<h3 id="when-to-choose-cloudwatch-vs-cloudtrail-vs-config"><a class="anchor" name="when-to-choose-cloudwatch-vs-cloudtrail-vs-config" href="#when-to-choose-cloudwatch-vs-cloudtrail-vs-config"><span class="octicon octicon-link"></span></a>When to choose CloudWatch vs. CloudTrail vs. Config</h3>
+<ul>
+<li>Use CloudWatch for --&gt; resource performance monitoring, events, and alerts.</li>
+<li>Use CloudTrail for --&gt; account-specific activity and audit.</li>
+<li>Use Config for --&gt; resource-specific change history, audit, and compliance.</li>
+</ul>
+<h3 id="misc"><a class="anchor" name="misc" href="#misc"><span class="octicon octicon-link"></span></a>Misc:</h3>
+<ul>
+<li>Anytime a question as for an in-memory, high perf, low latency database, use ElastiCache.</li>
+<li>Anytime a replacement for Chef and Puppet are suggested, always go for OpsWorks.</li>
+<li>You can use Read Replicas to improve read performance and disaster recovery.</li>
+</ul>
+<hr>
+<div style="text-align: center">Sahal Abdulrahman Alturaigi - <b>Version 0.1.1</b></div></div><div id="_toc" class="tex2jax-ignore"><div class="_ul"><a href="#cloud--aws">Cloud &amp; AWS</a></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#types-of-cloud-providers">Types of cloud providers</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#types-of-cloud-computing">Types of cloud computing</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#server-management">Server management</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#aws-support-plans">AWS Support Plans</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#5-characteristics-of-cloud-computing">5 characteristics of cloud computing</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#advantages-of-cloud-computing">Advantages of cloud computing</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#aws-has-3-pricing-fundamental-cost-drivers">AWS has 3 pricing fundamental cost-drivers</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#aws-infrastructure-identities">AWS infrastructure identities</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#well-architected-framework-aws">Well-Architected Framework, AWS</a></div></div></div><div class="_ul"><a href="#accessaccountidentity-management-in-aws">Access/Account/Identity Management in AWS</a></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#identity-and-access-management-iam">Identity and Access Management (IAM)</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#iam-identity-center">IAM Identity Center</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#iam-credentials-report">IAM Credentials Report</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#iam-access-advisor">IAM Access Advisor</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#multi-factor-authentication-mfa">Multi-factor Authentication (MFA)</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#organizations-aws">Organizations, AWS</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#service-control-policy-scp">Service Control Policy (SCP)</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#control-tower-aws">Control Tower, AWS</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#security-token-service-sts-aws">Security Token Service (STS), AWS</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#cognito-aws">Cognito, AWS</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#directory-services-aws">Directory Services, AWS</a></div></div></div><div class="_ul"><a href="#elastic-compute-cloud-ec2">Elastic Compute Cloud (EC2)</a></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#ec2-summary">EC2 summary:</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#ec2-instance-types">EC2 Instance Types</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#security-groups">Security Groups</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#ec2-instance-purchasing-options">EC2 instance purchasing options:</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#amazon-machine-image-ami">Amazon Machine Image (AMI)</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#ec2-image-builder">EC2 Image Builder</a></div></div></div><div class="_ul"><a href="#storage-systems">Storage Systems</a></div><div class="_ul"><div class="_ul"><a href="#aws-storage-cloud-native-options">AWS Storage Cloud Native Options</a></div></div><div class="_ul"><div class="_ul"><a href="#elastic-block-store-ebs">Elastic Block Store (EBS)</a></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#ebs-summary">EBS summary</a></div></div></div><div class="_ul"><div class="_ul"><a href="#instance-store">Instance Store</a></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#instance-store-summary">Instance Store summary</a></div></div></div><div class="_ul"><div class="_ul"><a href="#elastic-file-system-efs">Elastic File System (EFS)</a></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#efs-summary">EFS summary</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#efs-infrequent-access-efs-ia">EFS Infrequent Access (EFS-IA)</a></div></div></div><div class="_ul"><div class="_ul"><a href="#amazon-fsx">Amazon FSx</a></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#fsx-summary">FSx summary</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#fsx-for-windows-file-server">FSx for Windows File Server</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#fsx-for-lustre">FSx for Lustre</a></div></div></div><div class="_ul"><div class="_ul"><a href="#simple-storage-service-s3-aws">Simple Storage Service (S3), AWS</a></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#s3-summary">S3 summary</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#s3-buckets">S3 Buckets</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#s3-objects">S3 Objects</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#s3-security-config">S3 Security config</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#s3-replication">S3 Replication</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#s3-storage-classes">S3 Storage Classes</a></div></div></div><div class="_ul"><a href="#databases">Databases</a></div><div class="_ul"><div class="_ul"><a href="#amazon-relational-database-rds">Amazon Relational Database (RDS)</a></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#rds-overview">RDS overview</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#aurora-aws">Aurora, AWS</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#rds-deployment">RDS deployment</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#elasticache-aws">ElastiCache, AWS</a></div></div></div><div class="_ul"><div class="_ul"><a href="#amazon-nosql-databases">Amazon NoSQL databases</a></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#dynamodb-aws">DynamoDB, AWS</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#dynamodb-accelerator-dax">DynamoDB Accelerator (DAX)</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#dynamodb-global-tables">DynamoDB Global Tables</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#documentdb-aws">DocumentDB, AWS</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#when-to-use-native-mongodb-vs-documentdb-vs-dynamodb">When to use Native MongoDB vs. DocumentDB vs. DynamoDB</a></div></div></div><div class="_ul"><div class="_ul"><a href="#other-database-services">Other database services</a></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#redshift-aws">Redshift, AWS</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#elastic-mapreduce-emr-amazon">Elastic MapReduce (EMR), Amazon</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#athena-amazon">Athena, Amazon</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#quicksight">QuickSight</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#neptune-amazon">Neptune, Amazon</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#quantum-ledger-database-qldb-amazon">Quantum Ledger Database (QLDB), Amazon</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#managed-blockchain-amazon">Managed Blockchain, Amazon</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#glue-aws">Glue, AWS</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#database-migration-service-dms">Database Migration Service (DMS)</a></div></div></div><div class="_ul"><a href="#edge-computing">Edge Computing</a></div><div class="_ul"><div class="_ul"><a href="#aws-snow-family">AWS Snow Family</a></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#snow-family-summary">Snow Family summary</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#datasync-aws">DataSync, AWS</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#snowcone">Snowcone</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#snowball-edge">Snowball Edge</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#snowmobile">Snowmobile</a></div></div></div><div class="_ul"><a href="#other-compute-services">Other Compute Services</a></div><div class="_ul"><div class="_ul"><a href="#container-services">Container Services</a></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#elastic-container-service-ecs">Elastic Container Service (ECS)</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#fargate">Fargate</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#elastic-container-registry-ecr">Elastic Container Registry (ECR)</a></div></div></div><div class="_ul"><div class="_ul"><a href="#function-as-a-service-faas">Function-as-a-Service (FaaS)</a></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#lambda-aws">Lambda, AWS</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#api-gateway-amazon">API Gateway, Amazon</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#batch-aws">Batch, AWS</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#step-functions-aws">Step Functions, AWS</a></div></div></div><div class="_ul"><div class="_ul"><a href="#lightsail-amazon">Lightsail, Amazon</a></div></div><div class="_ul"><div class="_ul"><a href="#machine-learning">Machine Learning</a></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#rekognition">Rekognition</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#transcribe">Transcribe</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#polly">Polly</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#translate-aws">Translate, AWS</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#lex--conntext-amazon">Lex &amp; Conntext, Amazon</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#comprehend-amazon">Comprehend, Amazon</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#sagemaker-amazon">SageMaker, Amazon</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#forecast-amazon">Forecast, Amazon</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#kendra-amazon">Kendra, Amazon</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#personalize-amazon">Personalize, Amazon</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#textract-amazon">Textract, Amazon</a></div></div></div><div class="_ul"><a href="#scaling-and-elasticity">Scaling and Elasticity</a></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#load-balancers-in-general">Load Balancers in general</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#elastic-load-balancer-elb-summary">Elastic Load Balancer (ELB) summary</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#auto-scaling-groups-asg-summary">Auto Scaling Groups (ASG) summary</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#hybrid-cloud">Hybrid Cloud</a></div></div></div><div class="_ul"><a href="#deployment--managing-infrastructure">Deployment &amp; Managing Infrastructure</a></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#cloudformation-aws">CloudFormation, AWS</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#cloud-development-kit-cdk-aws">Cloud Development Kit (CDK), AWS</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#elastic-beanstalk-aws">Elastic Beanstalk, AWS</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#codedeploy">CodeDeploy</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#codecommit">CodeCommit</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#codebuild">CodeBuild</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#codepipeline">CodePipeline</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#codeartifact">CodeArtifact</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#codestar">CodeStar</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#cloud9">Cloud9</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#systems-manager-ssm">Systems Manager (SSM)</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#opsworks-aws">OpsWorks, AWS</a></div></div></div><div class="_ul"><a href="#leveraging-aws-global-infrastructure">Leveraging AWS Global Infrastructure</a></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#route-53">Route 53</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#cloudfront">CloudFront</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#s3-transfer-acceleration">S3 Transfer Acceleration</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#global-accelerator-aws">Global Accelerator, AWS</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#outposts-aws">Outposts, AWS</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#wavelength-aws">WaveLength, AWS</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#local-zones-aws">Local Zones, AWS</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#global-applications-architecture">Global Applications Architecture</a></div></div></div><div class="_ul"><a href="#cloud-integrations">Cloud Integrations</a></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#simple-queue-service-sqs">Simple Queue Service (SQS)</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#simple-notification-service-sns">Simple Notification Service (SNS)</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#simple-email-service-ses">Simple Email Service (SES)</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#mq-amazon">MQ, Amazon</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#kinesis-amazon">Kinesis, Amazon</a></div></div></div><div class="_ul"><a href="#cloud-monitoring">Cloud Monitoring</a></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#cloudwatch-amazon">CloudWatch, Amazon</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#eventbridge-amazon">EventBridge, Amazon</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#cloudtrail-amazon">CloudTrail, Amazon</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#x-ray-aws">X-Ray, AWS</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#codeguru-amazon">CodeGuru, Amazon</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#service-health-dashboard-aws">Service Health Dashboard, AWS</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#personal-health-dashboard-aws">Personal Health Dashboard, AWS</a></div></div></div><div class="_ul"><a href="#cloud-networking-security-and-compliance">Cloud Networking, Security, and Compliance</a></div><div class="_ul"><div class="_ul"><a href="#virtual-private-cloud-vpc">Virtual Private Cloud (VPC)</a></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#vpc-summary">VPC summary</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#vpc-endpoints">VPC Endpoints</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#vpc-peering">VPC Peering</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#privatelink-aws-vpc-endpoint-services">PrivateLink, AWS (VPC Endpoint Services)</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#vpc-flow-logs">VPC Flow Logs</a></div></div></div><div class="_ul"><div class="_ul"><a href="#other-networking">Other Networking</a></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#subnets">Subnets</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#security-groups-1">Security Groups</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#network-access-control-list-nacl">Network Access Control List (NACL)</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#site-to-site-vpn">Site-to-site VPN</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#direct-connect-dx">Direct Connect (DX)</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#clientvpn-aws">ClientVPN, AWS</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#transit-gateway-aws">Transit Gateway, AWS</a></div></div></div><div class="_ul"><div class="_ul"><a href="#security-tools">Security Tools</a></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#shield-standard-aws">Shield Standard, AWS</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#shield-advanced-aws">Shield Advanced, AWS</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#web-application-firewall-waf-aws">Web Application Firewall (WAF), AWS</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#key-management-system-kms-aws">Key Management System (KMS), AWS</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#aws-certificate-manager-acm">AWS Certificate Manager (ACM)</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#secrets-manager-aws">Secrets Manager, AWS</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#guardduty-aws">GuardDuty, AWS</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#inspector-aws">Inspector, AWS</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#security-hub-aws">Security Hub, AWS</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#detective-amazon">Detective, Amazon</a></div></div></div><div class="_ul"><div class="_ul"><a href="#security-notes">Security Notes</a></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#penetration-testing">Penetration Testing</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#ddos-protection-best-practices">DDoS Protection Best Practices</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#aws-abuse">AWS Abuse</a></div></div></div><div class="_ul"><div class="_ul"><a href="#compliance">Compliance</a></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#aws-shared-responsibility-model">AWS Shared Responsibility Model</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#artifact-aws">Artifact, AWS</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#config-aws">Config, AWS</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#macie-amazon">Macie, Amazon</a></div></div></div><div class="_ul"><a href="#billing--support">Billing &amp; Support</a></div><div class="_ul"><div class="_ul"><a href="#billing">Billing</a></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#the-4-pricing-models-in-aws">The 4 Pricing Models in AWS</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#ec2-pricing---computing">EC2 Pricing - Computing</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#lambda--elastic-container-service-ecs-pricing---computing">Lambda &amp; Elastic Container Service (ECS) Pricing - Computing</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#s3-pricing---storage">S3 Pricing - Storage</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#elastic-block-storage-ebs-pricing---storage">Elastic Block Storage (EBS) Pricing - Storage</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#rds-database-pricing---database">RDS Database Pricing - Database</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#cloudfront-pricing---content-delivery">CloudFront Pricing - Content delivery</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#savings-plan">Savings Plan</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#networking-costs-in-aws-per-gb---simplified">Networking Costs in AWS per GB - Simplified</a></div></div></div><div class="_ul"><div class="_ul"><a href="#support">Support</a></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#compute-optimizer-aws">Compute Optimizer, AWS</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#pricing-calculator-aws">Pricing Calculator, AWS</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#billing-dashboard-aws">Billing Dashboard, AWS</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#cost-allocation-tags">Cost Allocation Tags</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#cost-and-usage-reports-aws">Cost and Usage Reports, AWS</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#cost-explorer-aws">Cost Explorer, AWS</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#budgets-aws">Budgets, AWS</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#trusted-advisor-aws">Trusted Advisor, AWS</a></div></div></div><div class="_ul"><a href="#disaster-recovery-dr">Disaster Recovery (DR)</a></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#disaster-recovery-strategies">Disaster Recovery strategies</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#elastic-disaster-recovery-drs-aws">Elastic Disaster Recovery (DRS), AWS</a></div></div></div><div class="_ul"><a href="#architecting--ecosystems-aws">Architecting &amp; Ecosystems, AWS</a></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#general-guiding-principles">General guiding principles</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#design-principles">Design principles</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#aws-ecosystem">AWS Ecosystem</a></div></div></div><div class="_ul"><div class="_ul"><a href="#well-architected-framework-aws-1">Well-Architected Framework, AWS</a></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#the-6-pillars">The 6 Pillars</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#1---operational-excellence">1 - Operational Excellence</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#2---security">2 - Security</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#3---reliability">3 - Reliability</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#4---performance-efficiency">4 - Performance Efficiency</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#5---cost-optimization">5 - Cost Optimization</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#6---sustainability">6 - Sustainability</a></div></div></div><div class="_ul"><a href="#aws-iconography">AWS Iconography</a></div><div class="_ul"><div class="_ul"><a href="#aws-architecture-diagrams">AWS Architecture Diagrams</a></div></div><div class="_ul"><div class="_ul"><a href="#aws-icons">AWS Icons</a></div></div><div class="_ul"><div class="_ul"><a href="#aws-groups">AWS Groups</a></div></div><div class="_ul"><a href="#other-minor-services">Other Minor Services</a></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#workspace-amazon">WorkSpace, Amazon</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#appstream-20-amazon">AppStream 2.0, Amazon</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#sumerian-amazon">Sumerian, Amazon</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#iot-core-aws">IoT Core, AWS</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#elastic-transcoder-aws">Elastic Transcoder, AWS</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#appsync-aws">AppSync, AWS</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#amplify-aws">Amplify, AWS</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#device-farm-aws">Device Farm, AWS</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#backup-aws">Backup, AWS</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#application-discovery-service-aws">Application Discovery Service, AWS</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#application-migration-service-mgn-aws">Application Migration Service (MGN), AWS</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#migration-evaluator-aws">Migration Evaluator, AWS</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#fault-injection-simulator-fis-aws">Fault Injection Simulator (FIS), AWS</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#ground-station-aws">Ground Station, AWS</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#pinpoint-aws">Pinpoint, AWS</a></div></div></div><div class="_ul"><a href="#exam-questions">Exam questions</a></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#how-to-choose-an-aws-region">How to choose an AWS region?</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#database-and-analytics-summary-in-aws">Database and analytics summary in AWS:</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#batch-vs-lambda">Batch vs. Lambda</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#cloudfront-vs-s3-x-region-replication">CloudFront vs. S3 X-Region Replication</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#cloudfront-vs-global-accelerator">CloudFront vs. Global Accelerator</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#aws-machine-learning-in-a-nutshell">AWS Machine Learning in a nutshell:</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#security-groups-vs-nacl">Security Groups vs. NACL</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#multi-account-vs-multi-vpc">Multi-account vs. Multi-VPC</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#reserved-instance-billing-example">Reserved Instance billing example:</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#data-transfer-question">Data transfer question:</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#billing-and-costing-tools">Billing and Costing tools</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#awss-that-support-reservations-to-optimize-costs">AWSs that support reservations to optimize costs</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#trusted-advisor-recommendation-categories">Trusted Advisor recommendation categories:</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#question-separating-costs-by-department">Question: separating costs by department</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#when-to-choose-cloudwatch-vs-cloudtrail-vs-config">When to choose CloudWatch vs. CloudTrail vs. Config</a></div></div></div><div class="_ul"><div class="_ul"><div class="_ul"><a href="#misc">Misc:</a></div></div></div></div></body></html>

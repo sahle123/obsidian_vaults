@@ -1,0 +1,3 @@
+# Check distro
+cat /etc/*-release
+

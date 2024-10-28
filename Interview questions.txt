@@ -1,0 +1,61 @@
+Interview questions
+LU: 2023-07-06
+
+OOP
+	- Polymorphism
+	- Inheritance
+	- Interfaces
+	- Encapsulation
+	- Generics
+
+Javascript
+	- Factory functions
+	- DOM
+	- The 7 primitives in Javascript
+	- Difference between prototypal programming vs. class-based programming.
+
+.NET Core
+	- "Sealed" keyword
+	- Depedency injection + service lifetimes
+	- Any of the latest .NET features. (e.g. record instead of class)
+	- Entity Framework vs. Dapper
+	- Code-first vs. Database-first
+	- Filters middleware
+	- Reflections
+	- Common Language Runtime (CLR)
+	- Intermediate Language (IL)
+	- Abstract classes vs. Interfaces
+	- Extension methods
+	- Managed vs. Unmanaged code
+
+Databases:
+	- DDL, DML, DQL, DCL, TCL commands in SQL
+	- Functions
+	- Stored Procedures
+	- Views
+	- Clustered vs. non-clustered indexes
+	- Speeding up queries
+	- SQL vs. NoSQL
+	- Normal Forms (1NF, 2NF, 3NF)
+	- ACID
+	- Common Table Expressions (CTE)
+	- CAP theorem
+
+Design patterns
+	- SOLID principles
+	- OOP design patterns:
+		* Command
+		* Bridge
+		* Adapter
+		* Factory vs. Builder
+	- Declarative programming vs. imperative programming
+	- Architecture types:
+		- Layered (n-tier)
+		- Microservice
+		- MVC
+		- Domain driven design
+		- Test driven design
+		- Component-based (or modular design)
+		- Event-driven
+		- Client-server
+		- Enterprise service bus

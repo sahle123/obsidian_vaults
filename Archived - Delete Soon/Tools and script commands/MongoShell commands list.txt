@@ -1,0 +1,31 @@
+MongoShell commands list
+
+# Show all databases
+show dbs
+
+# Show all collections
+show collections
+
+
+##
+## Insert
+##
+
+# Insert into a collection
+db.myDoc.insertOne({
+	...
+})
+
+# Insert many into a collection
+db.myDoc.insertMany([
+	{ ... },
+	{ ... }
+])
+
+
+##
+## Query
+##
+
+# Index a document
+db.myDoc.find()

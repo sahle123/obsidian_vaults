@@ -1,0 +1,158 @@
+{
+  "main": {
+    "id": "68d59e04481d12a8",
+    "type": "split",
+    "children": [
+      {
+        "id": "4ff56a4b5c61055c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d978fcf1d9f3c824",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Scratchpad.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "afcb6cbabbd73e56",
+    "type": "split",
+    "children": [
+      {
+        "id": "a2baad93f2f1820f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0bbd3db1420e675c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "dbbbe7d924ad4a73",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "c546f11233a7120f",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "fee67bf87463209b",
+    "type": "split",
+    "children": [
+      {
+        "id": "060bbf7e9c627acb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "46b627ef15a5f1fb",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Scratchpad.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "752dede0a9f02494",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Scratchpad.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "4201b88c62323d52",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "968f8f1c7dc2baec",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Scratchpad.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "d978fcf1d9f3c824",
+  "lastOpenFiles": [
+    "media/average_int_and_persist_greater_than_genius.png",
+    "Scratchpad.md",
+    "Unorganized.md",
+    "How to build extremely quickly.md",
+    "media",
+    "Welcome.md"
+  ]
+}
