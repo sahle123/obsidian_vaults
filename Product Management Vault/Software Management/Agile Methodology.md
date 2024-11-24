@@ -4,7 +4,6 @@
 #fill_in_later 
 
 ### Structuring work in Agile
-
 0. **Initiative**: #fill_in_later 
 
 1. **Epic**: An epic is a large body of work that can be broken down into smaller tasks or stories. Epics are usually too big to be completed in a single iteration or sprint, so they are broken down into smaller, more manageable pieces. Epics often represent high-level features or initiatives that provide value to the customer or end user. 
@@ -14,7 +13,6 @@
 3. **Task**: Depending on the organization, it appears tasks can have the same scope as a story or be smaller than one. For the sake of simplicity, we will say that tasks are smaller than user stories and follow different acceptance criteria as well as description of the work to be done. Multiple tasks can be done in the span of a single sprint.
 
 ### Popular Agile Frameworks for Teams
-
 * [[Scrum]]
 * [[Kanban]]
 * [[Scrumban]]
