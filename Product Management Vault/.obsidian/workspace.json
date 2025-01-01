@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Software Management/RICE Prioritization.md",
+                "file": "What to do as a new Product Manager.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "RICE Prioritization"
+              "title": "What to do as a new Product Manager"
             }
           }
         ]
@@ -164,9 +164,9 @@
   },
   "active": "d46f037270e41a33",
   "lastOpenFiles": [
+    "Software Management/RICE Prioritization.md",
     "Software Management/Agile Methodology.md",
     "Software Management/DORA Metrics.md",
-    "Software Management/RICE Prioritization.md",
     "Software Management/Scrum.md",
     "Overview.md",
     "What to do as a new Product Manager.md",

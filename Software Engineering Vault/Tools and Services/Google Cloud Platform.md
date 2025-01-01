@@ -61,7 +61,7 @@ _Elastic_
 ![[shared_responsibility_model.png]]
 ![[shared_responsibility_model_across_levels.png]]
 ![[shared_responsibility_model_across_levels2.png]]
-<p style="text-align: center"><i>Credit: freeCodeCamp.org</i></p>
+<p style="text-align: center"><i>Credit: exampro.co</i></p>
 
 ### Cloud Computing Deployment Models
 * **Public Cloud**
@@ -105,6 +105,7 @@ A **Project** in GCP is a logical grouping of resources (i.e. a namespace). A cl
 * Multiple projects can have their resource usage billed to the same account.
 
 ![[gcp_resource_hierarchy.png]]
+<p style="text-align: center"><i>Credit: exampro.co</i></p>
 
 ### Definitions
 **Regions**
@@ -144,11 +145,11 @@ A **Project** in GCP is a logical grouping of resources (i.e. a namespace). A cl
 These are physical or geographical locations of where an organization or cloud resources reside. This is generally important for compliance and regulation reasons. Especially in countries like KSA.
 
 **Assured Workloads**
-> A feature in GCP that allows one to apply various security controls to an environment. Some features include:
-> * Data residency --> You need an organizational policy called "Resource Location Restriction" and choose the allowed regions.
-> * Personnel data access controls based on attributes.
-> * Personnel support case ownership controls based on attributes.
-> * Encryption.
+* A feature in GCP that allows one to apply various security controls to an environment. Some features include:
+	* Data residency --> You need an organizational policy called "Resource Location Restriction" and choose the allowed regions.
+	* Personnel data access controls based on attributes.
+	* Personnel support case ownership controls based on attributes.
+	* Encryption.
 
 ## Digital Transformation
 Digital transformation is defined as the adoption of digital technology to transform services or businesses through:
@@ -156,37 +157,38 @@ Digital transformation is defined as the adoption of digital technology to trans
 * Replacing older digital technology with new digital technology (adopting cloud technology)
 
 At Google, they have 7 "solution pillars" for achieving digital transformation:
-*  Infrastructure modernization
+
+**Infrastructure modernization**
 >Replacing legacy hardware and software systems with cloud solutions. This allows an organization to adopt hybrid architectures and have more infrastructure mobility choosing a mix of best cloud service provider offerings for their organization's use-case.
 >**Anthos** allows management of on-premise and public cloud in a single unified interface.
 
-* Business application platform portfolio
+**Business application platform portfolio**
 > The backbone of CSPs are built on-top of robust, well-documented APIs standardized across all offered cloud services. Organizations can focus on the configuration and interconnections of various systems instead of having to build their own systems.
 > e.g. Cloud SDK, Cloud API, Cloud CLI, Google Cloud documentation
 
-* Application modernization
+**Application modernization**
 > Building web-applications on-top of cloud services allows organizations to globally deliver and rapidly iterate faster than ever before. CSPs offer automated deployment pipelines, AI-powered code-reviews, easy staging, testing of new features, the ability to test in-production, and rollback changes. Apps are more durable and can remain available even when facing catastrophic regional failure.
 > e.g. App Engine.
 
-* Database and storage solutions
+**Database and storage solutions**
 > Most companies can tolerate losing application code, you can always rewrite. Losing data is not something you can recover. CSPs have guaranteed SLAs of data durability, as well as the ability to easily migrate and secure your data.
 > e.g. Cloud Storage. 99.5% availability SLA.
 
-* Smart analytics
+**Smart analytics**
 > When you store data on CSPs, you can tap into BigData and BI cloud offerings assisted by AI to help you analyze your data.
 > e.g. Looker.
 
-* AI
+**AI**
 > AI, deep learning, ML are specialized domains that traditionally required scarce and expensive subject matter experts. Cloud is commoditizing, simplifying AI knowledge while driving costs lower for adoption.
 > e.g. Vertex AI, TensorFlow.
 
-* Security
+**Security**
 > CSPs by default have strong mechanisms built in for security, governance, and compliance. CSPs are continually developing new and innovative security offerings not just as the service-per-service, but to analyze, recommend, and remediate at the project and organization level. You can easily and quickly audit and apply security controls to become compliant in a fraction of the time than an on-premise solution.
 > e.g. IAM, BeyondCorp, Security Command Center.
 
 **Innovation Waves (Kondratiev Waves)** are hypothesized cycle-like phenomena in the global world economy. This phenomenon is closely connect with technology life cycles.
 ![[kondratiev_waves.png]]
-<p style="text-align: center"><i>Credit: freeCodeCamp.org</i></p>
+<p style="text-align: center"><i>Credit: exampro.co</i></p>
 
 **Burning Platform** is a term used when a company abandons old technology for new technology with the uncertainty of success and can be motivated by fear that the organization's future survival hinges on its digital transformation.
 
@@ -196,16 +198,55 @@ Types of computing power in GCP:
 * Quantum Computing - offered through Google Quantum AI. This field is still green and is constantly improving. Has the potential to be 100 million times more powerful than traditional CPUs.
 
 ## Google Cloud Adoption Framework
-The "Google Cloud Adoption Framework" (GCAP) is a whitepaper that determines:
+The "Google Cloud Adoption Framework" (GCAF) is a whitepaper that determines:
 * an organizations readiness to adopt GCP
 * the steps to fill in the knowledge gaps
 * how to develop new competencies
 
-The GCAP is composed of:
+The GCAF is composed of:
 * 4 themes - Learn, Lead, Scale, Secure
+	* _Learn_ - The quality and scale of the learning programs you have in place to upskill your technical teams. Your ability to augment your IT staff with experience partners.
+		* Who is engaged?
+		* How widespread is that engagement?
+		* How concerted is the effort?
+		* How effective are the results?
+	* _Lead_ - The extent to which IT teams are supported by a mandate from leadership to migrate to cloud. Also the degree to which the teams themselves are cross-functional, collaborative, and self-motivated.
+		* How are the teams structured?
+		* Have they got executive sponsorship?
+		* How are cloud projects budgeted, governed, assessed?
+	* _Scale_ - The extent to which you use cloud-native services that reduce operational overhead and automate manual processes and policies.
+		* How are cloud-based services provisioned?
+		* How is capacity for workloads allocated?
+		* How are application updates managed?
+	* _Secure_ - The capacity to protect your services from unauthorized and inappropriate access with a multilayered, identity-centric security model. Dependent also on advanced maturity of the other three themes (Learn, Lead, Scale).
+		* What controls are in place?
+		* What technologies used?
+		* What strategies govern the whole?
 * 3 _maturity_ phases - Tactical, Strategic, Transformational
-* Cloud Maturity Scale - Matrix of themes and phases
-* Epics - Workstreams to scope and structure cloud adoption
+	* _Tactical_ - Short-term. 
+		* Individual workloads are in place, but no coherent plan. 
+		* The focus is on reducing the cost of discrete systems. 
+		* Getting to cloud with minimal disruption. 
+		* The wins are quick, but there is no provision for scale.
+	* _Strategic_ - Mid-term. 
+		* A broader vision governs individual workloads, which are designed and developed with an eye to future needs and scale. 
+		* The business has begun to embrace, and people and processes are now involved in the adoption strategy. 
+		* IT teams are both efficient and effective, increasing the value of harnessing the cloud for your business operations.
+	* _Transformational_ - Long-term. 
+		* Cloud operations are functioning smoothly.
+		* The focus is on integrating the data and insights working in the cloud. 
+		* Existing data is transparently shared. New data is collected and analyzed. 
+		* ML is an available option. IT is no longer a cost center, but a partner to the business.
+* Cloud Maturity Scale - Matrix of themes and phases.
+![[gcp_maturity_matrix.png]]
+<p style="text-align: center"><i>Credit: exampro.co</i></p>
+
+* Epics - Workstreams to scope and structure cloud adoption.
+* A google Technical Account Manager (TAM) is a human resource assigned to work with your organization when paying for Google Cloud's Premium support.
+	* They can assist in finding where your business is in terms of the GCAF using the Cloud Maturity Scale.
+![[gcp_tam.png]]
+<p style="text-align: center"><i>Credit: exampro.co</i></p>
+
 ## Core Services
 ## More Services
 ## Migration Services

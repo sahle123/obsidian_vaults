@@ -16,7 +16,9 @@
                 "file": "Tools and Services/Google Cloud Platform.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Google Cloud Platform"
             }
           }
         ]
@@ -39,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -54,7 +58,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -62,7 +68,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -93,7 +101,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Google Cloud Platform"
             }
           },
           {
@@ -105,7 +115,9 @@
                 "file": "Tools and Services/Google Cloud Platform.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Google Cloud Platform"
             }
           },
           {
@@ -116,7 +128,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -126,7 +140,9 @@
               "type": "outline",
               "state": {
                 "file": "Tools and Services/Google Cloud Platform.md"
-              }
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Google Cloud Platform"
             }
           }
         ],
@@ -148,6 +164,8 @@
   },
   "active": "44ce6ab0c2072e07",
   "lastOpenFiles": [
+    "media/GCP/gcp_tam.png",
+    "media/GCP/gcp_maturity_matrix.png",
     "Distributed Systems.md",
     "Tools and Services/Google Cloud Platform.md",
     "Databases.md",
@@ -182,7 +200,6 @@
     "Cyber Security/Unorganized list of CyberSec certificates.md",
     "Unorganized",
     "Object Oriented Programming",
-    "media/data-modeling/concept_model.PNG",
     "Language-Specific/JavaScript.md",
     "Language-Specific"
   ]
