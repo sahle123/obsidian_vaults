@@ -5,7 +5,6 @@ All this work are study notes taken by Sahal A. Alturaigi and is derived from ma
 * _n-tier applications_ are also called distributed systems.
 * _Layers_ represent conceptual/logical organization of the code (e.g. UI layer, DAL, business logic, service layer).
 * _Tiers_ represent the logical/physical separation of components (e.g. database, app, UI, messaging, caching).
-
 # Distributed System Components
 
 ## Summary
@@ -408,25 +407,7 @@ How shards are selected during a write request require some sort of selection ru
 3. Metric-based selection
 	* A load balancer sits between the counter and shards that is charge of selection of the shard based on some defined metric.
 
-# Categorize Later
-## Failure Types
-* There are spectrum of failure types and below (in increasing order of difficulty) are the distributed system failure types:
-	1. _Fail-Stop_
-		* In this case a DS halts permanently, however, other nodes can still detect the node by (attempting) to communicate with it.
-		* Generally the easiest to debug.
-	2. _Crash_
-		* In this case the DS halts silently and other nodes cannot detect the node has stopped working.
-	3. _Omission_
-		* The node fails to send or receive messages.
-		* If it only fails to send messages, it is a _send omission failure_. If it fails only to receive messages, it is a _receive omission failure_.
-	4. _Temporal_
-		* The node generates the correct result but it arrives too late to be useful.
-		* This can be caused by bad algorithms, slow hardware, poor design strategies, or loss of synchronization between processor clocks.
-	5. _Byzantine_
-		* The node exhibits random behavior like transmitting arbitrary messages at arbitrary times producing wrong results or stopping midway.
-		* Likely caused by a software bug or a malicious entity.
-		* These are the most challenging types of bugs to handle.
-
+# DS Planning
 ## Non-functional System Characteristics
 
 Can be thought of in the form of "the system shall be X".
@@ -467,13 +448,31 @@ Can be thought of in the form of "the system shall be X".
 		* This is a technique where a system's state is saved in stable storage when the system state is consistent. Checkpointing is performed in many stages at different intervals.
 		* When a failure occurs, we go back to the last computed stable state (i.e. the previous checkpoint.)
 
+## Quality Attributes (QAs)
+* Measurable/testable properties of a software system that indicate how well it meets the stakeholder's needs.
+* Must be translated into concrete software structures.
+* Includes functional & nonfunctional requirements, service-level agreements, etc.
+
+The table below is an example of important QAs:
+
+| QA              | Description                                                                                | How to test it                                                                                                                                                                    |
+| --------------- | ------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Availability    | The proportion of time that the system is up and working.                                  | Measured as a percentage of total system downtime over a predefined time period.                                                                                                  |
+| Maintainability | The ability to undergo change as required.                                                 | Measured by calculating the time it takes to undergo the changes as required.                                                                                                     |
+| Performance     | Within a time interval, how quickly the system can respond to a command.                   | Measured in latency or throughput.                                                                                                                                                |
+| Reliability     | The changes that a product will perform its intended behavior under defined circumstances. | Measured in terms of correlation between two scores of test-retests.                                                                                                              |
+| Reusability     | If the product or some part of it can be reused in the production of another product.      | Tested by evaluating the software system's functionality in different scenarios, testing modularity and compatibility, and assessing the the performance + integration abilities. |
+| Security        | Ways to protect to the system and resources from unauthorized access and attacks.          | Tested via pen-tests, code reviews, vulnerability assessments, UAT, monitoring, etc.                                                                                              |
+| Scalability     | How well the system can scale up or down.                                                  | Measured in terms of capacity to extend or reduce quantity of user requests.                                                                                                      |
+| Load balancing  |                                                                                            |                                                                                                                                                                                   |
+| Caching         |                                                                                            |                                                                                                                                                                                   |
+
 ## Resource Estimation
 
 ### Back-of-the-envelope Hardware Latency
 
 * Below is a rough estimation of some hardware latencies: ![[media/hardware_latency_ref.PNG]]
     <p style="text-align: center"><i>Credit: Educative.io</i></p>
-
 ### Consistency Models
 * List of consistency models:
 	* __Linearizability__
@@ -483,7 +482,7 @@ Can be thought of in the form of "the system shall be X".
 		* A system that is both has linearizability and serializability is called __Strictly Serializable/Consistent__.
 		* Quorum-based replication can help improve the performance of a DS with this consistency model.
 	* __Sequential consistency__
-		*  In this consistency model, operations are allowed to take effect before their invocation or after their completion. As a result, there is no real-time guarantee. However, operations from different clients have to be seen in the same order by all other clients. The operations of every single client preserve the order specified by its program (global order).
+		* In this consistency model, operations are allowed to take effect before their invocation or after their completion. As a result, there is no real-time guarantee. However, operations from different clients have to be seen in the same order by all other clients. The operations of every single client preserve the order specified by its program (global order).
 		* Sequential order is preserved on the same processor or thread, while execution order of a program on different processors (or threads) is undefined.
 		* e.g. in a social media app, the ordering of posts between friends isn't important but the order of posts from a single friend is preserved.
 		* A weaker consistency model compared to _Linearizability_.
@@ -504,7 +503,6 @@ Can be thought of in the form of "the system shall be X".
 	* _Weak consistency models_
 		* These models that can be supported while also preserving availability during a network partition.
 		* Commonly, this is the _eventual consistency_ model.
-
 ### Isolation Levels
 * Isolation levels define what is possible and what is not in a system's behavior.
 * Isolation levels are applied to multi-object operations.
@@ -519,7 +517,6 @@ Can be thought of in the form of "the system shall be X".
 	
 	* __Read Uncommitted__ - allows reading of uncommitted data by other transactions. This is the lowest isolation level.
 ### Anomalies, Distributed Database
-
 * There are 7 common types of anomalies that can occur in a DS:
 	* __Dirty Writes__
 		* Occurs when a transaction overwrites a value that was previously written by another transaction that is still in-flight and has not been committed yet.
@@ -589,6 +586,24 @@ Can be thought of in the form of "the system shall be X".
 	<p style="text-align: center"><i>Credit: Educative.io</i></p>
 	* Further readings:
 		* https://brooker.co.za/blog/
+# Categorize Later
+## Failure Types
+* There are spectrum of failure types and below (in increasing order of difficulty) are the distributed system failure types:
+	1. _Fail-Stop_
+		* In this case a DS halts permanently. However, other nodes can still detect the node by (attempting) to communicate with it.
+		* Generally the easiest to debug.
+	2. _Crash_
+		* In this case the DS halts silently and other nodes cannot detect the node has stopped working.
+	3. _Omission_
+		* The node fails to send or receive messages.
+		* If it only fails to send messages, it is a _send omission failure_. If it fails only to receive messages, it is a _receive omission failure_.
+	4. _Temporal_
+		* The node generates the correct result but it arrives too late to be useful.
+		* This can be caused by bad algorithms, slow hardware, poor design strategies, or loss of synchronization between processor clocks.
+	5. _Byzantine_
+		* The node exhibits random behavior like transmitting arbitrary messages at arbitrary times producing wrong results or stopping midway.
+		* Likely caused by a software bug or a malicious entity.
+		* These are the most challenging types of bugs to handle.
 ## Request Routing
 * One problem that arises when partitioning data is how does the client know which node to connect to while making a request? If we want to read specific DB keys, we need to know which IP address we need to connect to read. This problem is problem is known as __Service Discovery__.
 ### ZooKeeper

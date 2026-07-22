@@ -1,2 +1,0 @@
-# Takes you to where hosts.txt is living.
-cd C:\Windows\System32\drivers\etc

@@ -8,20 +8,35 @@
         "type": "tabs",
         "children": [
           {
+            "id": "1108feb98baa5e24",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AI/Claude Code.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Claude Code"
+            }
+          },
+          {
             "id": "44ce6ab0c2072e07",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools and Services/Google Cloud Platform.md",
+                "file": "AI/Claude Code.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Google Cloud Platform"
+              "title": "Claude Code"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -40,7 +55,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -77,7 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 281.5
+    "width": 241.5
   },
   "right": {
     "id": "9fe4ef144cae769f",
@@ -139,10 +155,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tools and Services/Google Cloud Platform.md"
+                "file": "AI/Claude Code.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Google Cloud Platform"
+              "title": "Outline of Claude Code"
             }
           }
         ],
@@ -150,10 +169,11 @@
       }
     ],
     "direction": "horizontal",
-    "width": 317.5
+    "width": 299.5
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -164,31 +184,36 @@
   },
   "active": "44ce6ab0c2072e07",
   "lastOpenFiles": [
+    "Distributed Systems.md",
+    "Object Oriented Programming.md",
+    "AI/Claude Code.md",
+    "SDLC v.0.1.0.md",
+    "Software Architecture and Systems.md",
+    "SDLC v.0.1.0 1.md",
+    "media/AI/models-tier.png",
+    "media/AI/agentic-loop.png",
+    "media/AI/desktop.ini",
+    "media/AI",
+    "AI/GPT5 code pre-prompt.md",
+    "AI",
+    "Databases.md",
+    "Unorganized/Distributed Systems Monitoring.md",
+    "Tools and Services/Google Cloud Platform.md",
+    "Unorganized/Need to find place for.md",
+    "Tools and Services/Cloudflare.md",
     "media/GCP/gcp_tam.png",
     "media/GCP/gcp_maturity_matrix.png",
-    "Distributed Systems.md",
-    "Tools and Services/Google Cloud Platform.md",
-    "Databases.md",
-    "Tools and Services/Cloudflare.md",
     "System Design Practice.md",
-    "Untitled.md",
     "Tools and Services/Kubernetes.md",
     "Tools and Services",
-    "Object Oriented Programming.md",
-    "Software Architecture and Systems.md",
-    "Unorganized/Distributed Systems Monitoring.md",
     "Unorganized/Open Topics in Computer Science.md",
-    "Unorganized/Need to find place for.md",
     "Pasted image 20240827174348.png",
     "media/shared_counter_architecture.png",
     "media/mapreduce_diagram.png",
     "media/distributed_searching.png",
     "media/search_system.png",
     "media/distributed_logging.png",
-    "media/serverside_pull_monitoring.png",
     "Language-Specific/C-sharp and DOT-NET.md",
-    "media/blobstore_architecture.png",
-    "media/cdn_components.png",
     "Cyber Security/NCA - Essential Cybersecurity Controls.md",
     "().md",
     "Cyber Security/PDFs/ECC.pdf",
@@ -198,9 +223,6 @@
     "Cyber Security/PDFs/Guide-to-Essential-Cybersecurity-Controls-(ECC)-Implementation.pdf",
     "Cyber Security/PDFs",
     "Cyber Security/Unorganized list of CyberSec certificates.md",
-    "Unorganized",
-    "Object Oriented Programming",
-    "Language-Specific/JavaScript.md",
-    "Language-Specific"
+    "Language-Specific/JavaScript.md"
   ]
 }

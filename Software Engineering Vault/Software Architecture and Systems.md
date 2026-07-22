@@ -1,10 +1,11 @@
 #software-architecture 
 
+## Laws of Software Engineering
+[Start here](https://lawsofsoftwareengineering.com)
 ## Enterprise Integration Patterns/Styles
-* [Start here](https://en.wikipedia.org/wiki/Enterprise_Integration_Patterns)
-
+[Start here](https://en.wikipedia.org/wiki/Enterprise_Integration_Patterns)
 ## Application Architecture
-* [Start here](https://www.redhat.com/en/topics/cloud-native-apps/what-is-an-application-architecture#overview)
+[Start here](https://www.redhat.com/en/topics/cloud-native-apps/what-is-an-application-architecture#overview)
 ### N-tier architecture
 * Any N layers can be specified and these are to represent a separation of concerns. Each layer should have a specific focus and all communicate to each other accordingly.
 * It's easy to create layers that add extra work without adding any benefit so finding the sweet-spot is a matter of the scope of the project, the business, and the team's ability.
